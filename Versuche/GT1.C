@@ -34,9 +34,11 @@
 //***************************************************************************
 
 // USER CODE BEGIN (GT1_General,2)
-	static int aTaste = 0xF0, nTaste;
-	static bit tFlag = 0;	// Flag "Alter Status == Neuer Status" der ISR						
-	static bit iCnt = 0;
+
+static int nTaste, aTaste = 0xF0; // neue und alte taste
+static bit tFlag = 0; // taster flag
+static bit iCnt = 0; // interrupt counter
+
 // USER CODE END
 
 
@@ -134,7 +136,7 @@ void GT1_viIsrTmr2(void) interrupt T2INT
   // USER CODE BEGIN (GT1_IsrTmr2,1)
 	
 	nTaste = P1H & 0xF0;
-	if (nTaste == aTaste)
+	if (nTaste != 0xF0 && nTaste == aTaste)
 	{
 		if (iCnt == 0)
 		{
@@ -143,12 +145,13 @@ void GT1_viIsrTmr2(void) interrupt T2INT
 		else
 		{
 			iCnt = 0;
-			tFlag = (nTaste != 0xF0);
+			tFlag = 1;
 		}
 	}
 	else
 	{
 		iCnt = 0;
+		tFlag = 0;
 	}
 
 	aTaste = nTaste;
@@ -160,25 +163,28 @@ void GT1_viIsrTmr2(void) interrupt T2INT
 
 
 // USER CODE BEGIN (GT1_General,3)
+
 bit KeyDown(void)
 {
 	return tFlag;
 }
 
 char GetKey(void)
-{	/* Variablendeklaration */
-	char iRet = 0;
+{	
 	switch(nTaste)
-	{	case 0x70:		iRet = '1';
-						break;
-		case 0xB0:		iRet = '2';
-						break;
-		case 0xD0:		iRet = '3';
-						break;
-		case 0xE0:		iRet = '4';
-						break;	  		
-	}
-	return iRet;
+	{	
+		case 0x70:
+			return '1';
+		case 0xB0:
+			return '2';
+		case 0xD0:
+			return '3';
+		case 0xE0:
+			return '4';
+		default: // dieser fall hat nicht einzutreten PUNKT
+			return 0;
+	}	
 }
+
 // USER CODE END
 
