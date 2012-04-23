@@ -38,10 +38,10 @@
 // 4 x 24 Zeichen Buffer
 // Die ersten 4 Zeichen bleiben immer unveraendert
 static char buffer[ROWCOUNT][BUFSIZE] = {
-    { '\x1B', 'O', 1, 1 },
-	{ '\x1B', 'O', 1, 2 },
-	{ '\x1B', 'O', 1, 3 },
-	{ '\x1B', 'O', 1, 4 } };
+    { "\nZ1:" },
+	{ "\nZ2:" },
+	{ "\nZ3:" },
+	{ "\nZ4:" } };
 static char index = 0;
 
 static char next[ROWCOUNT];
