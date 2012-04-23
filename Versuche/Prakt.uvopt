@@ -219,6 +219,53 @@
           <Name>(103=120,117,383,521,0)(3010=-1,-1,-1,-1,0)(108=150,182,456,543,0)(3004=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(3014=-1,-1,-1,-1,0)(82=-1,-1,-1,-1,0)(83=1453,723,1851,850,1)(85=-1,-1,-1,-1,0)(3008=-1,-1,-1,-1,0)(3015=-1,-1,-1,-1,0)(90=-1,-1,-1,-1,0)(93=155,216,377,488,0)(94=-1,-1,-1,-1,0)(95=-1,-1,-1,-1,0)(98=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(3016=-1,-1,-1,-1,0)(3019=-1,-1,-1,-1,0)(3018=-1,-1,-1,-1,0)(80=150,100,366,461,0)(3007=150,100,371,504,0)(3000=-1,-1,-1,-1,0)(3013=-1,-1,-1,-1,0)(3012=165,117,473,279,0)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>182</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>796</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>ASC.C</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>198</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>930</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>ASC.C</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>2</Number>
+          <Type>0</Type>
+          <LineNumber>153</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>1520</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>MAIN.C</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+      </Breakpoint>
       <DebugFlag>
         <trace>0</trace>
         <periodic>1</periodic>
@@ -275,10 +322,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>18</ColumnNumber>
+      <ColumnNumber>10</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>129</TopLine>
-      <CurrentLine>131</CurrentLine>
+      <TopLine>149</TopLine>
+      <CurrentLine>156</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
@@ -289,10 +336,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>12</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>93</TopLine>
-      <CurrentLine>101</CurrentLine>
+      <TopLine>154</TopLine>
+      <CurrentLine>161</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\GT1.C</PathWithFileName>
       <FilenameWithoutPath>GT1.C</FilenameWithoutPath>
@@ -319,8 +366,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>178</TopLine>
-      <CurrentLine>178</CurrentLine>
+      <TopLine>171</TopLine>
+      <CurrentLine>182</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\ASC.C</PathWithFileName>
       <FilenameWithoutPath>ASC.C</FilenameWithoutPath>
@@ -335,29 +382,29 @@
   </Group>
 
   <MDIGroups>
-    <Orientation>1</Orientation>
+    <Orientation>3</Orientation>
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
-      <Size>100</Size>
-      <ActiveTab>2</ActiveTab>
+      <Size>50</Size>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\ASC.C</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>178</TopLine>
-          <CurrentLine>178</CurrentLine>
+          <TopLine>171</TopLine>
+          <CurrentLine>182</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\MAIN.C</Name>
-          <ColumnNumber>78</ColumnNumber>
-          <TopLine>129</TopLine>
-          <CurrentLine>157</CurrentLine>
+          <ColumnNumber>10</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\GT1.C</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>93</TopLine>
-          <CurrentLine>101</CurrentLine>
+          <ColumnNumber>12</ColumnNumber>
+          <TopLine>154</TopLine>
+          <CurrentLine>161</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
