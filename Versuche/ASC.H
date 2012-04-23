@@ -53,7 +53,6 @@ void ClrScr();
 
 #define COLCOUNT 20
 #define ROWCOUNT 4
-#define BUFSIZE 24
 
 // USER CODE END
 

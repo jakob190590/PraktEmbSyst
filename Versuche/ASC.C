@@ -35,6 +35,9 @@
 
 // USER CODE BEGIN (ASC_General,2)
 
+// Gehoert ned ins Header file, sondern nur in dieses Modul
+#define BUFSIZE 24
+
 // 4 x 24 Zeichen Buffer
 // Die ersten 4 Zeichen bleiben immer unveraendert
 static char buffer[ROWCOUNT][BUFSIZE] = {
@@ -48,7 +51,7 @@ static char index = 0;
 static char next[ROWCOUNT];
 static char size = 0;
 
-static char pause;
+static bit pause;
 
 // Forward Deklaration
 static void SendChar();
