@@ -275,10 +275,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>18</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>129</TopLine>
-      <CurrentLine>131</CurrentLine>
+      <TopLine>181</TopLine>
+      <CurrentLine>189</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
@@ -289,10 +289,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>12</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>93</TopLine>
-      <CurrentLine>101</CurrentLine>
+      <TopLine>154</TopLine>
+      <CurrentLine>161</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\GT1.C</PathWithFileName>
       <FilenameWithoutPath>GT1.C</FilenameWithoutPath>
@@ -317,10 +317,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>156</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>178</TopLine>
-      <CurrentLine>178</CurrentLine>
+      <TopLine>211</TopLine>
+      <CurrentLine>214</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\ASC.C</PathWithFileName>
       <FilenameWithoutPath>ASC.C</FilenameWithoutPath>
@@ -335,29 +335,29 @@
   </Group>
 
   <MDIGroups>
-    <Orientation>1</Orientation>
+    <Orientation>2</Orientation>
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
-      <Size>100</Size>
-      <ActiveTab>2</ActiveTab>
+      <Size>71</Size>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\ASC.C</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>178</TopLine>
-          <CurrentLine>178</CurrentLine>
+          <ColumnNumber>156</ColumnNumber>
+          <TopLine>211</TopLine>
+          <CurrentLine>214</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\MAIN.C</Name>
-          <ColumnNumber>78</ColumnNumber>
-          <TopLine>129</TopLine>
-          <CurrentLine>157</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>181</TopLine>
+          <CurrentLine>189</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\GT1.C</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>93</TopLine>
-          <CurrentLine>101</CurrentLine>
+          <ColumnNumber>12</ColumnNumber>
+          <TopLine>154</TopLine>
+          <CurrentLine>161</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

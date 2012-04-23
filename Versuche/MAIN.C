@@ -153,7 +153,10 @@ void main(void)
 	DoPrintZ(1, "Hallo!");
 	DoPrintZ(3, "Hallo Welt!");
 	DoPrintZ(4, "Hallo Jakob______________________");
-	DoPrintZ(1, " 123    ");//Hallo Raffi");
+	DoPrintZ(1, "Hallo Raffi");
+	DoPrintZ(2, "XXXXXXXXXXXXXXX");
+	DoPrintZ(2, "Hallo Raffi");
+	DoPrintZ(4, "Hallo Jakob");
 
 	while(1)
 	{ 	
