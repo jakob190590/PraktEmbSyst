@@ -322,10 +322,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>10</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>149</TopLine>
-      <CurrentLine>156</CurrentLine>
+      <TopLine>131</TopLine>
+      <CurrentLine>140</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
@@ -364,10 +364,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>23</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>171</TopLine>
-      <CurrentLine>182</CurrentLine>
+      <TopLine>164</TopLine>
+      <CurrentLine>173</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\ASC.C</PathWithFileName>
       <FilenameWithoutPath>ASC.C</FilenameWithoutPath>
@@ -386,19 +386,19 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>50</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\ASC.C</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>171</TopLine>
-          <CurrentLine>182</CurrentLine>
+          <ColumnNumber>72</ColumnNumber>
+          <TopLine>164</TopLine>
+          <CurrentLine>173</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\MAIN.C</Name>
-          <ColumnNumber>10</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>131</TopLine>
+          <CurrentLine>140</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\GT1.C</Name>

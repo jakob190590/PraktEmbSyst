@@ -42,6 +42,7 @@ static char buffer[ROWCOUNT][BUFSIZE] = {
 		{ '\x1B', 'O', 1, 2 },
 		{ '\x1B', 'O', 1, 3 },
 		{ '\x1B', 'O', 1, 4 } };
+
 static char index = 0;
 
 static char next[ROWCOUNT];
@@ -177,8 +178,8 @@ void DoPrintZ(int iZnr, char *pBuf)
 	char *text = &buffer[--iZnr][4]; // iZnr als index anpassen
 	int i = 0;
 
-	// signalisieren, dass naechster Interrupt
-	// kein weiteres zeichen mehr senden soll!
+	// signalisieren, dass naechster Interrupt erst
+	// mal kein weiteres zeichen mehr senden soll!
 	pause = 1;
   
   
@@ -197,11 +198,14 @@ void DoPrintZ(int iZnr, char *pBuf)
 
 	if (size == 0) // momentan nichts zu senden
 	{
-		next[0] = (char) iZnr;
+		*next = (char) iZnr;
 		size = 1;
 	}
-	else if (next[0] == iZnr) // zeile momentan in bearbeitung
-		index = 0; // index zuruecksetzen
+	else if (*next == iZnr) // zeile momentan in bearbeitung
+	{
+		if (index >= 4) // escape-sequenz schon komplett hinter sich gelassen und schon im text		
+			index = 0; // index zuruecksetzen
+	}
 	else
  	{
 		for (i = 1; i < size; i++)
@@ -221,7 +225,7 @@ static void SendChar()
 	if (size && index < BUFSIZE)
 	{	
 		char c = buffer[*next][index++];
-		ASC_vSendData(c); // TODO nachstes zeichen senden
+		ASC_vSendData(c);
 		if (index == BUFSIZE)
 		{
 			memmove(next, next + 1, --size);		
