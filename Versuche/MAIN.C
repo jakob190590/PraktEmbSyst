@@ -163,32 +163,35 @@ void main(void)
 
 		bit state = KeyDown();
 
-		if(!oldState && state)
-		{	switch(GetKey())
-			{	case '1':		//printf("Taste 1 ist gedrückt!!\n\r");
-								ledState ^= 0x80; 
-								break;
-				case '2':		//printf("Taste 2 ist gedrückt!!\n\r");
-								ledState ^= 0x40;
-								break;
-				case '3':		//printf("Taste 3 ist gedrückt!!\n\r");
-								ledState ^= 0x20;
-								break;
-				case '4':		//printf("Taste 4 ist gedrückt!!\n\r");
-								ledState ^= 0x10;
-								break;
-				default:		//printf("Fehler bei der Tastenbestimmung!!\n\r");
-								break;
+		// if (state != oldState) // wechsel detektieren
+
+		if (state && !oldState)
+		{
+			switch(GetKey())
+			{
+				case '1':
+					ledState ^= 0x80; 
+					break;
+				case '2':
+					ledState ^= 0x40;
+					break;
+				case '3':
+					ledState ^= 0x20;
+					break;
+				case '4':
+					ledState ^= 0x10;
+					break;
 			}
 			IO_vWritePort(P1L,ledState);
-
-				/*
 			
 			sprintf(s, "Taste %c ist gedrueckt", GetKey()); // mehr als 20 zeichen -> t sollte nicht mehr dabei sein; ohne fehler
 			DoPrintZ(2, "Hallo Welt!"); // es muesste ohne flackern das zweite angezeigt werden, nichts mit hallo welt.
 			DoPrintZ(2, s);
-			  */
+
 		}
+		else if (!state && oldState)
+			DoPrintZ(2, "Keine Taste gedrueckt");
+
 		oldState = state;
 	}
 
