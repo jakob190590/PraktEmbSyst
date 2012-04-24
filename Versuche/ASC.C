@@ -51,7 +51,7 @@ static char index = 0;
 static char next[ROWCOUNT];
 static char size = 0;
 
-static bit pause;
+static bit myIEN; // my Interrupt Enable (Transmit Buffer Interrupt)
 
 // Forward Deklaration
 static void SendChar();
@@ -165,7 +165,7 @@ void ASC_viIsrTxBuf(void) interrupt S0TBINT
 {
   // USER CODE BEGIN (ASC_IsrTxBuf,1)
 
-	if (!pause)
+	if (myIEN)
 		SendChar();
 
   // USER CODE END
@@ -183,7 +183,7 @@ void DoPrintZ(int iZnr, char *pBuf)
 
 	// signalisieren, dass naechster Interrupt erst
 	// mal kein weiteres zeichen mehr senden soll!
-	pause = 1;
+	myIEN = 0;
   
   
 	// Argument in buffer uebertragen
@@ -218,7 +218,7 @@ void DoPrintZ(int iZnr, char *pBuf)
 			next[size++] = (char) iZnr; // hinten anhaengen
 	}
 
-	pause = 0;
+	myIEN = 1;
 	SendChar();
 
 }
