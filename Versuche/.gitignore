@@ -1,7 +1,7 @@
 *.bak
 *.lst
 *.__i
-*.OBJ
+*.obj
 Prakt
 Prakt.H86
 Prakt.plg
@@ -9,4 +9,4 @@ Prakt.rtf
 Prakt.SBR
 Prakt.lnp
 ft3dlscr.txt
-Start167.LST
+Prakt.uvgui*

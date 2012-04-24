@@ -139,10 +139,17 @@ void Project_Init(void)
 void main(void)
 {
   // USER CODE BEGIN (Main,1)
-  int ledState = 0;	// LED Status
-  bit oldState = 0;
+	
+	int ledState = 0;	// LED Status
+	
+	bit oldState = 0;
 
-  char s[40];
+	char s[21]; // 20 Zeichen fuers Display + '\0'
+
+	char kanal = 0;
+
+	char wert;
+
   // USER CODE END
 
   Project_Init();
@@ -151,27 +158,31 @@ void main(void)
 	
 	ClrScr();
 	DoPrintZ(1, "Hallo!");
-	DoPrintZ(3, "Hallo Welt!");
-	DoPrintZ(4, "Hallo Jakob______________________");
-	DoPrintZ(1, "Hallo Raffi");
-	DoPrintZ(2, "XXXXXXXXXXXXXXX");
-	DoPrintZ(2, "Hallo Raffi");
-	DoPrintZ(4, "Hallo Jakob");
 
 	while(1)
 	{ 	
 
-		bit state = KeyDown();
-
-		// if (state != oldState) // wechsel detektieren
-
+		bit state = KeyDown(); 				
 		if (state && !oldState)
 		{
 			switch(GetKey())
 			{
 				case '1':
+					
+					// Wandlung fuer kanal anstossen
+					// explizit warten
+		
+					sprintf(s, "%x", wert);
+					DoPrintZ(1, s);
+		
+					if (kanal < 2)
+						kanal++;
+					else
+						kanal = 0;
+
 					ledState ^= 0x80; 
 					break;
+
 				case '2':
 					ledState ^= 0x40;
 					break;
@@ -183,18 +194,13 @@ void main(void)
 					break;
 			}
 			IO_vWritePort(P1L,ledState);
-			
-			sprintf(s, "Taste %c ist gedrueckt", GetKey()); // mehr als 20 zeichen -> t sollte nicht mehr dabei sein; ohne fehler
-			DoPrintZ(2, "Hallo Welt!"); // es muesste ohne flackern das zweite angezeigt werden, nichts mit hallo welt.
-			DoPrintZ(2, s);
 
 		}
-		else if (!state && oldState)
-			DoPrintZ(2, "Keine Taste gedrueckt");
-
+		
 		oldState = state;
 	}
 
   // USER CODE END
 }
+
 
