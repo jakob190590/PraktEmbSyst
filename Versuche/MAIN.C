@@ -148,8 +148,6 @@ void main(void)
 
 	char kanal = 0;
 
-	char wert;
-
   // USER CODE END
 
   Project_Init();
@@ -168,11 +166,8 @@ void main(void)
 			switch(GetKey())
 			{
 				case '1':
-					
-					// Wandlung fuer kanal anstossen
-					// explizit warten
 		
-					sprintf(s, "%x", wert);
+					sprintf(s, "Kanal %d: %5.2f", kanal, fGibADmittel(kanal));
 					DoPrintZ(1, s);
 		
 					if (kanal < 2)
@@ -183,7 +178,11 @@ void main(void)
 					ledState ^= 0x80; 
 					break;
 
-				case '2':
+				case '2':	
+					
+					sprintf(s, "Summe:    %5.2f", fGibGewicht());
+					DoPrintZ(2, s);
+									
 					ledState ^= 0x40;
 					break;
 				case '3':
@@ -202,5 +201,6 @@ void main(void)
 
   // USER CODE END
 }
+
 
 
