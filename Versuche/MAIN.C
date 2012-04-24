@@ -170,16 +170,16 @@ void main(void)
 			switch(GetKey())
 			{
 				case '1':
-					ledState ^= 0x80; 
+					ledState ^= 0x10; 
 					break;
 				case '2':
-					ledState ^= 0x40;
-					break;
-				case '3':
 					ledState ^= 0x20;
 					break;
+				case '3':
+					ledState ^= 0x40;
+					break;
 				case '4':
-					ledState ^= 0x10;
+					ledState ^= 0x80;
 					break;
 			}
 			IO_vWritePort(P1L,ledState);
