@@ -173,13 +173,13 @@ char GetKey(void)
 {	
 	switch(nTaste)
 	{	
-		case 0x70:
-			return '1';
-		case 0xB0:
-			return '2';
-		case 0xD0:
-			return '3';
 		case 0xE0:
+			return '1';
+		case 0xD0:
+			return '2';
+		case 0xB0:
+			return '3';
+		case 0x70:
 			return '4';
 		default: // dieser fall hat nicht einzutreten PUNKT
 			return 0;
