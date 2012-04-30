@@ -13,7 +13,7 @@
 //                the GPT1 unit.
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          30.04.2012 14:50:52
 //
 //****************************************************************************
 
@@ -28,6 +28,10 @@ void GT1_vInit(void);
 
 bit KeyDown(void);
 char GetKey(void);
+
+
+float fGibADmittel(char);
+float fGibGewicht();
 
 // USER CODE END
 
@@ -61,6 +65,7 @@ char GetKey(void);
 //***************************************************************************
 
 #define T2INT   0x22
+#define T3INT   0x23
 
 
 // USER CODE BEGIN (Header,4)
