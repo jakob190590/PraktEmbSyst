@@ -12,7 +12,7 @@
 // @Description   This file contains the Project initialization function.
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          30.04.2012 14:50:52
 //
 //****************************************************************************
 
@@ -62,7 +62,7 @@
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          30.04.2012 14:50:52
 //
 //****************************************************************************
 
@@ -107,6 +107,9 @@ void Project_Init(void)
   // initializes the Asynchronous/Synchronous Serial Interface (ASC)
   ASC_vInit();
 
+  // initializes the Analog/Digital Converter (ADC)
+  ADC_vInit();
+
   // initializes the General Purpose Timer Unit 1 (GPT1)
   GT1_vInit();
 
@@ -132,7 +135,7 @@ void Project_Init(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          30.04.2012 14:50:52
 //
 //****************************************************************************
 
@@ -147,8 +150,7 @@ void main(void)
 	char s[21]; // 20 Zeichen fuers Display + '\0'
 
 	char kanal = 0;
-
-	char wert;
+	uword wert;
 
   // USER CODE END
 
@@ -171,11 +173,15 @@ void main(void)
 					
 					// Wandlung fuer kanal anstossen
 					// explizit warten
+					ADC_vConfConv(FIXED, kanal);
+					ADC_vStartConv();
+					while (!ADC_bConvReady());
+					wert = ADC_uwReadConv() & 0x03FF;
 		
-					sprintf(s, "%x", wert);
+					sprintf(s, "%4x", wert);
 					DoPrintZ(1, s);
 		
-					if (kanal < 2)
+					if (kanal < (ADNUM - 1))
 						kanal++;
 					else
 						kanal = 0;
@@ -202,5 +208,4 @@ void main(void)
 
   // USER CODE END
 }
-
 
