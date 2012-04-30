@@ -35,7 +35,7 @@
 
 // USER CODE BEGIN (GT1_General,2)
 
-static int nTaste, aTaste = 0xF0; // neue und alte taste
+static int nTaste, aTaste = 0xFF; // neue und alte taste
 static bit tFlag = 0; // taster flag
 static bit iCnt = 0; // interrupt counter
 
@@ -135,8 +135,8 @@ void GT1_viIsrTmr2(void) interrupt T2INT
 {
   // USER CODE BEGIN (GT1_IsrTmr2,1)
 	
-	nTaste = P1H & 0xF0;
-	if (nTaste != 0xF0 && nTaste == aTaste)
+	nTaste = P1H | 0x0F;
+	if (nTaste != 0xFF && nTaste == aTaste)
 	{
 		if (iCnt == 0)
 		{
@@ -171,15 +171,15 @@ bit KeyDown(void)
 
 char GetKey(void)
 {	
-	switch(nTaste)
+	switch(~nTaste & 0xFF)
 	{	
-		case 0xE0:
+		case 0x10:
 			return '1';
-		case 0xD0:
+		case 0x20:
 			return '2';
-		case 0xB0:
+		case 0x40:
 			return '3';
-		case 0x70:
+		case 0x80:
 			return '4';
 		default: // dieser fall hat nicht einzutreten PUNKT
 			return 0;
