@@ -42,8 +42,8 @@ static bit iCnt = 0; // interrupt counter
 
 #define BUFLEN 20 // Size des Buffers zur Mittelung (adBuff)
 
-static uword adBuff[ADNUM][BUFLEN];
-static unsigned long sum[ADNUM];
+static uword adBuff[ADNUM][BUFLEN] = { 0 };	 // damit sollten alle Werte 0 sein.
+static unsigned long sum[ADNUM] = { 0 };
 
 // USER CODE END
 
