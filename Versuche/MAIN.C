@@ -178,7 +178,7 @@ void main(void)
 					while (!ADC_bConvReady());
 					wert = ADC_uwReadConv() & 0x03FF;
 		
-					sprintf(s, "%4x", wert);
+					sprintf(s, "0x%04x", wert);
 					DoPrintZ(1, s);
 		
 					if (kanal < (ADNUM - 1))
