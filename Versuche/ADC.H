@@ -150,6 +150,8 @@ uword ADC_uwReadConv(void);
 
 // USER CODE BEGIN (ADCHeader,3)
 
+#define ADNUM 3 // Anzahl der Kanaele
+
 // USER CODE END
 
 //****************************************************************************
