@@ -1,0 +1,136 @@
+//****************************************************************************
+// @Module        Ports
+// @Filename      IO.H
+// @Project       Prakt.dav
+//----------------------------------------------------------------------------
+// @Controller    Infineon C164CI-8E
+//
+// @Compiler      KEIL C166
+//
+// @Codegenerator DAvE 2-0-0
+//
+// @Description   This file contains all function prototypes and macros for
+//                the Parallel Ports.
+//
+//----------------------------------------------------------------------------
+// @Date          23.04.2012 17:51:39
+//
+//****************************************************************************
+
+//****************************************************************************
+// @Prototypes of global functions
+//****************************************************************************
+
+void IO_vInit(void);
+
+
+// USER CODE BEGIN (IOHeader,1)
+
+// USER CODE END
+
+
+//****************************************************************************
+// @Macros
+//****************************************************************************
+
+//****************************************************************************
+// @Macro         IO_vWritePort(Port,Data)
+//
+//----------------------------------------------------------------------------
+// @Description   The forwarded data is written to the selected port. If a port
+//                has less than 16 pins, the bits not used are ignored in
+//                the parameter value.
+//                
+//                The following definitions for PortNr are available:
+//                P0L,P0H,P1L,P1H,P3,P4,P8
+//
+//----------------------------------------------------------------------------
+// @Returnvalue   none
+//
+//----------------------------------------------------------------------------
+// @Parameters    port to be altered
+// @Parameters    value to be written to the chosen port
+//
+//----------------------------------------------------------------------------
+// @Date          23.04.2012 17:51:39
+//
+//****************************************************************************
+
+#define IO_vWritePort(Port,Data) Port = Data
+
+
+
+// USER CODE BEGIN (IOHeader,2)
+
+// USER CODE END
+
+
+//****************************************************************************
+// Declaration of bit addressable SFRs (for parameter PinNr)
+//****************************************************************************
+
+sbit  P0L_0 = P0L^0;
+sbit  P0L_1 = P0L^1;
+sbit  P0L_2 = P0L^2;
+sbit  P0L_3 = P0L^3;
+sbit  P0L_4 = P0L^4;
+sbit  P0L_5 = P0L^5;
+sbit  P0L_6 = P0L^6;
+sbit  P0L_7 = P0L^7;
+sbit  P0H_0 = P0H^0;
+sbit  P0H_1 = P0H^1;
+sbit  P0H_2 = P0H^2;
+sbit  P0H_3 = P0H^3;
+sbit  P0H_4 = P0H^4;
+sbit  P0H_5 = P0H^5;
+sbit  P0H_6 = P0H^6;
+sbit  P0H_7 = P0H^7;
+sbit  P1L_0 = P1L^0;
+sbit  P1L_1 = P1L^1;
+sbit  P1L_2 = P1L^2;
+sbit  P1L_3 = P1L^3;
+sbit  P1L_4 = P1L^4;
+sbit  P1L_5 = P1L^5;
+sbit  P1L_6 = P1L^6;
+sbit  P1L_7 = P1L^7;
+sbit  P1H_0 = P1H^0;
+sbit  P1H_1 = P1H^1;
+sbit  P1H_2 = P1H^2;
+sbit  P1H_3 = P1H^3;
+sbit  P1H_4 = P1H^4;
+sbit  P1H_5 = P1H^5;
+sbit  P1H_6 = P1H^6;
+sbit  P1H_7 = P1H^7;
+sbit  P3_4 = P3^4;
+sbit  P3_6 = P3^6;
+sbit  P3_8 = P3^8;
+sbit  P3_9 = P3^9;
+sbit  P3_10 = P3^10;
+sbit  P3_11 = P3^11;
+sbit  P3_12 = P3^12;
+sbit  P3_13 = P3^13;
+sbit  P3_15 = P3^15;
+sbit  P4_0 = P4^0;
+sbit  P4_1 = P4^1;
+sbit  P4_2 = P4^2;
+sbit  P4_3 = P4^3;
+sbit  P4_5 = P4^5;
+sbit  P4_6 = P4^6;
+sbit  P5_0 = P5^0;
+sbit  P5_1 = P5^1;
+sbit  P5_2 = P5^2;
+sbit  P5_3 = P5^3;
+sbit  P5_4 = P5^4;
+sbit  P5_5 = P5^5;
+sbit  P5_6 = P5^6;
+sbit  P5_7 = P5^7;
+sbit  P8_0 = P8^0;
+sbit  P8_1 = P8^1;
+sbit  P8_2 = P8^2;
+sbit  P8_3 = P8^3;
+
+
+// USER CODE BEGIN (IOHeader,3)
+
+// USER CODE END
+
