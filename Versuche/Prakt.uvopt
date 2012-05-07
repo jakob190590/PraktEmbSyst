@@ -16,13 +16,8 @@
   </Extensions>
 
   <DaveTm>
-<<<<<<< HEAD
-    <dwLowDateTime>-1174318848</dwLowDateTime>
-    <dwHighDateTime>30223387</dwHighDateTime>
-=======
-    <dwLowDateTime>-1444253440</dwLowDateTime>
-    <dwHighDateTime>30223389</dwHighDateTime>
->>>>>>> versuch2
+    <dwLowDateTime>0</dwLowDateTime>
+    <dwHighDateTime>0</dwHighDateTime>
   </DaveTm>
 
   <Target>
@@ -109,7 +104,7 @@
         </OnChipMemories>
       </MCS166>
       <OPTTT>
-        <gFlags>1</gFlags>
+        <gFlags>0</gFlags>
         <BeepAtEnd>1</BeepAtEnd>
         <RunSim>1</RunSim>
         <RunTarget>0</RunTarget>
@@ -157,24 +152,7 @@
         <tvExpOptDlg>0</tvExpOptDlg>
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
-      <CpuCode>255</CpuCode>
-      <Books>
-        <Book>
-          <Number>0</Number>
-          <Title>Data Sheet</Title>
-          <Path>DATASHTS\INFINEON\C164_DS.PDF</Path>
-        </Book>
-        <Book>
-          <Number>1</Number>
-          <Title>Instruction Set Manual</Title>
-          <Path>DATASHTS\INFINEON\C166ISM.PDF</Path>
-        </Book>
-        <Book>
-          <Number>2</Number>
-          <Title>User's Manual</Title>
-          <Path>DATASHTS\INFINEON\C164CICLSISL_UM.PDF</Path>
-        </Book>
-      </Books>
+      <CpuCode>0</CpuCode>
       <DllOpt>
         <SimDllName>S166.DLL</SimDllName>
         <SimDllArguments></SimDllArguments>
@@ -217,22 +195,15 @@
         <tIfile></tIfile>
         <pMon></pMon>
       </DebugOpt>
-      <TargetDriverDllRegistry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>DLGD167</Key>
-          <Name>(103=120,117,383,521,0)(3010=-1,-1,-1,-1,0)(108=150,182,456,543,0)(3004=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(3014=-1,-1,-1,-1,0)(82=-1,-1,-1,-1,0)(83=1493,893,1891,1020,1)(85=-1,-1,-1,-1,0)(3008=-1,-1,-1,-1,0)(3015=-1,-1,-1,-1,0)(90=-1,-1,-1,-1,0)(93=155,216,377,488,0)(94=-1,-1,-1,-1,0)(95=-1,-1,-1,-1,0)(98=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(3016=-1,-1,-1,-1,0)(3019=-1,-1,-1,-1,0)(3018=-1,-1,-1,-1,0)(80=150,100,366,461,0)(3007=150,100,371,504,0)(3000=-1,-1,-1,-1,0)(3013=-1,-1,-1,-1,0)(3012=165,117,473,279,0)</Name>
-        </SetRegEntry>
-      </TargetDriverDllRegistry>
       <DebugFlag>
         <trace>0</trace>
-        <periodic>1</periodic>
-        <aLwin>1</aLwin>
+        <periodic>0</periodic>
+        <aLwin>0</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
         <aPa>0</aPa>
-        <viewmode>1</viewmode>
+        <viewmode>0</viewmode>
         <vrSel>0</vrSel>
         <aSym>0</aSym>
         <aTbox>0</aTbox>
@@ -270,7 +241,7 @@
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>0</TopLine>
       <CurrentLine>0</CurrentLine>
-      <bDave2>1</bDave2>
+      <bDave2>0</bDave2>
       <PathWithFileName>.\Start167.a66</PathWithFileName>
       <FilenameWithoutPath>Start167.a66</FilenameWithoutPath>
     </File>
@@ -280,11 +251,11 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>21</ColumnNumber>
+      <ColumnNumber>26</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>153</TopLine>
-      <CurrentLine>181</CurrentLine>
-      <bDave2>1</bDave2>
+      <TopLine>169</TopLine>
+      <CurrentLine>188</CurrentLine>
+      <bDave2>0</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
     </File>
@@ -294,16 +265,11 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>38</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-<<<<<<< HEAD
-      <TopLine>181</TopLine>
-      <CurrentLine>181</CurrentLine>
-=======
       <TopLine>230</TopLine>
-      <CurrentLine>256</CurrentLine>
->>>>>>> versuch2
-      <bDave2>1</bDave2>
+      <CurrentLine>271</CurrentLine>
+      <bDave2>0</bDave2>
       <PathWithFileName>.\GT1.C</PathWithFileName>
       <FilenameWithoutPath>GT1.C</FilenameWithoutPath>
     </File>
@@ -313,11 +279,11 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>0</TopLine>
       <CurrentLine>0</CurrentLine>
-      <bDave2>1</bDave2>
+      <bDave2>0</bDave2>
       <PathWithFileName>.\IO.C</PathWithFileName>
       <FilenameWithoutPath>IO.C</FilenameWithoutPath>
     </File>
@@ -327,16 +293,11 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>50</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-<<<<<<< HEAD
-      <TopLine>39</TopLine>
-      <CurrentLine>50</CurrentLine>
-=======
-      <TopLine>207</TopLine>
-      <CurrentLine>207</CurrentLine>
->>>>>>> versuch2
-      <bDave2>1</bDave2>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
       <PathWithFileName>.\ASC.C</PathWithFileName>
       <FilenameWithoutPath>ASC.C</FilenameWithoutPath>
     </File>
@@ -348,9 +309,9 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>110</TopLine>
-      <CurrentLine>110</CurrentLine>
-      <bDave2>1</bDave2>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
       <PathWithFileName>.\ADC.C</PathWithFileName>
       <FilenameWithoutPath>ADC.C</FilenameWithoutPath>
     </File>
@@ -363,144 +324,24 @@
     <cbSel>0</cbSel>
   </Group>
 
-  <AlienFiles>
-    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\ADC.H</PathWithFilename>
-    <TopLine>120</TopLine>
-    <CurrentLine>145</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\GT1.H</PathWithFilename>
-    <TopLine>35</TopLine>
-    <CurrentLine>56</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\ASC.H</PathWithFilename>
-    <TopLine>43</TopLine>
-    <CurrentLine>55</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
   <MDIGroups>
     <Orientation>1</Orientation>
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>2</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
-          <Name>ASC.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>43</TopLine>
-          <CurrentLine>55</CurrentLine>
+          <Name>.\MAIN.C</Name>
+          <ColumnNumber>26</ColumnNumber>
+          <TopLine>169</TopLine>
+          <CurrentLine>188</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\GT1.C</Name>
-          <ColumnNumber>38</ColumnNumber>
-          <TopLine>230</TopLine>
-          <CurrentLine>256</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\MAIN.C</Name>
-<<<<<<< HEAD
-          <ColumnNumber>64</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>8</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\ASC.C</Name>
-          <ColumnNumber>67</ColumnNumber>
-          <TopLine>39</TopLine>
-          <CurrentLine>50</CurrentLine>
-=======
-          <ColumnNumber>21</ColumnNumber>
-          <TopLine>153</TopLine>
-          <CurrentLine>181</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\ASC.C</Name>
-          <ColumnNumber>50</ColumnNumber>
-          <TopLine>207</TopLine>
-          <CurrentLine>207</CurrentLine>
->>>>>>> versuch2
-        </Doc>
-        <Doc>
-          <Name>.\ADC.C</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>110</TopLine>
-          <CurrentLine>110</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>GT1.H</Name>
-          <ColumnNumber>37</ColumnNumber>
-          <TopLine>35</TopLine>
-          <CurrentLine>56</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>ADC.H</Name>
-          <ColumnNumber>24</ColumnNumber>
-          <TopLine>120</TopLine>
-          <CurrentLine>145</CurrentLine>
+          <TopLine>230</TopLine>
+          <CurrentLine>271</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

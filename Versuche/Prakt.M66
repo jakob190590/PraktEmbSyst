@@ -1,4 +1,4 @@
-L166 LINKER/LOCATER V5.25                                                               05/07/2012  08:53:54  PAGE 1
+L166 LINKER/LOCATER V5.25                                                               05/07/2012  09:03:41  PAGE 1
 
 
 L166 LINKER/LOCATER V5.25, INVOKED BY:
@@ -59,7 +59,7 @@ INTERRUPT PROCEDURES OF MODULE:  Prakt (?C_STARTUP)
 INTERRUPT PROCEDURE                 INT  INTERRUPT NAME
 =======================================================
 ?C_RESET                              0  RESET
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 2
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 2
 
 
 GT1_viIsrTmr3                        35  ---  
@@ -76,18 +76,18 @@ START     STOP      LENGTH    TYPE  RTYP  ALIGN  TGR  GRP  COMB  CLASS   SECTION
 000004H   000021H   00001EH   CONST ABS   WORD   ---  ---  PRIV  ---     ?C_CLRMEMSEC
 000022H   00007BH   00005AH   DATA  REL   WORD   ---  ---  PUBL  FCONST  ?FC??PRNFMT
 000088H   00008FH   000008H   ---   ---   ---    ---  ---  ---   * INTVECTOR TABLE *
-000090H   00009DH   00000EH   DATA  REL   BYTE   ---  ---  PUBL  FCONST  ?FC?MAIN
-00009EH   0000CDH   000030H   DATA  REL   WORD   ---    3  PUBL  NCONST  ?C_LIB_NCONST
-0000CEH   0000EFH   000022H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?IO
-0000F0H   00010BH   00001CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?ADC
+000090H   0000B6H   000027H   DATA  REL   BYTE   ---  ---  PUBL  FCONST  ?FC?MAIN
+0000B8H   0000E7H   000030H   DATA  REL   WORD   ---    3  PUBL  NCONST  ?C_LIB_NCONST
+0000E8H   000109H   000022H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?IO
 00011CH   00011FH   000004H   ---   ---   ---    ---  ---  ---   * INTVECTOR TABLE *
 000120H   000239H   00011AH   XDATA REL   WORD   ---  ---  GLOB  ---     ?C_INITSEC
 00023AH   000359H   000120H   CODE  REL   WORD   ---  ---  PRIV  ICODE   ?C_STARTUP_CODE
 00035AH   000C95H   00093CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?C_LIB_CODE
 000C96H   000FA9H   000314H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?GT1
 000FAAH   001249H   0002A0H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?ASC
-00124AH   00137DH   000134H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?MAIN
-00137EH   0013D9H   00005CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?MEMMOVE
+00124AH   001393H   00014AH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?MAIN
+001394H   0013EFH   00005CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?MEMMOVE
+0013F0H   00140BH   00001CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?ADC
 00FA00H   00FBFFH   000200H   ---   ---   ---    ---  ---  ---   * SYSTEM STACK *
 00FC00H   00FC1FH   000020H   DATA  ---   BYTE   ---  ---  ---   *REG*   ?C_MAINREGISTERS
 00FD00H.0 00FD00H.1 000000H.2 BIT   REL   BIT    ---  ---  PUBL  BIT0    ?BI0?GT1
@@ -119,7 +119,7 @@ NCODE                                CODE  ---    2  NCODE       ?PR?MAIN
 
 NCONST                               DATA  ---    3  NCONST      ?C_LIB_NCONST
 
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 3
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 3
 
 
 
@@ -163,8 +163,8 @@ PUBLIC SYMBOLS OF MODULE:  Prakt (?C_STARTUP)
       00FA00H     ?C_SYSSTKBOT                     CONST ---  ---     ---
       00FC00H     ?C_SYSSTKTOP                     CONST ---  ---     ---
       080000H     ?C_USRSTKBOT                     VAR   ---  NDATA   ?C_USERSTACK
-      000100H     ADC_uwReadConv                   LABEL ---  NCODE   ?PR?ADC
-      0000F0H     ADC_vInit                        LABEL ---  NCODE   ?PR?ADC
+      001400H     ADC_uwReadConv                   LABEL ---  NCODE   ?PR?ADC
+      0013F0H     ADC_vInit                        LABEL ---  NCODE   ?PR?ADC
       000FAAH     ASC_vInit                        LABEL ---  NCODE   ?PR?ASC
       000FE4H     ASC_vSendData                    LABEL ---  NCODE   ?PR?ASC
       000FF8H     ASC_viIsrTxBuf                   LABEL ---  NCODE   ?PR?ASC
@@ -174,17 +174,17 @@ PUBLIC SYMBOLS OF MODULE:  Prakt (?C_STARTUP)
       000E66H     GT1_viIsrTmr2                    LABEL ---  NCODE   ?PR?GT1
       000CDEH     GT1_viIsrTmr3                    LABEL ---  NCODE   ?PR?GT1
       000ED4H     GetKey                           LABEL ---  NCODE   ?PR?GT1
-      0000CEH     IO_vInit                         LABEL ---  NCODE   ?PR?IO
+      0000E8H     IO_vInit                         LABEL ---  NCODE   ?PR?IO
       000ECEH     KeyDown                          LABEL ---  NCODE   ?PR?GT1
       00124AH     Project_Init                     LABEL ---  NCODE   ?PR?MAIN
       000000H     RESET                            INTNO ---  ---     ---
       000F0CH     fGibADmittel                     LABEL ---  NCODE   ?PR?GT1
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 4
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 4
 
 
       000F52H     fGibGewicht                      LABEL ---  NCODE   ?PR?GT1
       001262H     main                             LABEL ---  NCODE   ?PR?MAIN
-      00137EH     memmove                          LABEL ---  NCODE   ?PR?MEMMOVE
+      001394H     memmove                          LABEL ---  NCODE   ?PR?MEMMOVE
       0005E4H     sprintf                          LABEL ---  NCODE   ?C_LIB_CODE
 
 
@@ -239,7 +239,7 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
 
       00023AH     BLOCK     LVL=0     0120H   ---   ?C_RESET
       00023AH     LINE      ---       ---     ---   #669
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 5
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 5
 
 
       00023EH     LINE      ---       ---     ---   #691
@@ -299,7 +299,7 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       0002CEH     LINE      ---       ---     ---   #1014
       0002D2H     LINE      ---       ---     ---   #1020
       0002D6H     LINE      ---       ---     ---   #1021
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 6
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 6
 
 
       0002D8H     LINE      ---       ---     ---   #1022
@@ -359,7 +359,7 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       000352H     SYMBOL    LABEL     ---     ---   StoreBit
       000350H     SYMBOL    LABEL     ---     ---   SetBit
       000338H     SYMBOL    LABEL     ---     ---   InitBit
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 7
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 7
 
 
       00032AH     SYMBOL    LABEL     ---     ---   NoDPP3Adj
@@ -388,14 +388,13 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       001260H     LINE      ---       ---     ---   #122
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      001262H     BLOCK     LVL=0     011CH   ---   main
-      001266H     BLOCK     LVL=1     0112H   ---   
+      001262H     BLOCK     LVL=0     0132H   ---   main
+      001266H     BLOCK     LVL=1     0128H   ---   
       000000H     SYMBOL    AUTO      ---     ---   ledState
       R15.0       SYMBOL    RBIT      ---     ---   oldState
       000002H     SYMBOL    AUTO      ---     ---   s
       000018H     SYMBOL    AUTO      ---     ---   kanal
-      00001AH     SYMBOL    AUTO      ---     ---   wert
-      00128AH     BLOCK     LVL=2     00ECH   ---   
+      00128AH     BLOCK     LVL=2     0100H   ---   
       R15.1       SYMBOL    RBIT      ---     ---   state
       ---         BLOCKEND  LVL=2     ---     ---   
       ---         BLOCKEND  LVL=1     ---     ---   
@@ -413,35 +412,33 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       001292H     LINE      ---       ---     ---   #168
       0012A2H     LINE      ---       ---     ---   #170
       0012BCH     LINE      ---       ---     ---   #172
-      0012BCH     LINE      ---       ---     ---   #176
-      0012D2H     LINE      ---       ---     ---   #177
-      0012D8H     LINE      ---       ---     ---   #178
-      0012E0H     LINE      ---       ---     ---   #179
-      0012EEH     LINE      ---       ---     ---   #181
-      00130AH     LINE      ---       ---     ---   #182
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 8
+      0012BCH     LINE      ---       ---     ---   #174
+      0012EAH     LINE      ---       ---     ---   #176
+      0012FCH     LINE      ---       ---     ---   #178
+      001306H     LINE      ---       ---     ---   #179
+      001314H     LINE      ---       ---     ---   #181
+      00131AH     LINE      ---       ---     ---   #183
+      001324H     LINE      ---       ---     ---   #184
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 8
 
 
-      00131CH     LINE      ---       ---     ---   #184
-      001326H     LINE      ---       ---     ---   #185
-      001334H     LINE      ---       ---     ---   #187
-      00133AH     LINE      ---       ---     ---   #189
-      001344H     LINE      ---       ---     ---   #190
-      001346H     LINE      ---       ---     ---   #192
-      001346H     LINE      ---       ---     ---   #193
-      001350H     LINE      ---       ---     ---   #194
-      001352H     LINE      ---       ---     ---   #195
-      001352H     LINE      ---       ---     ---   #196
-      00135CH     LINE      ---       ---     ---   #197
-      00135EH     LINE      ---       ---     ---   #198
-      00135EH     LINE      ---       ---     ---   #199
-      001368H     LINE      ---       ---     ---   #200
-      001368H     LINE      ---       ---     ---   #201
-      001368H     LINE      ---       ---     ---   #202
-      00136EH     LINE      ---       ---     ---   #204
-      00136EH     LINE      ---       ---     ---   #206
-      001376H     LINE      ---       ---     ---   #207
-      001378H     LINE      ---       ---     ---   #210
+      001326H     LINE      ---       ---     ---   #186
+      001326H     LINE      ---       ---     ---   #188
+      001348H     LINE      ---       ---     ---   #189
+      00135AH     LINE      ---       ---     ---   #191
+      001364H     LINE      ---       ---     ---   #192
+      001366H     LINE      ---       ---     ---   #193
+      001366H     LINE      ---       ---     ---   #194
+      001370H     LINE      ---       ---     ---   #195
+      001372H     LINE      ---       ---     ---   #196
+      001372H     LINE      ---       ---     ---   #197
+      00137CH     LINE      ---       ---     ---   #198
+      00137CH     LINE      ---       ---     ---   #199
+      00137CH     LINE      ---       ---     ---   #200
+      001382H     LINE      ---       ---     ---   #202
+      001382H     LINE      ---       ---     ---   #204
+      00138AH     LINE      ---       ---     ---   #205
+      00138EH     LINE      ---       ---     ---   #208
       ---         BLOCKEND  LVL=0     ---     ---   
       000ED4H     PUBLIC    LABEL     ---     ---   GetKey
       000F52H     PUBLIC    LABEL     ---     ---   fGibGewicht
@@ -479,12 +476,12 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       ---         BLOCKEND  LVL=1     ---     ---   
       000CDEH     LINE      ---       ---     ---   #140
       000D04H     LINE      ---       ---     ---   #141
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 9
-
-
       000D04H     LINE      ---       ---     ---   #147
       000D10H     LINE      ---       ---     ---   #150
       000D64H     LINE      ---       ---     ---   #151
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 9
+
+
       000D98H     LINE      ---       ---     ---   #152
       000DECH     LINE      ---       ---     ---   #154
       000DF6H     LINE      ---       ---     ---   #155
@@ -539,12 +536,12 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       000F0AH     LINE      ---       ---     ---   #251
       ---         BLOCKEND  LVL=0     ---     ---   
 
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 10
-
-
       000F0CH     BLOCK     LVL=0     0046H   ---   fGibADmittel
       000000H     SYMBOL    AUTO      ---     ---   n
       000F0CH     LINE      ---       ---     ---   #254
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 10
+
+
       000F0EH     LINE      ---       ---     ---   #256
       000F4EH     LINE      ---       ---     ---   #257
       ---         BLOCKEND  LVL=0     ---     ---   
@@ -562,16 +559,16 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       000F94H     LINE      ---       ---     ---   #266
       000FA6H     LINE      ---       ---     ---   #267
       ---         BLOCKEND  LVL=0     ---     ---   
-      0000CEH     PUBLIC    LABEL     ---     ---   IO_vInit
+      0000E8H     PUBLIC    LABEL     ---     ---   IO_vInit
 
-      0000CEH     BLOCK     LVL=0     0022H   ---   IO_vInit
-      0000CEH     LINE      ---       ---     ---   #69
-      0000CEH     LINE      ---       ---     ---   #74
-      0000D4H     LINE      ---       ---     ---   #93
-      0000DAH     LINE      ---       ---     ---   #94
-      0000E2H     LINE      ---       ---     ---   #105
-      0000E8H     LINE      ---       ---     ---   #106
-      0000EEH     LINE      ---       ---     ---   #121
+      0000E8H     BLOCK     LVL=0     0022H   ---   IO_vInit
+      0000E8H     LINE      ---       ---     ---   #69
+      0000E8H     LINE      ---       ---     ---   #74
+      0000EEH     LINE      ---       ---     ---   #93
+      0000F4H     LINE      ---       ---     ---   #94
+      0000FCH     LINE      ---       ---     ---   #105
+      000102H     LINE      ---       ---     ---   #106
+      000108H     LINE      ---       ---     ---   #121
       ---         BLOCKEND  LVL=0     ---     ---   
       00123EH     PUBLIC    LABEL     ---     ---   ClrScr
       000FAAH     PUBLIC    LABEL     ---     ---   ASC_vInit
@@ -599,12 +596,12 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       000FE4H     BLOCK     LVL=0     0014H   ---   ASC_vSendData
       000000H     SYMBOL    AUTO      ---     ---   Data
       000FE4H     LINE      ---       ---     ---   #135
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 11
-
-
       000FE6H     LINE      ---       ---     ---   #137
       000FEEH     LINE      ---       ---     ---   #138
       000FF4H     LINE      ---       ---     ---   #139
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 11
+
+
       ---         BLOCKEND  LVL=0     ---     ---   
 
       000FF8H     BLOCK     LVL=0     0056H   ---   ASC_viIsrTxBuf
@@ -659,12 +656,12 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       0011B8H     LINE      ---       ---     ---   #228
       0011CEH     LINE      ---       ---     ---   #229
       0011CEH     LINE      ---       ---     ---   #230
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 12
-
-
       001200H     LINE      ---       ---     ---   #231
       001208H     LINE      ---       ---     ---   #232
       001214H     LINE      ---       ---     ---   #234
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 12
+
+
       001236H     LINE      ---       ---     ---   #235
       00123AH     LINE      ---       ---     ---   #236
       00123AH     LINE      ---       ---     ---   #238
@@ -676,21 +673,21 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       001242H     LINE      ---       ---     ---   #243
       001248H     LINE      ---       ---     ---   #244
       ---         BLOCKEND  LVL=0     ---     ---   
-      0000F0H     PUBLIC    LABEL     ---     ---   ADC_vInit
-      000100H     PUBLIC    LABEL     ---     ---   ADC_uwReadConv
+      0013F0H     PUBLIC    LABEL     ---     ---   ADC_vInit
+      001400H     PUBLIC    LABEL     ---     ---   ADC_uwReadConv
 
-      0000F0H     BLOCK     LVL=0     0010H   ---   ADC_vInit
-      0000F0H     LINE      ---       ---     ---   #62
-      0000F0H     LINE      ---       ---     ---   #73
-      0000F6H     LINE      ---       ---     ---   #80
-      0000FEH     LINE      ---       ---     ---   #86
+      0013F0H     BLOCK     LVL=0     0010H   ---   ADC_vInit
+      0013F0H     LINE      ---       ---     ---   #62
+      0013F0H     LINE      ---       ---     ---   #73
+      0013F6H     LINE      ---       ---     ---   #80
+      0013FEH     LINE      ---       ---     ---   #86
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000100H     BLOCK     LVL=0     000CH   ---   ADC_uwReadConv
-      000100H     LINE      ---       ---     ---   #110
-      000100H     LINE      ---       ---     ---   #112
-      000106H     LINE      ---       ---     ---   #113
-      00010AH     LINE      ---       ---     ---   #114
+      001400H     BLOCK     LVL=0     000CH   ---   ADC_uwReadConv
+      001400H     LINE      ---       ---     ---   #110
+      001400H     LINE      ---       ---     ---   #112
+      001406H     LINE      ---       ---     ---   #113
+      00140AH     LINE      ---       ---     ---   #114
       ---         BLOCKEND  LVL=0     ---     ---   
       00035EH     PUBLIC    LABEL     ---     ---   ?C_FPADD
       00039CH     PUBLIC    LABEL     ---     ---   ?C_FPXSUB
@@ -719,12 +716,12 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       ---         BLOCKEND  LVL=0     ---     ---   
       000610H     PUBLIC    LABEL     ---     ---   ?C_FPGETOPN
       000636H     PUBLIC    LABEL     ---     ---   ?C_FPNANRSL
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 13
-
-
       00063EH     PUBLIC    LABEL     ---     ---   ?C_FPINFRSL
       000660H     PUBLIC    LABEL     ---     ---   ?C_FPNOERR
       000656H     PUBLIC    LABEL     ---     ---   ?C_FPRSLNR
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 13
+
+
       00064AH     PUBLIC    LABEL     ---     ---   ?C_FPOPRSL
       00066EH     PUBLIC    LABEL     ---     ---   ?C_FPZERRSL
       00066EH     PUBLIC    LABEL     ---     ---   ?C_FPUNFRS
@@ -766,7 +763,7 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
 
       000C72H     BLOCK     LVL=0     0024H   ---   ?C_PCASTS
       ---         BLOCKEND  LVL=0     ---     ---   
-      00137EH     PUBLIC    LABEL     ---     ---   memmove
+      001394H     PUBLIC    LABEL     ---     ---   memmove
       000238H     PUBLIC    VAR       ---     ---   ?C_ENDINIT
 
 
@@ -779,11 +776,11 @@ FUNCTION . . . . . . REG MASK
 
 
 ******************************************************************************
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  08:53:54  PAGE 14
-
-
-* RESTRICTED VERSION WITH 1000H BYTE CODE SIZE LIMIT; USED: 096CH BYTE (58%) *
+* RESTRICTED VERSION WITH 1000H BYTE CODE SIZE LIMIT; USED: 099BH BYTE (60%) *
 ******************************************************************************
 
-Program Size: data=753(near=753) const=464(near=152) code=4574
+L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:03:41  PAGE 14
+
+
+Program Size: data=753(near=753) const=489(near=177) code=4596
 L166 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

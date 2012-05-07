@@ -185,7 +185,7 @@ void main(void)
 
 				case '2':	
 					
-					sprintf(s, "Summe:    %5.2f", fGibGewicht());
+					sprintf(s, "Mittel:   %5.2f", fGibGewicht());
 					DoPrintZ(2, s);
 									
 					ledState ^= 0x40;
