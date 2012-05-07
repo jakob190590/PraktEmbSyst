@@ -13,7 +13,7 @@
 //                
 //
 //----------------------------------------------------------------------------
-// @Date          30.04.2012 14:50:52
+// @Date          07.05.2012 09:23:09
 //
 //****************************************************************************
 
@@ -65,7 +65,7 @@ static unsigned long sum[ADNUM] = { 0 };
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          30.04.2012 14:50:52
+// @Date          07.05.2012 09:23:09
 //
 //****************************************************************************
 
@@ -77,7 +77,7 @@ void GT1_vInit(void)
   ///  up/down control bit is set
   ///  external up/down control is disabled
   T3CON = 0x0080;
-  T3    = 0x0000;  //  load timer 3 register
+  T3    = 0x09C3;  //  load timer 3 register
 
   ///  enable timer 3 interrupt
   ///  timer 3 interrupt priority level(ILVL) = 5
@@ -99,9 +99,9 @@ void GT1_vInit(void)
 
   /// ---------- Timer 4 Control Register ----------
   ///  timer 4 works in reload mode 
-  ///  timer T4 is disabled
-  T4CON = 0x0020;
-  T4    = 0x09C4;  //  load timer 4 register
+  ///  any transition (rising and falling edge) of output toggle latch T3OTL
+  T4CON = 0x0027;
+  T4    = 0x09C3;  //  load timer 4 register
 
 
 
@@ -133,7 +133,7 @@ void GT1_vInit(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          30.04.2012 14:50:52
+// @Date          07.05.2012 09:23:09
 //
 //****************************************************************************
 
@@ -156,6 +156,8 @@ void GT1_viIsrTmr3(void) interrupt T3INT
 		else
 		{
 			kanal = 0;
+//			index = ++index%BUFLEN;
+
 
 			if (index < (BUFLEN - 1))
 				index++;
@@ -191,7 +193,7 @@ void GT1_viIsrTmr3(void) interrupt T3INT
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          30.04.2012 14:50:52
+// @Date          07.05.2012 09:23:09
 //
 //****************************************************************************
 

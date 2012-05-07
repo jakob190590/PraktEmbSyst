@@ -9,7 +9,7 @@
 ;                PLEASE DO NOT MODIFY THIS FILE !
 ;
 ;----------------------------------------------------------------------------
-; Date          30.04.2012 14:50:52
+; Date          07.05.2012 09:23:09
 ;
 ;****************************************************************************
 
@@ -1346,10 +1346,10 @@ T3IC_T3IE	SET	1
 T3IC_T3IR	SET	0
 
 ; GPT1 Timer 3 Register
-T3_T3	SET	0
+T3_T3	SET	2499
 
 ; GPT1 Timer 4 Control Register
-T4CON_T4I	SET	0
+T4CON_T4I	SET	7
 T4CON_T4M	SET	4
 T4CON_T4R	SET	0
 T4CON_T4UD	SET	0
@@ -1362,7 +1362,7 @@ T4IC_T4IE	SET	0
 T4IC_T4IR	SET	0
 
 ; GPT1 Timer 4 Register
-T4_T4	SET	2500
+T4_T4	SET	2499
 
 ; CAPCOM 2 Timer 7 and Timer 8 Control Register
 T78CON_T7I	SET	0
