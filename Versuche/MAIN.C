@@ -169,6 +169,7 @@ void main(void)
 		{
 			switch(GetKey())
 			{
+
 				case '1': 
 		
 					sprintf(s, "Kanal %d: %5.2f", kanal, fGibADmittel(kanal));
@@ -192,13 +193,10 @@ void main(void)
 					break;
 				case '3':
 					
-					sprintf(s, "Gewicht: %5.2f", (fGibGewicht() - 0.025) * 500 / 1.1f);
-					DoPrintZ(3, s);
-
 					ledState ^= 0x20;
 					break;
 				case '4':
-					ledState ^= 0x10;
+					ledState ^= 0x80;
 					break;
 			}
 			IO_vWritePort(P1L,ledState);
