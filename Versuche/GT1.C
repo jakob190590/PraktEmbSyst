@@ -13,7 +13,7 @@
 //                
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          07.05.2012 09:23:09
 //
 //****************************************************************************
 
@@ -39,6 +39,12 @@ static int nTaste, aTaste = 0xFF; // neue und alte taste
 static bit tFlag = 0; // taster flag
 static bit iCnt = 0; // interrupt counter
 
+
+#define BUFLEN 20 // Size des Buffers zur Mittelung (adBuff)
+   
+static uword adBuff[ADNUM][BUFLEN] = { 0 };	 // damit sollten alle Werte 0 sein.
+static unsigned long sum[ADNUM] = { 0 };
+
 // USER CODE END
 
 
@@ -59,7 +65,7 @@ static bit iCnt = 0; // interrupt counter
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          07.05.2012 09:23:09
 //
 //****************************************************************************
 
@@ -68,11 +74,15 @@ void GT1_vInit(void)
   /// ------------ Timer 3 Control Register ----------
   ///  timer 3 works in timer mode
   ///  prescaler factor is 8
-  ///  timer 3 run bit is reset
-  ///  up/down control bit is reset 
+  ///  up/down control bit is set
   ///  external up/down control is disabled
-  T3CON = 0x0000;
-  T3    = 0x0000;  //  load timer 3 register
+  T3CON = 0x0080;
+  T3    = 0x09C3;  //  load timer 3 register
+
+  ///  enable timer 3 interrupt
+  ///  timer 3 interrupt priority level(ILVL) = 5
+  ///  timer 3 interrupt group level (GLVL) = 0
+  T3IC = 0x0054;
 
   /// ---------- Timer 2 Control Register ----------
   ///  timer 2 works in timer mode
@@ -88,13 +98,10 @@ void GT1_vInit(void)
   T2IC = 0x0050;
 
   /// ---------- Timer 4 Control Register ----------
-  ///  timer 4 works in timer mode
-  ///  prescaler factor is 8
-  ///  timer 4 run bit is reset
-  ///  up/down control bit is reset 
-  ///  external up/down control is disabled
-  T4CON = 0x0000;
-  T4    = 0x0000;  //  load timer 4 register
+  ///  timer 4 works in reload mode 
+  ///  any transition (rising and falling edge) of output toggle latch T3OTL
+  T4CON = 0x0027;
+  T4    = 0x09C3;  //  load timer 4 register
 
 
 
@@ -104,6 +111,65 @@ void GT1_vInit(void)
 
 
   T2R = 1;         //   set timer 2 run bit 
+  T3R = 1;         //   set timer 3 run bit 
+}
+
+
+//****************************************************************************
+// @Function      void GT1_viIsrTmr3(void) interrupt T3INT
+//
+//----------------------------------------------------------------------------
+// @Description   This is the interrupt service routine for the GPT1 timer 3.
+//                It is called up in the case of over or underflow of the 
+//                timer 3 register.
+//                
+//                Please note that you have to add application specific
+//                code to this function.
+//
+//----------------------------------------------------------------------------
+// @Returnvalue   none
+//
+//----------------------------------------------------------------------------
+// @Parameters    none
+//
+//----------------------------------------------------------------------------
+// @Date          07.05.2012 09:23:09
+//
+//****************************************************************************
+
+void GT1_viIsrTmr3(void) interrupt T3INT
+{
+  // USER CODE BEGIN (GT1_IsrTmr3,1)
+
+	static char kanal = 0;
+	static int index = 0;
+
+	if (ADC_bConvReady())
+	{
+		
+		sum[kanal] -= adBuff[kanal][index];
+		adBuff[kanal][index] = ADC_uwReadConv() & 0x03FF;
+		sum[kanal] += adBuff[kanal][index];
+
+		if (kanal < (ADNUM - 1))
+			kanal++;
+		else
+		{
+			kanal = 0;
+//			index = ++index%BUFLEN;
+
+
+			if (index < (BUFLEN - 1))
+				index++;
+			else
+				index = 0;						  	
+		}
+
+		ADC_vConfConv(FIXED, kanal);
+		ADC_vStartConv();
+	}
+
+  // USER CODE END
 }
 
 
@@ -127,7 +193,7 @@ void GT1_vInit(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          07.05.2012 09:23:09
 //
 //****************************************************************************
 
@@ -184,6 +250,22 @@ char GetKey(void)
 		default: // dieser fall hat nicht einzutreten PUNKT
 			return 0;
 	}	
+}
+
+
+float fGibADmittel(char n)
+{
+	return (float) sum[n] / BUFLEN / 1023 * 5;
+}
+
+float fGibGewicht()
+{
+	int i;
+	float summe = 0;
+	for (i = 0; i < ADNUM; i++)
+		summe += fGibADmittel(i);
+
+	return summe / ADNUM;
 }
 
 // USER CODE END

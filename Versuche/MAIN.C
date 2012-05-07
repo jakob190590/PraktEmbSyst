@@ -12,7 +12,7 @@
 // @Description   This file contains the Project initialization function.
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          07.05.2012 09:23:08
 //
 //****************************************************************************
 
@@ -62,7 +62,7 @@
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          07.05.2012 09:23:08
 //
 //****************************************************************************
 
@@ -107,6 +107,9 @@ void Project_Init(void)
   // initializes the Asynchronous/Synchronous Serial Interface (ASC)
   ASC_vInit();
 
+  // initializes the Analog/Digital Converter (ADC)
+  ADC_vInit();
+
   // initializes the General Purpose Timer Unit 1 (GPT1)
   GT1_vInit();
 
@@ -132,17 +135,23 @@ void Project_Init(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          07.05.2012 09:23:08
 //
 //****************************************************************************
 
 void main(void)
 {
   // USER CODE BEGIN (Main,1)
-  int ledState = 0;	// LED Status
-  bit oldState = 0;
+	
+	int ledState = 0;	// LED Status
+	
+	bit oldState = 0;
 
-  char s[40];
+	char s[21]; // 20 Zeichen fuers Display + '\0'
+
+	char kanal = 0;
+
+
   // USER CODE END
 
   Project_Init();
@@ -151,47 +160,49 @@ void main(void)
 	
 	ClrScr();
 	DoPrintZ(1, "Hallo!");
-	DoPrintZ(3, "Hallo Welt!");
-	DoPrintZ(4, "Hallo Jakob______________________");
-	DoPrintZ(1, "Hallo Raffi");
-	DoPrintZ(2, "XXXXXXXXXXXXXXX");
-	DoPrintZ(2, "Hallo Raffi");
-	DoPrintZ(4, "Hallo Jakob");
 
 	while(1)
 	{ 	
 
-		bit state = KeyDown();
-
-		// if (state != oldState) // wechsel detektieren
-
+		bit state = KeyDown(); 				
 		if (state && !oldState)
 		{
 			switch(GetKey())
 			{
-				case '1':
-					ledState ^= 0x10; 
+
+				case '1': 
+		
+					sprintf(s, "Kanal %d: %5.2f", kanal, fGibADmittel(kanal));
+
+					DoPrintZ(1, s);
+		
+					if (kanal < (ADNUM - 1))
+						kanal++;
+					else
+						kanal = 0;
+
+					ledState ^= 0x80; 
 					break;
-				case '2':
-					ledState ^= 0x20;
+
+				case '2':	
+					
+					sprintf(s, "Mittel:  %5.2f", fGibGewicht());
+					DoPrintZ(2, s);
+									
+					ledState ^= 0x40;
 					break;
 				case '3':
-					ledState ^= 0x40;
+					
+					ledState ^= 0x20;
 					break;
 				case '4':
 					ledState ^= 0x80;
 					break;
 			}
 			IO_vWritePort(P1L,ledState);
-			
-			sprintf(s, "Taste %c ist gedrueckt", GetKey()); // mehr als 20 zeichen -> t sollte nicht mehr dabei sein; ohne fehler
-			DoPrintZ(2, "Hallo Welt!"); // es muesste ohne flackern das zweite angezeigt werden, nichts mit hallo welt.
-			DoPrintZ(2, s);
 
 		}
-		else if (!state && oldState)
-			DoPrintZ(2, "Keine Taste gedrueckt");
-
+		
 		oldState = state;
 	}
 

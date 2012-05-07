@@ -12,7 +12,7 @@
 // @Description   This is the include header file for all other modules.
 //
 //----------------------------------------------------------------------------
-// @Date          23.04.2012 17:51:39
+// @Date          07.05.2012 09:23:08
 //
 //****************************************************************************
 
@@ -487,6 +487,7 @@ sbit  XP3IE    = XP3IC^6;
 
 #include "IO.H"
 #include "ASC.H"
+#include "ADC.H"
 #include "GT1.H"
 
 // USER CODE BEGIN (MainHeader,1)
