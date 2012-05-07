@@ -16,8 +16,8 @@
   </Extensions>
 
   <DaveTm>
-    <dwLowDateTime>-529432770</dwLowDateTime>
-    <dwHighDateTime>30222031</dwHighDateTime>
+    <dwLowDateTime>-1444253440</dwLowDateTime>
+    <dwHighDateTime>30223389</dwHighDateTime>
   </DaveTm>
 
   <Target>
@@ -275,10 +275,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>21</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>143</TopLine>
-      <CurrentLine>184</CurrentLine>
+      <TopLine>153</TopLine>
+      <CurrentLine>181</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
@@ -289,10 +289,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>38</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>217</TopLine>
-      <CurrentLine>240</CurrentLine>
+      <TopLine>230</TopLine>
+      <CurrentLine>256</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\GT1.C</PathWithFileName>
       <FilenameWithoutPath>GT1.C</FilenameWithoutPath>
@@ -317,10 +317,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>50</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>39</TopLine>
-      <CurrentLine>39</CurrentLine>
+      <TopLine>207</TopLine>
+      <CurrentLine>207</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\ASC.C</PathWithFileName>
       <FilenameWithoutPath>ASC.C</FilenameWithoutPath>
@@ -349,7 +349,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>D:\Daten\Dropbox\6_SoSe12\Embedded Systems\Praktikum\CP164PRJ\Versuche\ADC.H</PathWithFilename>
+    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\ADC.H</PathWithFilename>
     <TopLine>120</TopLine>
     <CurrentLine>145</CurrentLine>
     <Constant>0</Constant>
@@ -375,7 +375,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>D:\Daten\Dropbox\6_SoSe12\Embedded Systems\Praktikum\CP164PRJ\Versuche\GT1.H</PathWithFilename>
+    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\GT1.H</PathWithFilename>
     <TopLine>35</TopLine>
     <CurrentLine>56</CurrentLine>
     <Constant>0</Constant>
@@ -401,7 +401,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>D:\Daten\Dropbox\6_SoSe12\Embedded Systems\Praktikum\CP164PRJ\Versuche\ASC.H</PathWithFilename>
+    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\ASC.H</PathWithFilename>
     <TopLine>43</TopLine>
     <CurrentLine>55</CurrentLine>
     <Constant>0</Constant>
@@ -431,7 +431,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>2</ActiveTab>
       <Documents>
         <Doc>
           <Name>ASC.H</Name>
@@ -441,21 +441,21 @@
         </Doc>
         <Doc>
           <Name>.\GT1.C</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>181</TopLine>
-          <CurrentLine>181</CurrentLine>
+          <ColumnNumber>38</ColumnNumber>
+          <TopLine>230</TopLine>
+          <CurrentLine>256</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\MAIN.C</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>143</TopLine>
-          <CurrentLine>184</CurrentLine>
+          <ColumnNumber>21</ColumnNumber>
+          <TopLine>153</TopLine>
+          <CurrentLine>181</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\ASC.C</Name>
           <ColumnNumber>50</ColumnNumber>
-          <TopLine>39</TopLine>
-          <CurrentLine>50</CurrentLine>
+          <TopLine>207</TopLine>
+          <CurrentLine>207</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\ADC.C</Name>

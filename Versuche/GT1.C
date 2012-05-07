@@ -253,7 +253,7 @@ char GetKey(void)
 
 float fGibADmittel(char n)
 {
-	return (float) sum[n] / BUFLEN;
+	return (float) sum[n] / BUFLEN / 1023 * 5;
 }
 
 float fGibGewicht()
