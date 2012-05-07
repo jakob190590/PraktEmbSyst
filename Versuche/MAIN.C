@@ -151,6 +151,7 @@ void main(void)
 
 	char kanal = 0;
 
+
   // USER CODE END
 
   Project_Init();
@@ -168,9 +169,10 @@ void main(void)
 		{
 			switch(GetKey())
 			{
-				case '1':
+				case '1': 
 		
 					sprintf(s, "Kanal %d: %5.2f", kanal, fGibADmittel(kanal));
+
 					DoPrintZ(1, s);
 		
 					if (kanal < (ADNUM - 1))
@@ -204,3 +206,4 @@ void main(void)
 
   // USER CODE END
 }
+

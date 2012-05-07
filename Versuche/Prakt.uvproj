@@ -309,6 +309,11 @@
               <FileType>1</FileType>
               <FilePath>.\ASC.C</FilePath>
             </File>
+            <File>
+              <FileName>ADC.C</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ADC.C</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
