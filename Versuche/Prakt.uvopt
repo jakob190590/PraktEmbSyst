@@ -16,8 +16,13 @@
   </Extensions>
 
   <DaveTm>
+<<<<<<< HEAD
     <dwLowDateTime>-1174318848</dwLowDateTime>
     <dwHighDateTime>30223387</dwHighDateTime>
+=======
+    <dwLowDateTime>-1444253440</dwLowDateTime>
+    <dwHighDateTime>30223389</dwHighDateTime>
+>>>>>>> versuch2
   </DaveTm>
 
   <Target>
@@ -275,10 +280,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>21</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>143</TopLine>
-      <CurrentLine>184</CurrentLine>
+      <TopLine>153</TopLine>
+      <CurrentLine>181</CurrentLine>
       <bDave2>1</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
@@ -289,10 +294,15 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>38</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
+<<<<<<< HEAD
       <TopLine>181</TopLine>
       <CurrentLine>181</CurrentLine>
+=======
+      <TopLine>230</TopLine>
+      <CurrentLine>256</CurrentLine>
+>>>>>>> versuch2
       <bDave2>1</bDave2>
       <PathWithFileName>.\GT1.C</PathWithFileName>
       <FilenameWithoutPath>GT1.C</FilenameWithoutPath>
@@ -319,8 +329,13 @@
       <Focus>0</Focus>
       <ColumnNumber>50</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
+<<<<<<< HEAD
       <TopLine>39</TopLine>
       <CurrentLine>50</CurrentLine>
+=======
+      <TopLine>207</TopLine>
+      <CurrentLine>207</CurrentLine>
+>>>>>>> versuch2
       <bDave2>1</bDave2>
       <PathWithFileName>.\ASC.C</PathWithFileName>
       <FilenameWithoutPath>ASC.C</FilenameWithoutPath>
@@ -441,12 +456,13 @@
         </Doc>
         <Doc>
           <Name>.\GT1.C</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>181</TopLine>
-          <CurrentLine>181</CurrentLine>
+          <ColumnNumber>38</ColumnNumber>
+          <TopLine>230</TopLine>
+          <CurrentLine>256</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\MAIN.C</Name>
+<<<<<<< HEAD
           <ColumnNumber>64</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>8</CurrentLine>
@@ -456,6 +472,17 @@
           <ColumnNumber>67</ColumnNumber>
           <TopLine>39</TopLine>
           <CurrentLine>50</CurrentLine>
+=======
+          <ColumnNumber>21</ColumnNumber>
+          <TopLine>153</TopLine>
+          <CurrentLine>181</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\ASC.C</Name>
+          <ColumnNumber>50</ColumnNumber>
+          <TopLine>207</TopLine>
+          <CurrentLine>207</CurrentLine>
+>>>>>>> versuch2
         </Doc>
         <Doc>
           <Name>.\ADC.C</Name>
