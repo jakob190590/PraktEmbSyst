@@ -38,6 +38,7 @@
 static int nTaste, aTaste = 0xFF; // neue und alte taste
 static bit tFlag = 0; // taster flag
 static bit iCnt = 0; // interrupt counter
+static bit consumed;
 
 
 #define BUFLEN 20 // Size des Buffers zur Mittelung (adBuff)
@@ -231,8 +232,9 @@ void GT1_viIsrTmr2(void) interrupt T2INT
 // USER CODE BEGIN (GT1_General,3)
 
 bit KeyDown(void)
-{
-	return tFlag;
+{  	
+	consumed = 1;
+	return (tFlag && !consumed);
 }
 
 char GetKey(void)

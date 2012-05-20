@@ -145,8 +145,6 @@ void main(void)
 	
 	int ledState = 0;	// LED Status
 	
-	bit oldState = 0;
-
 	char s[21]; // 20 Zeichen fuers Display + '\0'
 
 	char kanal = 0;
@@ -163,9 +161,8 @@ void main(void)
 
 	while(1)
 	{ 	
-
-		bit state = KeyDown(); 				
-		if (state && !oldState)
+				
+		if (KeyDown())
 		{
 			switch(GetKey())
 			{
@@ -202,8 +199,6 @@ void main(void)
 			IO_vWritePort(P1L,ledState);
 
 		}
-		
-		oldState = state;
 	}
 
   // USER CODE END
