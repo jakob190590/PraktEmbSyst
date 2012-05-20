@@ -9,7 +9,7 @@
 ;                PLEASE DO NOT MODIFY THIS FILE !
 ;
 ;----------------------------------------------------------------------------
-; Date          07.05.2012 09:23:09
+; Date          20.05.2012 17:17:06
 ;
 ;****************************************************************************
 
@@ -251,10 +251,10 @@ CC18IC_ILVL	SET	0
 CC18_CC18	SET	0
 
 ; CAPCOM Channel 19 Interrupt Control Register
-CC19IC_CC19IE	SET	0
+CC19IC_CC19IE	SET	1
 CC19IC_CC19IR	SET	0
-CC19IC_GLVL	SET	0
-CC19IC_ILVL	SET	0
+CC19IC_GLVL	SET	1
+CC19IC_ILVL	SET	5
 
 ; CAPCOM 2 Register 19
 CC19_CC19	SET	0
@@ -375,12 +375,12 @@ CC9IC_ILVL	SET	0
 ; CC Mode Control Register 4
 CCM4_ACC16	SET	0
 CCM4_ACC17	SET	0
-CCM4_ACC18	SET	0
-CCM4_ACC19	SET	0
+CCM4_ACC18	SET	1
+CCM4_ACC19	SET	1
 CCM4_CCMOD16	SET	0
 CCM4_CCMOD17	SET	0
-CCM4_CCMOD18	SET	0
-CCM4_CCMOD19	SET	0
+CCM4_CCMOD18	SET	1
+CCM4_CCMOD19	SET	2
 
 ; CC Mode Control Register 6
 CCM6_ACC24	SET	0

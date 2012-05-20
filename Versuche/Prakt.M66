@@ -1,12 +1,13 @@
-L166 LINKER/LOCATER V5.25                                                               05/07/2012  09:40:52  PAGE 1
+L166 LINKER/LOCATER V5.25                                                               05/20/2012  17:33:40  PAGE 1
 
 
 L166 LINKER/LOCATER V5.25, INVOKED BY:
-C:\KEIL\C166\BIN\L166.EXE Start167.obj, MAIN.obj, GT1.obj, IO.obj, ASC.obj, ADC.obj TO Prakt CLASSES (ICODE (0X0-0X1FFF)
->> , NCODE (0X0-0X1FFF), FCONST (0X0-0X1FFF), HCONST (0X0-0X1FFF), XCONST (0X0-0X1FFF), NCONST (0X0-0X1FFF), NDATA (0X80
->> 000-0X83FFF), NDATA0 (0X80000-0X83FFF), SDATA (0XE000-0XE7FF, 0XF600-0XFDFF), SDATA0 (0XE000-0XE7FF, 0XF600-0XFDFF), 
->> IDATA (0XF600-0XFDFF), IDATA0 (0XF600-0XFDFF), FDATA (0X80000-0X83FFF), FDATA0 (0X80000-0X83FFF), HDATA (0X80000-0X83
->> FFF), HDATA0 (0X80000-0X83FFF), XDATA (0X80000-0X83FFF), XDATA0 (0X80000-0X83FFF)) CINITTAB (0X0-0X1FFF)
+C:\PROGRAM FILES (X86)\KEIL\C166\BIN\L166.EXE Start167.obj, MAIN.obj, GT1.obj, IO.obj, ASC.obj, ADC.obj, CC2.obj TO Prak
+>> t CLASSES (ICODE (0X0-0X1FFF), NCODE (0X0-0X1FFF), FCONST (0X0-0X1FFF), HCONST (0X0-0X1FFF), XCONST (0X0-0X1FFF), NCO
+>> NST (0X0-0X1FFF), NDATA (0X80000-0X83FFF), NDATA0 (0X80000-0X83FFF), SDATA (0XE000-0XE7FF, 0XF600-0XFDFF), SDATA0 (0X
+>> E000-0XE7FF, 0XF600-0XFDFF), IDATA (0XF600-0XFDFF), IDATA0 (0XF600-0XFDFF), FDATA (0X80000-0X83FFF), FDATA0 (0X80000-
+>> 0X83FFF), HDATA (0X80000-0X83FFF), HDATA0 (0X80000-0X83FFF), XDATA (0X80000-0X83FFF), XDATA0 (0X80000-0X83FFF)) CINIT
+>> TAB (0X0-0X1FFF)
 
 
 CPU TYPE:     C167 or derivative
@@ -27,44 +28,47 @@ INPUT MODULES INCLUDED:
          COMMENT TYPE 128: C166 V7.04
   ADC.obj (ADC)
          COMMENT TYPE 128: C166 V7.04
-  C:\KEIL\C166\LIB\C167FPC.LIB (?C_FPADD)
+  CC2.obj (CC2)
+         COMMENT TYPE 128: C166 V7.04
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (?C_FPADD)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167FPC.LIB (?C_FPMUL)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (?C_FPMUL)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167FPC.LIB (?C_FPDIV)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (?C_FPDIV)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167FPC.LIB (?C_FCAST)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (?C_FCAST)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167FPC.LIB (SPRINTF)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (SPRINTF)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167FPC.LIB (?C_FPGETOPN)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (?C_FPGETOPN)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167FPC.LIB (?C?PRNFMT)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (?C?PRNFMT)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167FPC.LIB (?C_FPCONVERT)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (?C_FPCONVERT)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167FPC.LIB (?C_FTNPWR)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167FPC.LIB (?C_FTNPWR)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167C.LIB (?C_PCASTS)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167C.LIB (?C_PCASTS)
          COMMENT TYPE 128: A166 V5.33
-  C:\KEIL\C166\LIB\C167C.LIB (MEMMOVE)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167C.LIB (MEMMOVE)
          COMMENT TYPE 128: C166 V7.01
-  C:\KEIL\C166\LIB\C167C.LIB (?C_ENDINIT)
+  C:\PROGRAM FILES (X86)\KEIL\C166\LIB\C167C.LIB (?C_ENDINIT)
          COMMENT TYPE 128: A166 V5.33
 
 
 INTERRUPT PROCEDURES OF MODULE:  Prakt (?C_STARTUP)
 
 
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 2
+
+
 INTERRUPT PROCEDURE                 INT  INTERRUPT NAME
 =======================================================
 ?C_RESET                              0  RESET
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 2
-
-
 GT1_viIsrTmr3                        35  ---  
 GT1_viIsrTmr2                        34  ---  
 ASC_viIsrTxBuf                       71  ---  
+CC2_viIsrCC19                        51  ---  
 
 
 MEMORY MAP OF MODULE:  Prakt (?C_STARTUP)
@@ -73,30 +77,35 @@ MEMORY MAP OF MODULE:  Prakt (?C_STARTUP)
 START     STOP      LENGTH    TYPE  RTYP  ALIGN  TGR  GRP  COMB  CLASS   SECTION NAME
 =====================================================================================
 000000H   000003H   000004H   ---   ---   ---    ---  ---  ---   * INTVECTOR TABLE *
-000004H   000021H   00001EH   CONST ABS   WORD   ---  ---  PRIV  ---     ?C_CLRMEMSEC
-000022H   00007BH   00005AH   DATA  REL   WORD   ---  ---  PUBL  FCONST  ?FC??PRNFMT
+000004H   00002FH   00002CH   CONST ABS   WORD   ---  ---  PRIV  ---     ?C_CLRMEMSEC
+000030H   000067H   000038H   DATA  REL   BYTE   ---  ---  PUBL  FCONST  ?FC?MAIN
+000068H   000083H   00001CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?ADC
 000088H   00008FH   000008H   ---   ---   ---    ---  ---  ---   * INTVECTOR TABLE *
-000090H   0000C7H   000038H   DATA  REL   BYTE   ---  ---  PUBL  FCONST  ?FC?MAIN
-0000C8H   0000F7H   000030H   DATA  REL   WORD   ---    3  PUBL  NCONST  ?C_LIB_NCONST
-0000F8H   000119H   000022H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?IO
+000090H   0000BFH   000030H   DATA  REL   WORD   ---    3  PUBL  NCONST  ?C_LIB_NCONST
+0000CCH   0000CFH   000004H   ---   ---   ---    ---  ---  ---   * INTVECTOR TABLE *
+0000D0H   0000F1H   000022H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?IO
 00011CH   00011FH   000004H   ---   ---   ---    ---  ---  ---   * INTVECTOR TABLE *
-000120H   000239H   00011AH   XDATA REL   WORD   ---  ---  GLOB  ---     ?C_INITSEC
-00023AH   000359H   000120H   CODE  REL   WORD   ---  ---  PRIV  ICODE   ?C_STARTUP_CODE
-00035AH   000C95H   00093CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?C_LIB_CODE
-000C96H   000FABH   000316H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?GT1
-000FACH   00124BH   0002A0H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?ASC
-00124CH   0013F7H   0001ACH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?MAIN
-0013F8H   001453H   00005CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?MEMMOVE
-001454H   00146FH   00001CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?ADC
+000120H   00023FH   000120H   XDATA REL   WORD   ---  ---  GLOB  ---     ?C_INITSEC
+000240H   000299H   00005AH   DATA  REL   WORD   ---  ---  PUBL  FCONST  ?FC??PRNFMT
+00029AH   0003B9H   000120H   CODE  REL   WORD   ---  ---  PRIV  ICODE   ?C_STARTUP_CODE
+0003BAH   000CF5H   00093CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?C_LIB_CODE
+000CF6H   001015H   000320H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?GT1
+001016H   0012B5H   0002A0H   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?ASC
+0012B6H   001481H   0001CCH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?CC2
+001482H   0015EBH   00016AH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?MAIN
+0015ECH   001647H   00005CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?MEMMOVE
 00FA00H   00FBFFH   000200H   ---   ---   ---    ---  ---  ---   * SYSTEM STACK *
 00FC00H   00FC1FH   000020H   DATA  ---   BYTE   ---  ---  ---   *REG*   ?C_MAINREGISTERS
-00FD00H.0 00FD00H.1 000000H.2 BIT   REL   BIT    ---  ---  PUBL  BIT0    ?BI0?GT1
-00FD00H.2 00FD00H.2 000000H.1 BIT   REL   BIT    ---  ---  PUBL  BIT0    ?BI0?ASC
+00FD00H.0 00FD00H.2 000000H.3 BIT   REL   BIT    ---  ---  PUBL  BIT0    ?BI0?GT1
+00FD00H.3 00FD00H.3 000000H.1 BIT   REL   BIT    ---  ---  PUBL  BIT0    ?BI0?ASC
+00FD00H.4 00FD00H.4 000000H.1 BIT   REL   BIT    ---  ---  PUBL  BIT0    ?BI0?CC2
 080000H   0801FFH   000200H   DATA  REL   WORD   ---    1  PUBL  NDATA   ?C_USERSTACK
-080200H   080206H   000007H   DATA  REL   WORD   ---    1  PUBL  NDATA0  ?ND0?GT1
-080208H   08020DH   000006H   DATA  REL   WORD   ---    1  PUBL  NDATA0  ?ND0?ASC
-08020EH   080291H   000084H   DATA  REL   WORD   ---  ---  PUBL  FDATA0  ?FD0?GT1
-080292H   0802F1H   000060H   DATA  REL   WORD   ---  ---  PUBL  FDATA0  ?FD0?ASC
+080200H   080205H   000006H   DATA  REL   WORD   ---    1  PUBL  NDATA0  ?ND0?ASC
+080206H   08020AH   000005H   DATA  REL   WORD   ---    1  PUBL  NDATA0  ?ND0?GT1
+08020CH   08020FH   000004H   DATA  REL   WORD   ---    1  PUBL  NDATA0  ?ND0?CC2
+080210H   0802D7H   0000C8H   DATA  REL   WORD   ---  ---  PUBL  FDATA0  ?FD0?CC2
+0802D8H   08035BH   000084H   DATA  REL   WORD   ---  ---  PUBL  FDATA0  ?FD0?GT1
+08035CH   0803BBH   000060H   DATA  REL   WORD   ---  ---  PUBL  FDATA0  ?FD0?ASC
 
 
 
@@ -108,19 +117,21 @@ GROUP NAME                           TYPE  TGR  GRP  CLASS       SECTION NAME
 NDATA                                DATA  ---    1  NDATA       ?C_USERSTACK
                                                      NDATA0      ?ND0?GT1
                                                      NDATA0      ?ND0?ASC
+                                                     NDATA0      ?ND0?CC2
+
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 3
+
 
 NCODE                                CODE  ---    2  NCODE       ?PR?MAIN
                                                      NCODE       ?PR?GT1
                                                      NCODE       ?PR?IO
                                                      NCODE       ?PR?ASC
                                                      NCODE       ?PR?ADC
+                                                     NCODE       ?PR?CC2
                                                      NCODE       ?C_LIB_CODE
                                                      NCODE       ?PR?MEMMOVE
 
 NCONST                               DATA  ---    3  NCONST      ?C_LIB_NCONST
-
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 3
-
 
 
 
@@ -130,26 +141,26 @@ PUBLIC SYMBOLS OF MODULE:  Prakt (?C_STARTUP)
 
       VALUE       PUBLIC SYMBOL NAME               REP   TGR  CLASS   SECTION
       =======================================================================
-      0006AEH     ?C?PRNFMT                        LABEL ---  NCODE   ?C_LIB_CODE
+      00070EH     ?C?PRNFMT                        LABEL ---  NCODE   ?C_LIB_CODE
       000004H     ?C_CLRMEMSECSTART                VAR   ---  ---     ---
-      000238H     ?C_ENDINIT                       VAR   ---  ---     ?C_INITSEC
-      00059EH     ?C_FCAST                         LABEL ---  NCODE   ?C_LIB_CODE
-      00035EH     ?C_FPADD                         LABEL ---  NCODE   ?C_LIB_CODE
-      000AD2H     ?C_FPCONVERT                     LABEL ---  NCODE   ?C_LIB_CODE
-      0004D6H     ?C_FPDIV                         LABEL ---  NCODE   ?C_LIB_CODE
-      000610H     ?C_FPGETOPN                      LABEL ---  NCODE   ?C_LIB_CODE
-      00063EH     ?C_FPINFRSL                      LABEL ---  NCODE   ?C_LIB_CODE
-      000442H     ?C_FPMUL                         LABEL ---  NCODE   ?C_LIB_CODE
-      000636H     ?C_FPNANRSL                      LABEL ---  NCODE   ?C_LIB_CODE
-      000660H     ?C_FPNOERR                       LABEL ---  NCODE   ?C_LIB_CODE
-      00064AH     ?C_FPOPRSL                       LABEL ---  NCODE   ?C_LIB_CODE
-      000BF2H     ?C_FPROUND                       LABEL ---  NCODE   ?C_LIB_CODE
-      000656H     ?C_FPRSLNR                       LABEL ---  NCODE   ?C_LIB_CODE
-      00035AH     ?C_FPSUB                         LABEL ---  NCODE   ?C_LIB_CODE
-      00066EH     ?C_FPUNFRS                       LABEL ---  NCODE   ?C_LIB_CODE
-      00039CH     ?C_FPXSUB                        LABEL ---  NCODE   ?C_LIB_CODE
-      00066EH     ?C_FPZERRSL                      LABEL ---  NCODE   ?C_LIB_CODE
-      000C2EH     ?C_FTNPWR                        LABEL ---  NCODE   ?C_LIB_CODE
+      00023EH     ?C_ENDINIT                       VAR   ---  ---     ?C_INITSEC
+      0005FEH     ?C_FCAST                         LABEL ---  NCODE   ?C_LIB_CODE
+      0003BEH     ?C_FPADD                         LABEL ---  NCODE   ?C_LIB_CODE
+      000B32H     ?C_FPCONVERT                     LABEL ---  NCODE   ?C_LIB_CODE
+      000536H     ?C_FPDIV                         LABEL ---  NCODE   ?C_LIB_CODE
+      000670H     ?C_FPGETOPN                      LABEL ---  NCODE   ?C_LIB_CODE
+      00069EH     ?C_FPINFRSL                      LABEL ---  NCODE   ?C_LIB_CODE
+      0004A2H     ?C_FPMUL                         LABEL ---  NCODE   ?C_LIB_CODE
+      000696H     ?C_FPNANRSL                      LABEL ---  NCODE   ?C_LIB_CODE
+      0006C0H     ?C_FPNOERR                       LABEL ---  NCODE   ?C_LIB_CODE
+      0006AAH     ?C_FPOPRSL                       LABEL ---  NCODE   ?C_LIB_CODE
+      000C52H     ?C_FPROUND                       LABEL ---  NCODE   ?C_LIB_CODE
+      0006B6H     ?C_FPRSLNR                       LABEL ---  NCODE   ?C_LIB_CODE
+      0003BAH     ?C_FPSUB                         LABEL ---  NCODE   ?C_LIB_CODE
+      0006CEH     ?C_FPUNFRS                       LABEL ---  NCODE   ?C_LIB_CODE
+      0003FCH     ?C_FPXSUB                        LABEL ---  NCODE   ?C_LIB_CODE
+      0006CEH     ?C_FPZERRSL                      LABEL ---  NCODE   ?C_LIB_CODE
+      000C8EH     ?C_FTNPWR                        LABEL ---  NCODE   ?C_LIB_CODE
       000120H     ?C_INITSECSTART                  VAR   ---  ---     ---
 000000001FFFC000H ?C_NCONSTBASE                    CONST ---  ---     ---
 000000001FFFFFFFH ?C_NCONSTBASESEG                 CONST ---  ---     ---
@@ -158,34 +169,39 @@ PUBLIC SYMBOLS OF MODULE:  Prakt (?C_STARTUP)
       000000H     ?C_PAGEDPP0                      CONST ---  ---     ---
       000000H     ?C_PAGEDPP1                      CONST ---  ---     ---
       000020H     ?C_PAGEDPP2                      CONST ---  ---     ---
-      000C72H     ?C_PCASTS                        LABEL ---  NCODE   ?C_LIB_CODE
-      00023AH     ?C_STARTUP                       LABEL ---  ICODE   ?C_STARTUP_CODE
+      000CD2H     ?C_PCASTS                        LABEL ---  NCODE   ?C_LIB_CODE
+      00029AH     ?C_STARTUP                       LABEL ---  ICODE   ?C_STARTUP_CODE
       00FA00H     ?C_SYSSTKBOT                     CONST ---  ---     ---
       00FC00H     ?C_SYSSTKTOP                     CONST ---  ---     ---
       080000H     ?C_USRSTKBOT                     VAR   ---  NDATA   ?C_USERSTACK
-      001464H     ADC_uwReadConv                   LABEL ---  NCODE   ?PR?ADC
-      001454H     ADC_vInit                        LABEL ---  NCODE   ?PR?ADC
-      000FACH     ASC_vInit                        LABEL ---  NCODE   ?PR?ASC
-      000FE6H     ASC_vSendData                    LABEL ---  NCODE   ?PR?ASC
-      000FFAH     ASC_viIsrTxBuf                   LABEL ---  NCODE   ?PR?ASC
-      001240H     ClrScr                           LABEL ---  NCODE   ?PR?ASC
-      001050H     DoPrintZ                         LABEL ---  NCODE   ?PR?ASC
-      000C96H     GT1_vInit                        LABEL ---  NCODE   ?PR?GT1
-      000E68H     GT1_viIsrTmr2                    LABEL ---  NCODE   ?PR?GT1
-      000CE0H     GT1_viIsrTmr3                    LABEL ---  NCODE   ?PR?GT1
-      000ED6H     GetKey                           LABEL ---  NCODE   ?PR?GT1
-      0000F8H     IO_vInit                         LABEL ---  NCODE   ?PR?IO
-      000ED0H     KeyDown                          LABEL ---  NCODE   ?PR?GT1
-      00124CH     Project_Init                     LABEL ---  NCODE   ?PR?MAIN
+      000078H     ADC_uwReadConv                   LABEL ---  NCODE   ?PR?ADC
+      000068H     ADC_vInit                        LABEL ---  NCODE   ?PR?ADC
+      001016H     ASC_vInit                        LABEL ---  NCODE   ?PR?ASC
+      001050H     ASC_vSendData                    LABEL ---  NCODE   ?PR?ASC
+      001064H     ASC_viIsrTxBuf                   LABEL ---  NCODE   ?PR?ASC
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 4
+
+
+      0012B6H     CC2_vInit                        LABEL ---  NCODE   ?PR?CC2
+      0012F2H     CC2_viIsrCC19                    LABEL ---  NCODE   ?PR?CC2
+      0012AAH     ClrScr                           LABEL ---  NCODE   ?PR?ASC
+      0010BAH     DoPrintZ                         LABEL ---  NCODE   ?PR?ASC
+      000CF6H     GT1_vInit                        LABEL ---  NCODE   ?PR?GT1
+      000EC8H     GT1_viIsrTmr2                    LABEL ---  NCODE   ?PR?GT1
+      000D40H     GT1_viIsrTmr3                    LABEL ---  NCODE   ?PR?GT1
+      000F38H     GetKey                           LABEL ---  NCODE   ?PR?GT1
+      0000D0H     IO_vInit                         LABEL ---  NCODE   ?PR?IO
+      000F1AH     KeyDown                          LABEL ---  NCODE   ?PR?GT1
+      001482H     Project_Init                     LABEL ---  NCODE   ?PR?MAIN
       000000H     RESET                            INTNO ---  ---     ---
-      000F0EH     fGibADmittel                     LABEL ---  NCODE   ?PR?GT1
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 4
-
-
-      000F54H     fGibGewicht                      LABEL ---  NCODE   ?PR?GT1
-      001264H     main                             LABEL ---  NCODE   ?PR?MAIN
-      0013F8H     memmove                          LABEL ---  NCODE   ?PR?MEMMOVE
-      0005E4H     sprintf                          LABEL ---  NCODE   ?C_LIB_CODE
+      001382H     StartTemp                        LABEL ---  NCODE   ?PR?CC2
+      001394H     bTempDa                          LABEL ---  NCODE   ?PR?CC2
+      0013A8H     fGetTemp                         LABEL ---  NCODE   ?PR?CC2
+      000F78H     fGibADmittel                     LABEL ---  NCODE   ?PR?GT1
+      000FBEH     fGibGewicht                      LABEL ---  NCODE   ?PR?GT1
+      00149EH     main                             LABEL ---  NCODE   ?PR?MAIN
+      0015ECH     memmove                          LABEL ---  NCODE   ?PR?MEMMOVE
+      000644H     sprintf                          LABEL ---  NCODE   ?C_LIB_CODE
 
 
 
@@ -193,7 +209,7 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
 
       VALUE       TYPE      REP       LENGTH  TGR   SYMBOL NAME
       =========================================================
-      00023AH     PUBLIC    LABEL     ---     ---   ?C_STARTUP
+      00029AH     PUBLIC    LABEL     ---     ---   ?C_STARTUP
       080000H     PUBLIC    VAR       ---     ---   ?C_USRSTKBOT
       00FA00H     PUBLIC    CONST     ---     ---   ?C_SYSSTKBOT
       00FC00H     PUBLIC    CONST     ---     ---   ?C_SYSSTKTOP
@@ -223,6 +239,9 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       000000H     SYMBOL    CONST     ---     ---   _CSREN0
       000000H     SYMBOL    CONST     ---     ---   _CSWEN0
       00000FH     SYMBOL    CONST     ---     ---   _MCTC0
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 5
+
+
       000000H     SYMBOL    CONST     ---     ---   _MTTC0
       000000H     SYMBOL    CONST     ---     ---   _PWDCFG
       000000H     SYMBOL    CONST     ---     ---   _RDYEN0
@@ -237,536 +256,613 @@ SYMBOL TABLE OF MODULE:  Prakt (?C_STARTUP)
       000001H     SYMBOL    CONST     ---     ---   _XPEN
       000000H     SYMBOL    CONST     ---     ---   _XPERSHARE
 
-      00023AH     BLOCK     LVL=0     0120H   ---   ?C_RESET
-      00023AH     LINE      ---       ---     ---   #669
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 5
+      00029AH     BLOCK     LVL=0     0120H   ---   ?C_RESET
+      00029AH     LINE      ---       ---     ---   #669
+      00029EH     LINE      ---       ---     ---   #691
+      0002A2H     LINE      ---       ---     ---   #692
+      0002A6H     LINE      ---       ---     ---   #718
+      0002AAH     LINE      ---       ---     ---   #719
+      0002AEH     LINE      ---       ---     ---   #818
+      0002B2H     LINE      ---       ---     ---   #828
+      0002B6H     LINE      ---       ---     ---   #830
+      0002BAH     LINE      ---       ---     ---   #831
+      0002BEH     LINE      ---       ---     ---   #835
+      0002C2H     LINE      ---       ---     ---   #836
+      0002C6H     LINE      ---       ---     ---   #841
+      0002CAH     LINE      ---       ---     ---   #895
+      0002CEH     LINE      ---       ---     ---   #896
+      0002D2H     LINE      ---       ---     ---   #897
+      0002D4H     LINE      ---       ---     ---   #898
+      0002D6H     LINE      ---       ---     ---   #899
+      0002D8H     LINE      ---       ---     ---   #905
+      0002DAH     LINE      ---       ---     ---   #906
+      0002DCH     LINE      ---       ---     ---   #907
+      0002DEH     LINE      ---       ---     ---   #908
+      0002E0H     LINE      ---       ---     ---   #909
+      0002E2H     LINE      ---       ---     ---   #910
+      0002E4H     LINE      ---       ---     ---   #911
+      0002E6H     LINE      ---       ---     ---   #912
+      0002EAH     LINE      ---       ---     ---   #913
+      0002EEH     LINE      ---       ---     ---   #915
+      0002F0H     LINE      ---       ---     ---   #916
+      0002F2H     LINE      ---       ---     ---   #917
+      0002F4H     LINE      ---       ---     ---   #918
+      0002F8H     LINE      ---       ---     ---   #919
+      0002FAH     LINE      ---       ---     ---   #920
+      0002FCH     LINE      ---       ---     ---   #921
+      0002FEH     LINE      ---       ---     ---   #922
+      000300H     LINE      ---       ---     ---   #923
+      000302H     LINE      ---       ---     ---   #924
+      000304H     LINE      ---       ---     ---   #925
+      000306H     LINE      ---       ---     ---   #926
+      000308H     LINE      ---       ---     ---   #927
+      00030AH     LINE      ---       ---     ---   #929
+      00030CH     LINE      ---       ---     ---   #930
+      00030EH     LINE      ---       ---     ---   #935
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 6
 
 
-      00023EH     LINE      ---       ---     ---   #691
-      000242H     LINE      ---       ---     ---   #692
-      000246H     LINE      ---       ---     ---   #718
-      00024AH     LINE      ---       ---     ---   #719
-      00024EH     LINE      ---       ---     ---   #818
-      000252H     LINE      ---       ---     ---   #828
-      000256H     LINE      ---       ---     ---   #830
-      00025AH     LINE      ---       ---     ---   #831
-      00025EH     LINE      ---       ---     ---   #835
-      000262H     LINE      ---       ---     ---   #836
-      000266H     LINE      ---       ---     ---   #841
-      00026AH     LINE      ---       ---     ---   #895
-      00026EH     LINE      ---       ---     ---   #896
-      000272H     LINE      ---       ---     ---   #897
-      000274H     LINE      ---       ---     ---   #898
-      000276H     LINE      ---       ---     ---   #899
-      000278H     LINE      ---       ---     ---   #905
-      00027AH     LINE      ---       ---     ---   #906
-      00027CH     LINE      ---       ---     ---   #907
-      00027EH     LINE      ---       ---     ---   #908
-      000280H     LINE      ---       ---     ---   #909
-      000282H     LINE      ---       ---     ---   #910
-      000284H     LINE      ---       ---     ---   #911
-      000286H     LINE      ---       ---     ---   #912
-      00028AH     LINE      ---       ---     ---   #913
-      00028EH     LINE      ---       ---     ---   #915
-      000290H     LINE      ---       ---     ---   #916
-      000292H     LINE      ---       ---     ---   #917
-      000294H     LINE      ---       ---     ---   #918
-      000298H     LINE      ---       ---     ---   #919
-      00029AH     LINE      ---       ---     ---   #920
-      00029CH     LINE      ---       ---     ---   #921
-      00029EH     LINE      ---       ---     ---   #922
-      0002A0H     LINE      ---       ---     ---   #923
-      0002A2H     LINE      ---       ---     ---   #924
-      0002A4H     LINE      ---       ---     ---   #925
-      0002A6H     LINE      ---       ---     ---   #926
-      0002A8H     LINE      ---       ---     ---   #927
-      0002AAH     LINE      ---       ---     ---   #929
-      0002ACH     LINE      ---       ---     ---   #930
-      0002AEH     LINE      ---       ---     ---   #935
-      0002B0H     LINE      ---       ---     ---   #936
-      0002B2H     LINE      ---       ---     ---   #937
-      0002B4H     LINE      ---       ---     ---   #938
-      0002B6H     LINE      ---       ---     ---   #939
-      0002BAH     LINE      ---       ---     ---   #940
-      0002BCH     LINE      ---       ---     ---   #941
-      0002BEH     LINE      ---       ---     ---   #942
-      0002C0H     LINE      ---       ---     ---   #948
-      0002C2H     LINE      ---       ---     ---   #949
-      0002C4H     LINE      ---       ---     ---   #950
-      0002C6H     LINE      ---       ---     ---   #951
-      0002C8H     LINE      ---       ---     ---   #952
-      0002CAH     LINE      ---       ---     ---   #1013
-      0002CEH     LINE      ---       ---     ---   #1014
-      0002D2H     LINE      ---       ---     ---   #1020
-      0002D6H     LINE      ---       ---     ---   #1021
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 6
+      000310H     LINE      ---       ---     ---   #936
+      000312H     LINE      ---       ---     ---   #937
+      000314H     LINE      ---       ---     ---   #938
+      000316H     LINE      ---       ---     ---   #939
+      00031AH     LINE      ---       ---     ---   #940
+      00031CH     LINE      ---       ---     ---   #941
+      00031EH     LINE      ---       ---     ---   #942
+      000320H     LINE      ---       ---     ---   #948
+      000322H     LINE      ---       ---     ---   #949
+      000324H     LINE      ---       ---     ---   #950
+      000326H     LINE      ---       ---     ---   #951
+      000328H     LINE      ---       ---     ---   #952
+      00032AH     LINE      ---       ---     ---   #1013
+      00032EH     LINE      ---       ---     ---   #1014
+      000332H     LINE      ---       ---     ---   #1020
+      000336H     LINE      ---       ---     ---   #1021
+      000338H     LINE      ---       ---     ---   #1022
+      00033AH     LINE      ---       ---     ---   #1023
+      00033CH     LINE      ---       ---     ---   #1024
+      00033EH     LINE      ---       ---     ---   #1025
+      000340H     LINE      ---       ---     ---   #1026
+      000344H     LINE      ---       ---     ---   #1027
+      000346H     LINE      ---       ---     ---   #1028
+      00034AH     LINE      ---       ---     ---   #1029
+      00034CH     LINE      ---       ---     ---   #1030
+      00034EH     LINE      ---       ---     ---   #1031
+      000350H     LINE      ---       ---     ---   #1032
+      000352H     LINE      ---       ---     ---   #1033
+      000354H     LINE      ---       ---     ---   #1034
+      000356H     LINE      ---       ---     ---   #1035
+      000358H     LINE      ---       ---     ---   #1036
+      00035AH     LINE      ---       ---     ---   #1037
+      00035CH     LINE      ---       ---     ---   #1038
+      00035EH     LINE      ---       ---     ---   #1039
+      000362H     LINE      ---       ---     ---   #1040
+      000366H     LINE      ---       ---     ---   #1041
+      000368H     LINE      ---       ---     ---   #1042
+      00036AH     LINE      ---       ---     ---   #1043
+      00036CH     LINE      ---       ---     ---   #1044
+      00036EH     LINE      ---       ---     ---   #1045
+      000370H     LINE      ---       ---     ---   #1046
+      000372H     LINE      ---       ---     ---   #1047
+      000374H     LINE      ---       ---     ---   #1048
+      000376H     LINE      ---       ---     ---   #1049
+      000378H     LINE      ---       ---     ---   #1050
+      00037AH     LINE      ---       ---     ---   #1051
+      00037EH     LINE      ---       ---     ---   #1052
+      000382H     LINE      ---       ---     ---   #1053
+      000386H     LINE      ---       ---     ---   #1054
+      00038AH     LINE      ---       ---     ---   #1059
+      00038CH     LINE      ---       ---     ---   #1060
+      00038EH     LINE      ---       ---     ---   #1061
+      000392H     LINE      ---       ---     ---   #1062
+      000394H     LINE      ---       ---     ---   #1063
+      000396H     LINE      ---       ---     ---   #1064
+      000398H     LINE      ---       ---     ---   #1066
+      00039AH     LINE      ---       ---     ---   #1067
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 7
 
 
-      0002D8H     LINE      ---       ---     ---   #1022
-      0002DAH     LINE      ---       ---     ---   #1023
-      0002DCH     LINE      ---       ---     ---   #1024
-      0002DEH     LINE      ---       ---     ---   #1025
-      0002E0H     LINE      ---       ---     ---   #1026
-      0002E4H     LINE      ---       ---     ---   #1027
-      0002E6H     LINE      ---       ---     ---   #1028
-      0002EAH     LINE      ---       ---     ---   #1029
-      0002ECH     LINE      ---       ---     ---   #1030
-      0002EEH     LINE      ---       ---     ---   #1031
-      0002F0H     LINE      ---       ---     ---   #1032
-      0002F2H     LINE      ---       ---     ---   #1033
-      0002F4H     LINE      ---       ---     ---   #1034
-      0002F6H     LINE      ---       ---     ---   #1035
-      0002F8H     LINE      ---       ---     ---   #1036
-      0002FAH     LINE      ---       ---     ---   #1037
-      0002FCH     LINE      ---       ---     ---   #1038
-      0002FEH     LINE      ---       ---     ---   #1039
-      000302H     LINE      ---       ---     ---   #1040
-      000306H     LINE      ---       ---     ---   #1041
-      000308H     LINE      ---       ---     ---   #1042
-      00030AH     LINE      ---       ---     ---   #1043
-      00030CH     LINE      ---       ---     ---   #1044
-      00030EH     LINE      ---       ---     ---   #1045
-      000310H     LINE      ---       ---     ---   #1046
-      000312H     LINE      ---       ---     ---   #1047
-      000314H     LINE      ---       ---     ---   #1048
-      000316H     LINE      ---       ---     ---   #1049
-      000318H     LINE      ---       ---     ---   #1050
-      00031AH     LINE      ---       ---     ---   #1051
-      00031EH     LINE      ---       ---     ---   #1052
-      000322H     LINE      ---       ---     ---   #1053
-      000326H     LINE      ---       ---     ---   #1054
-      00032AH     LINE      ---       ---     ---   #1059
-      00032CH     LINE      ---       ---     ---   #1060
-      00032EH     LINE      ---       ---     ---   #1061
-      000332H     LINE      ---       ---     ---   #1062
-      000334H     LINE      ---       ---     ---   #1063
-      000336H     LINE      ---       ---     ---   #1064
-      000338H     LINE      ---       ---     ---   #1066
-      00033AH     LINE      ---       ---     ---   #1067
-      00033CH     LINE      ---       ---     ---   #1068
-      000340H     LINE      ---       ---     ---   #1069
-      000342H     LINE      ---       ---     ---   #1070
-      000344H     LINE      ---       ---     ---   #1071
-      000346H     LINE      ---       ---     ---   #1072
-      00034AH     LINE      ---       ---     ---   #1073
-      00034CH     LINE      ---       ---     ---   #1074
-      00034EH     LINE      ---       ---     ---   #1075
-      000350H     LINE      ---       ---     ---   #1076
-      000352H     LINE      ---       ---     ---   #1077
-      000354H     LINE      ---       ---     ---   #1078
-      000356H     LINE      ---       ---     ---   #1167
-      000356H     SYMBOL    LABEL     ---     ---   EndInit
-      000352H     SYMBOL    LABEL     ---     ---   StoreBit
-      000350H     SYMBOL    LABEL     ---     ---   SetBit
-      000338H     SYMBOL    LABEL     ---     ---   InitBit
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 7
-
-
-      00032AH     SYMBOL    LABEL     ---     ---   NoDPP3Adj
-      00030EH     SYMBOL    LABEL     ---     ---   CopyInitVal
-      0002F6H     SYMBOL    LABEL     ---     ---   LenLoad
-      0002D2H     SYMBOL    LABEL     ---     ---   RepeatInit
-      0002CAH     SYMBOL    LABEL     ---     ---   Init_Vars
-      0002CAH     SYMBOL    LABEL     ---     ---   EndClear
-      0002C0H     SYMBOL    LABEL     ---     ---   ClearNear
-      0002AEH     SYMBOL    LABEL     ---     ---   RepClearFar
-      0002AAH     SYMBOL    LABEL     ---     ---   ClearFar
-      00028EH     SYMBOL    LABEL     ---     ---   ClearBit
-      000278H     SYMBOL    LABEL     ---     ---   RepeatClear
-      00026AH     SYMBOL    LABEL     ---     ---   Clr_Memory
+      00039CH     LINE      ---       ---     ---   #1068
+      0003A0H     LINE      ---       ---     ---   #1069
+      0003A2H     LINE      ---       ---     ---   #1070
+      0003A4H     LINE      ---       ---     ---   #1071
+      0003A6H     LINE      ---       ---     ---   #1072
+      0003AAH     LINE      ---       ---     ---   #1073
+      0003ACH     LINE      ---       ---     ---   #1074
+      0003AEH     LINE      ---       ---     ---   #1075
+      0003B0H     LINE      ---       ---     ---   #1076
+      0003B2H     LINE      ---       ---     ---   #1077
+      0003B4H     LINE      ---       ---     ---   #1078
+      0003B6H     LINE      ---       ---     ---   #1167
+      0003B6H     SYMBOL    LABEL     ---     ---   EndInit
+      0003B2H     SYMBOL    LABEL     ---     ---   StoreBit
+      0003B0H     SYMBOL    LABEL     ---     ---   SetBit
+      000398H     SYMBOL    LABEL     ---     ---   InitBit
+      00038AH     SYMBOL    LABEL     ---     ---   NoDPP3Adj
+      00036EH     SYMBOL    LABEL     ---     ---   CopyInitVal
+      000356H     SYMBOL    LABEL     ---     ---   LenLoad
+      000332H     SYMBOL    LABEL     ---     ---   RepeatInit
+      00032AH     SYMBOL    LABEL     ---     ---   Init_Vars
+      00032AH     SYMBOL    LABEL     ---     ---   EndClear
+      000320H     SYMBOL    LABEL     ---     ---   ClearNear
+      00030EH     SYMBOL    LABEL     ---     ---   RepClearFar
+      00030AH     SYMBOL    LABEL     ---     ---   ClearFar
+      0002EEH     SYMBOL    LABEL     ---     ---   ClearBit
+      0002D8H     SYMBOL    LABEL     ---     ---   RepeatClear
+      0002CAH     SYMBOL    LABEL     ---     ---   Clr_Memory
       ---         BLOCKEND  LVL=0     ---     ---   
-      001264H     GLOBAL    LABEL     ---     ---   main
-      00124CH     PUBLIC    LABEL     ---     ---   Project_Init
+      00149EH     GLOBAL    LABEL     ---     ---   main
+      001482H     PUBLIC    LABEL     ---     ---   Project_Init
 
-      00124CH     BLOCK     LVL=0     0018H   ---   Project_Init
-      00124CH     LINE      ---       ---     ---   #69
-      00124CH     LINE      ---       ---     ---   #105
-      001250H     LINE      ---       ---     ---   #108
-      001254H     LINE      ---       ---     ---   #111
-      001258H     LINE      ---       ---     ---   #114
-      00125CH     LINE      ---       ---     ---   #121
-      001262H     LINE      ---       ---     ---   #122
+      001482H     BLOCK     LVL=0     001CH   ---   Project_Init
+      001482H     LINE      ---       ---     ---   #69
+      001482H     LINE      ---       ---     ---   #105
+      001486H     LINE      ---       ---     ---   #108
+      00148AH     LINE      ---       ---     ---   #111
+      00148EH     LINE      ---       ---     ---   #114
+      001492H     LINE      ---       ---     ---   #117
+      001496H     LINE      ---       ---     ---   #124
+      00149CH     LINE      ---       ---     ---   #125
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      001264H     BLOCK     LVL=0     0194H   ---   main
-      001268H     BLOCK     LVL=1     018AH   ---   
+      00149EH     BLOCK     LVL=0     014EH   ---   main
+      0014A2H     BLOCK     LVL=1     0144H   ---   
       000000H     SYMBOL    AUTO      ---     ---   ledState
-      R15.0       SYMBOL    RBIT      ---     ---   oldState
       000002H     SYMBOL    AUTO      ---     ---   s
       000018H     SYMBOL    AUTO      ---     ---   kanal
-      00128CH     BLOCK     LVL=2     0162H   ---   
-      R15.1       SYMBOL    RBIT      ---     ---   state
-      ---         BLOCKEND  LVL=2     ---     ---   
       ---         BLOCKEND  LVL=1     ---     ---   
-      001264H     LINE      ---       ---     ---   #142
-      001268H     LINE      ---       ---     ---   #143
-      001268H     LINE      ---       ---     ---   #146
-      00126CH     LINE      ---       ---     ---   #148
-      001272H     LINE      ---       ---     ---   #152
-      001278H     LINE      ---       ---     ---   #157
-      00127AH     LINE      ---       ---     ---   #161
-      00127EH     LINE      ---       ---     ---   #162
-      00128CH     LINE      ---       ---     ---   #164
-      00128CH     LINE      ---       ---     ---   #165
-      00128CH     LINE      ---       ---     ---   #167
-      001294H     LINE      ---       ---     ---   #168
-      0012ACH     LINE      ---       ---     ---   #170
-      0012CAH     LINE      ---       ---     ---   #172
-      0012CAH     LINE      ---       ---     ---   #174
-      0012F8H     LINE      ---       ---     ---   #176
-      00130AH     LINE      ---       ---     ---   #178
-      001314H     LINE      ---       ---     ---   #179
-      001322H     LINE      ---       ---     ---   #181
-      001328H     LINE      ---       ---     ---   #183
-      001332H     LINE      ---       ---     ---   #184
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 8
+      00149EH     LINE      ---       ---     ---   #145
+      0014A2H     LINE      ---       ---     ---   #146
+      0014A2H     LINE      ---       ---     ---   #149
+      0014A6H     LINE      ---       ---     ---   #153
+      0014ACH     LINE      ---       ---     ---   #158
+      0014AEH     LINE      ---       ---     ---   #162
+      0014B2H     LINE      ---       ---     ---   #163
+      0014C0H     LINE      ---       ---     ---   #165
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 8
 
 
-      001334H     LINE      ---       ---     ---   #186
-      001334H     LINE      ---       ---     ---   #188
-      001356H     LINE      ---       ---     ---   #189
-      001368H     LINE      ---       ---     ---   #191
-      001372H     LINE      ---       ---     ---   #192
-      001374H     LINE      ---       ---     ---   #193
-      001374H     LINE      ---       ---     ---   #195
-      0013B8H     LINE      ---       ---     ---   #196
-      0013CAH     LINE      ---       ---     ---   #198
-      0013D4H     LINE      ---       ---     ---   #199
-      0013D6H     LINE      ---       ---     ---   #200
-      0013D6H     LINE      ---       ---     ---   #201
-      0013E0H     LINE      ---       ---     ---   #202
-      0013E0H     LINE      ---       ---     ---   #203
-      0013E0H     LINE      ---       ---     ---   #204
-      0013E6H     LINE      ---       ---     ---   #206
-      0013E6H     LINE      ---       ---     ---   #208
-      0013EEH     LINE      ---       ---     ---   #209
-      0013F2H     LINE      ---       ---     ---   #212
+      0014C0H     LINE      ---       ---     ---   #168
+      0014C8H     LINE      ---       ---     ---   #170
+      0014E2H     LINE      ---       ---     ---   #173
+      0014E2H     LINE      ---       ---     ---   #175
+      001510H     LINE      ---       ---     ---   #176
+      001522H     LINE      ---       ---     ---   #178
+      001534H     LINE      ---       ---     ---   #179
+      00153AH     LINE      ---       ---     ---   #181
+      001544H     LINE      ---       ---     ---   #182
+      001546H     LINE      ---       ---     ---   #184
+      001546H     LINE      ---       ---     ---   #186
+      001568H     LINE      ---       ---     ---   #187
+      00157AH     LINE      ---       ---     ---   #189
+      001584H     LINE      ---       ---     ---   #190
+      001586H     LINE      ---       ---     ---   #191
+      001586H     LINE      ---       ---     ---   #193
+      00158AH     LINE      ---       ---     ---   #195
+      001594H     LINE      ---       ---     ---   #196
+      001596H     LINE      ---       ---     ---   #197
+      001596H     LINE      ---       ---     ---   #198
+      0015A0H     LINE      ---       ---     ---   #199
+      0015A0H     LINE      ---       ---     ---   #200
+      0015A0H     LINE      ---       ---     ---   #202
+      0015A6H     LINE      ---       ---     ---   #204
+      0015AEH     LINE      ---       ---     ---   #206
+      0015D0H     LINE      ---       ---     ---   #207
+      0015E2H     LINE      ---       ---     ---   #208
+      0015E2H     LINE      ---       ---     ---   #211
+      0015E6H     LINE      ---       ---     ---   #214
       ---         BLOCKEND  LVL=0     ---     ---   
-      000ED6H     PUBLIC    LABEL     ---     ---   GetKey
-      000F54H     PUBLIC    LABEL     ---     ---   fGibGewicht
-      000ED0H     PUBLIC    LABEL     ---     ---   KeyDown
-      000C96H     PUBLIC    LABEL     ---     ---   GT1_vInit
-      000CE0H     PUBLIC    LABEL     ---     ---   GT1_viIsrTmr3
-      000E68H     PUBLIC    LABEL     ---     ---   GT1_viIsrTmr2
-      000F0EH     PUBLIC    LABEL     ---     ---   fGibADmittel
-      080200H     SYMBOL    VAR       ---     ---   nTaste
-      080202H     SYMBOL    VAR       ---     ---   aTaste
-      08020EH     SYMBOL    VAR       ---     ---   sum
-      08021AH     SYMBOL    VAR       ---     ---   adBuff
+      000F38H     PUBLIC    LABEL     ---     ---   GetKey
+      000FBEH     PUBLIC    LABEL     ---     ---   fGibGewicht
+      000F1AH     PUBLIC    LABEL     ---     ---   KeyDown
+      000CF6H     PUBLIC    LABEL     ---     ---   GT1_vInit
+      000D40H     PUBLIC    LABEL     ---     ---   GT1_viIsrTmr3
+      000EC8H     PUBLIC    LABEL     ---     ---   GT1_viIsrTmr2
+      000F78H     PUBLIC    LABEL     ---     ---   fGibADmittel
+      080206H     SYMBOL    VAR       ---     ---   nTaste
+      0802D8H     SYMBOL    VAR       ---     ---   sum
+      0802E4H     SYMBOL    VAR       ---     ---   adBuff
       00FD00H.0   SYMBOL    BIT       ---     ---   tFlag
-      00FD00H.1   SYMBOL    BIT       ---     ---   iCnt
+      00FD00H.1   SYMBOL    BIT       ---     ---   consumed
+      00FD00H.2   SYMBOL    BIT       ---     ---   iCnt
 
-      000C96H     BLOCK     LVL=0     004AH   ---   GT1_vInit
-      000C96H     LINE      ---       ---     ---   #72
-      000C96H     LINE      ---       ---     ---   #79
-      000C9EH     LINE      ---       ---     ---   #80
-      000CA6H     LINE      ---       ---     ---   #85
-      000CAEH     LINE      ---       ---     ---   #92
-      000CB4H     LINE      ---       ---     ---   #93
-      000CBAH     LINE      ---       ---     ---   #98
-      000CC2H     LINE      ---       ---     ---   #103
-      000CCAH     LINE      ---       ---     ---   #104
-      000CD2H     LINE      ---       ---     ---   #113
-      000CD8H     LINE      ---       ---     ---   #114
-      000CDEH     LINE      ---       ---     ---   #115
+      000CF6H     BLOCK     LVL=0     004AH   ---   GT1_vInit
+      000CF6H     LINE      ---       ---     ---   #73
+      000CF6H     LINE      ---       ---     ---   #80
+      000CFEH     LINE      ---       ---     ---   #81
+      000D06H     LINE      ---       ---     ---   #86
+      000D0EH     LINE      ---       ---     ---   #93
+      000D14H     LINE      ---       ---     ---   #94
+      000D1AH     LINE      ---       ---     ---   #99
+      000D22H     LINE      ---       ---     ---   #104
+      000D2AH     LINE      ---       ---     ---   #105
+      000D32H     LINE      ---       ---     ---   #114
+      000D38H     LINE      ---       ---     ---   #115
+      000D3EH     LINE      ---       ---     ---   #116
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 9
+
+
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000CE0H     BLOCK     LVL=0     0188H   ---   GT1_viIsrTmr3
-      000D06H     BLOCK     LVL=1     013EH   ---   
-      080206H     SYMBOL    VAR       ---     ---   kanal
-      080204H     SYMBOL    VAR       ---     ---   index
+      000D40H     BLOCK     LVL=0     0188H   ---   GT1_viIsrTmr3
+      000D66H     BLOCK     LVL=1     013EH   ---   
+      08020AH     SYMBOL    VAR       ---     ---   kanal
+      080208H     SYMBOL    VAR       ---     ---   index
       ---         BLOCKEND  LVL=1     ---     ---   
-      000CE0H     LINE      ---       ---     ---   #140
-      000D06H     LINE      ---       ---     ---   #141
-      000D06H     LINE      ---       ---     ---   #147
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 9
-
-
-      000D12H     LINE      ---       ---     ---   #150
-      000D66H     LINE      ---       ---     ---   #151
-      000D9AH     LINE      ---       ---     ---   #152
-      000DEEH     LINE      ---       ---     ---   #154
-      000DF8H     LINE      ---       ---     ---   #155
-      000E06H     LINE      ---       ---     ---   #158
-      000E0AH     LINE      ---       ---     ---   #162
-      000E16H     LINE      ---       ---     ---   #163
-      000E24H     LINE      ---       ---     ---   #165
-      000E28H     LINE      ---       ---     ---   #166
-      000E28H     LINE      ---       ---     ---   #168
-      000E3EH     LINE      ---       ---     ---   #169
-      000E44H     LINE      ---       ---     ---   #170
+      000D40H     LINE      ---       ---     ---   #141
+      000D66H     LINE      ---       ---     ---   #142
+      000D66H     LINE      ---       ---     ---   #148
+      000D72H     LINE      ---       ---     ---   #151
+      000DC6H     LINE      ---       ---     ---   #152
+      000DFAH     LINE      ---       ---     ---   #153
+      000E4EH     LINE      ---       ---     ---   #155
+      000E58H     LINE      ---       ---     ---   #156
+      000E66H     LINE      ---       ---     ---   #159
+      000E6AH     LINE      ---       ---     ---   #163
+      000E76H     LINE      ---       ---     ---   #164
+      000E84H     LINE      ---       ---     ---   #166
+      000E88H     LINE      ---       ---     ---   #167
+      000E88H     LINE      ---       ---     ---   #169
+      000E9EH     LINE      ---       ---     ---   #170
+      000EA4H     LINE      ---       ---     ---   #171
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000E68H     BLOCK     LVL=0     0068H   ---   GT1_viIsrTmr2
-      000E68H     LINE      ---       ---     ---   #200
-      000E70H     LINE      ---       ---     ---   #204
-      000E7EH     LINE      ---       ---     ---   #205
-      000E96H     LINE      ---       ---     ---   #207
-      000E9EH     LINE      ---       ---     ---   #209
-      000EA4H     LINE      ---       ---     ---   #210
-      000EA6H     LINE      ---       ---     ---   #213
-      000EACH     LINE      ---       ---     ---   #214
-      000EB2H     LINE      ---       ---     ---   #215
-      000EB2H     LINE      ---       ---     ---   #216
-      000EB4H     LINE      ---       ---     ---   #219
-      000EBAH     LINE      ---       ---     ---   #220
-      000EC0H     LINE      ---       ---     ---   #221
-      000EC0H     LINE      ---       ---     ---   #223
-      000EC8H     LINE      ---       ---     ---   #226
+      000EC8H     BLOCK     LVL=0     0052H   ---   GT1_viIsrTmr2
+      000EC8H     LINE      ---       ---     ---   #201
+      000ED0H     LINE      ---       ---     ---   #205
+      000EDCH     LINE      ---       ---     ---   #206
+      000EE8H     LINE      ---       ---     ---   #208
+      000EF0H     LINE      ---       ---     ---   #210
+      000EF6H     LINE      ---       ---     ---   #211
+      000EFCH     LINE      ---       ---     ---   #212
+      000EFEH     LINE      ---       ---     ---   #215
+      000F04H     LINE      ---       ---     ---   #216
+      000F04H     LINE      ---       ---     ---   #217
+      000F06H     LINE      ---       ---     ---   #220
+      000F0CH     LINE      ---       ---     ---   #221
+      000F12H     LINE      ---       ---     ---   #222
+      000F12H     LINE      ---       ---     ---   #225
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000ED0H     BLOCK     LVL=0     0006H   ---   KeyDown
-      000ED0H     LINE      ---       ---     ---   #233
-      000ED0H     LINE      ---       ---     ---   #235
-      000ED4H     LINE      ---       ---     ---   #236
+      000F1AH     BLOCK     LVL=0     001EH   ---   KeyDown
+      000F1AH     LINE      ---       ---     ---   #232
+      000F1AH     LINE      ---       ---     ---   #234
+      000F2AH     LINE      ---       ---     ---   #236
+      000F30H     LINE      ---       ---     ---   #237
+      000F34H     LINE      ---       ---     ---   #238
+      000F34H     LINE      ---       ---     ---   #240
+      000F36H     LINE      ---       ---     ---   #241
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000ED6H     BLOCK     LVL=0     0038H   ---   GetKey
-      000ED6H     LINE      ---       ---     ---   #238
-      000ED6H     LINE      ---       ---     ---   #240
-      000EF2H     LINE      ---       ---     ---   #242
-      000EF2H     LINE      ---       ---     ---   #243
-      000EF8H     LINE      ---       ---     ---   #244
-      000EF8H     LINE      ---       ---     ---   #245
-      000EFEH     LINE      ---       ---     ---   #246
-      000EFEH     LINE      ---       ---     ---   #247
-      000F04H     LINE      ---       ---     ---   #248
-      000F04H     LINE      ---       ---     ---   #249
-      000F0AH     LINE      ---       ---     ---   #250
-      000F0AH     LINE      ---       ---     ---   #251
-      000F0CH     LINE      ---       ---     ---   #252
-      000F0CH     LINE      ---       ---     ---   #253
+      000F38H     BLOCK     LVL=0     0040H   ---   GetKey
+      000F38H     LINE      ---       ---     ---   #243
+      000F38H     LINE      ---       ---     ---   #245
+      000F5CH     LINE      ---       ---     ---   #247
+      000F5CH     LINE      ---       ---     ---   #248
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 10
+
+
+      000F62H     LINE      ---       ---     ---   #249
+      000F62H     LINE      ---       ---     ---   #250
+      000F68H     LINE      ---       ---     ---   #251
+      000F68H     LINE      ---       ---     ---   #252
+      000F6EH     LINE      ---       ---     ---   #253
+      000F6EH     LINE      ---       ---     ---   #254
+      000F74H     LINE      ---       ---     ---   #255
+      000F74H     LINE      ---       ---     ---   #256
+      000F76H     LINE      ---       ---     ---   #257
+      000F76H     LINE      ---       ---     ---   #258
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000F0EH     BLOCK     LVL=0     0046H   ---   fGibADmittel
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 10
-
-
+      000F78H     BLOCK     LVL=0     0046H   ---   fGibADmittel
       000000H     SYMBOL    AUTO      ---     ---   n
-      000F0EH     LINE      ---       ---     ---   #256
-      000F10H     LINE      ---       ---     ---   #258
-      000F50H     LINE      ---       ---     ---   #259
+      000F78H     LINE      ---       ---     ---   #261
+      000F7AH     LINE      ---       ---     ---   #263
+      000FBAH     LINE      ---       ---     ---   #264
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000F54H     BLOCK     LVL=0     0058H   ---   fGibGewicht
-      000F58H     BLOCK     LVL=1     0050H   ---   
+      000FBEH     BLOCK     LVL=0     0058H   ---   fGibGewicht
+      000FC2H     BLOCK     LVL=1     0050H   ---   
       000000H     SYMBOL    AUTO      ---     ---   i
       000002H     SYMBOL    AUTO      ---     ---   summe
       ---         BLOCKEND  LVL=1     ---     ---   
-      000F54H     LINE      ---       ---     ---   #261
-      000F58H     LINE      ---       ---     ---   #262
-      000F58H     LINE      ---       ---     ---   #264
-      000F64H     LINE      ---       ---     ---   #265
-      000F6AH     LINE      ---       ---     ---   #266
-      000F96H     LINE      ---       ---     ---   #268
-      000FA8H     LINE      ---       ---     ---   #269
+      000FBEH     LINE      ---       ---     ---   #266
+      000FC2H     LINE      ---       ---     ---   #267
+      000FC2H     LINE      ---       ---     ---   #269
+      000FCEH     LINE      ---       ---     ---   #270
+      000FD4H     LINE      ---       ---     ---   #271
+      001000H     LINE      ---       ---     ---   #273
+      001012H     LINE      ---       ---     ---   #274
       ---         BLOCKEND  LVL=0     ---     ---   
-      0000F8H     PUBLIC    LABEL     ---     ---   IO_vInit
+      0000D0H     PUBLIC    LABEL     ---     ---   IO_vInit
 
-      0000F8H     BLOCK     LVL=0     0022H   ---   IO_vInit
-      0000F8H     LINE      ---       ---     ---   #69
-      0000F8H     LINE      ---       ---     ---   #74
-      0000FEH     LINE      ---       ---     ---   #93
-      000104H     LINE      ---       ---     ---   #94
-      00010CH     LINE      ---       ---     ---   #105
-      000112H     LINE      ---       ---     ---   #106
-      000118H     LINE      ---       ---     ---   #121
+      0000D0H     BLOCK     LVL=0     0022H   ---   IO_vInit
+      0000D0H     LINE      ---       ---     ---   #69
+      0000D0H     LINE      ---       ---     ---   #74
+      0000D6H     LINE      ---       ---     ---   #93
+      0000DCH     LINE      ---       ---     ---   #94
+      0000E4H     LINE      ---       ---     ---   #105
+      0000EAH     LINE      ---       ---     ---   #106
+      0000F0H     LINE      ---       ---     ---   #121
       ---         BLOCKEND  LVL=0     ---     ---   
-      001240H     PUBLIC    LABEL     ---     ---   ClrScr
-      000FACH     PUBLIC    LABEL     ---     ---   ASC_vInit
-      000FE6H     PUBLIC    LABEL     ---     ---   ASC_vSendData
-      000FFAH     PUBLIC    LABEL     ---     ---   ASC_viIsrTxBuf
-      001050H     PUBLIC    LABEL     ---     ---   DoPrintZ
-      0011B6H     SYMBOL    LABEL     ---     ---   SendChar
-      080208H     SYMBOL    VAR       ---     ---   next
-      08020CH     SYMBOL    VAR       ---     ---   size
-      08020DH     SYMBOL    VAR       ---     ---   index
-      080292H     SYMBOL    VAR       ---     ---   buffer
-      00FD00H.2   SYMBOL    BIT       ---     ---   myIEN
+      0012AAH     PUBLIC    LABEL     ---     ---   ClrScr
+      001016H     PUBLIC    LABEL     ---     ---   ASC_vInit
+      001050H     PUBLIC    LABEL     ---     ---   ASC_vSendData
+      001064H     PUBLIC    LABEL     ---     ---   ASC_viIsrTxBuf
+      0010BAH     PUBLIC    LABEL     ---     ---   DoPrintZ
+      001220H     SYMBOL    LABEL     ---     ---   SendChar
+      080200H     SYMBOL    VAR       ---     ---   next
+      080204H     SYMBOL    VAR       ---     ---   size
+      080205H     SYMBOL    VAR       ---     ---   index
+      08035CH     SYMBOL    VAR       ---     ---   buffer
+      00FD00H.3   SYMBOL    BIT       ---     ---   myIEN
 
-      000FACH     BLOCK     LVL=0     003AH   ---   ASC_vInit
-      000FACH     LINE      ---       ---     ---   #83
-      000FACH     LINE      ---       ---     ---   #89
-      000FB2H     LINE      ---       ---     ---   #93
-      000FBAH     LINE      ---       ---     ---   #98
-      000FC2H     LINE      ---       ---     ---   #100
-      000FD0H     LINE      ---       ---     ---   #101
-      000FDEH     LINE      ---       ---     ---   #108
-      000FE4H     LINE      ---       ---     ---   #109
+      001016H     BLOCK     LVL=0     003AH   ---   ASC_vInit
+      001016H     LINE      ---       ---     ---   #83
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 11
+
+
+      001016H     LINE      ---       ---     ---   #89
+      00101CH     LINE      ---       ---     ---   #93
+      001024H     LINE      ---       ---     ---   #98
+      00102CH     LINE      ---       ---     ---   #100
+      00103AH     LINE      ---       ---     ---   #101
+      001048H     LINE      ---       ---     ---   #108
+      00104EH     LINE      ---       ---     ---   #109
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000FE6H     BLOCK     LVL=0     0014H   ---   ASC_vSendData
+      001050H     BLOCK     LVL=0     0014H   ---   ASC_vSendData
       000000H     SYMBOL    AUTO      ---     ---   Data
-      000FE6H     LINE      ---       ---     ---   #135
-      000FE8H     LINE      ---       ---     ---   #137
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 11
-
-
-      000FF0H     LINE      ---       ---     ---   #138
-      000FF6H     LINE      ---       ---     ---   #139
+      001050H     LINE      ---       ---     ---   #135
+      001052H     LINE      ---       ---     ---   #137
+      00105AH     LINE      ---       ---     ---   #138
+      001060H     LINE      ---       ---     ---   #139
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000FFAH     BLOCK     LVL=0     0056H   ---   ASC_viIsrTxBuf
-      000FFAH     LINE      ---       ---     ---   #164
-      001020H     LINE      ---       ---     ---   #168
-      001028H     LINE      ---       ---     ---   #169
-      00102CH     LINE      ---       ---     ---   #172
+      001064H     BLOCK     LVL=0     0056H   ---   ASC_viIsrTxBuf
+      001064H     LINE      ---       ---     ---   #164
+      00108AH     LINE      ---       ---     ---   #168
+      001092H     LINE      ---       ---     ---   #169
+      001096H     LINE      ---       ---     ---   #172
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      001050H     BLOCK     LVL=0     0166H   ---   DoPrintZ
+      0010BAH     BLOCK     LVL=0     0166H   ---   DoPrintZ
       000006H     SYMBOL    AUTO      ---     ---   iZnr
       000008H     SYMBOL    AUTO      ---     ---   pBuf
-      00105AH     BLOCK     LVL=1     0156H   ---   
+      0010C4H     BLOCK     LVL=1     0156H   ---   
       000000H     SYMBOL    AUTO      ---     ---   text
       000004H     SYMBOL    AUTO      ---     ---   i
       ---         BLOCKEND  LVL=1     ---     ---   
-      001050H     LINE      ---       ---     ---   #179
-      00105AH     LINE      ---       ---     ---   #180
-      00105AH     LINE      ---       ---     ---   #181
-      001080H     LINE      ---       ---     ---   #182
-      001086H     LINE      ---       ---     ---   #186
-      00108CH     LINE      ---       ---     ---   #190
-      00108EH     LINE      ---       ---     ---   #192
-      0010B0H     LINE      ---       ---     ---   #193
-      0010BCH     LINE      ---       ---     ---   #194
-      0010E0H     LINE      ---       ---     ---   #197
-      0010E6H     LINE      ---       ---     ---   #198
-      00110CH     LINE      ---       ---     ---   #202
-      001116H     LINE      ---       ---     ---   #204
-      00111EH     LINE      ---       ---     ---   #205
-      001124H     LINE      ---       ---     ---   #206
-      001126H     LINE      ---       ---     ---   #207
-      001134H     LINE      ---       ---     ---   #209
-      00113EH     LINE      ---       ---     ---   #210
-      001142H     LINE      ---       ---     ---   #211
-      001144H     LINE      ---       ---     ---   #214
-      00114CH     LINE      ---       ---     ---   #215
-      001162H     LINE      ---       ---     ---   #216
-      00117CH     LINE      ---       ---     ---   #217
-      00118AH     LINE      ---       ---     ---   #218
-      0011A8H     LINE      ---       ---     ---   #219
-      0011A8H     LINE      ---       ---     ---   #221
-      0011AEH     LINE      ---       ---     ---   #222
-      0011B0H     LINE      ---       ---     ---   #224
+      0010BAH     LINE      ---       ---     ---   #179
+      0010C4H     LINE      ---       ---     ---   #180
+      0010C4H     LINE      ---       ---     ---   #181
+      0010EAH     LINE      ---       ---     ---   #182
+      0010F0H     LINE      ---       ---     ---   #186
+      0010F6H     LINE      ---       ---     ---   #190
+      0010F8H     LINE      ---       ---     ---   #192
+      00111AH     LINE      ---       ---     ---   #193
+      001126H     LINE      ---       ---     ---   #194
+      00114AH     LINE      ---       ---     ---   #197
+      001150H     LINE      ---       ---     ---   #198
+      001176H     LINE      ---       ---     ---   #202
+      001180H     LINE      ---       ---     ---   #204
+      001188H     LINE      ---       ---     ---   #205
+      00118EH     LINE      ---       ---     ---   #206
+      001190H     LINE      ---       ---     ---   #207
+      00119EH     LINE      ---       ---     ---   #209
+      0011A8H     LINE      ---       ---     ---   #210
+      0011ACH     LINE      ---       ---     ---   #211
+      0011AEH     LINE      ---       ---     ---   #214
+      0011B6H     LINE      ---       ---     ---   #215
+      0011CCH     LINE      ---       ---     ---   #216
+      0011E6H     LINE      ---       ---     ---   #217
+      0011F4H     LINE      ---       ---     ---   #218
+      001212H     LINE      ---       ---     ---   #219
+      001212H     LINE      ---       ---     ---   #221
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 12
+
+
+      001218H     LINE      ---       ---     ---   #222
+      00121AH     LINE      ---       ---     ---   #224
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      0011B6H     BLOCK     LVL=0     008AH   ---   SendChar
-      0011D0H     BLOCK     LVL=1     006CH   ---   
+      001220H     BLOCK     LVL=0     008AH   ---   SendChar
+      00123AH     BLOCK     LVL=1     006CH   ---   
       000000H     SYMBOL    AUTO      ---     ---   c
       ---         BLOCKEND  LVL=1     ---     ---   
-      0011B6H     LINE      ---       ---     ---   #226
-      0011BAH     LINE      ---       ---     ---   #228
-      0011D0H     LINE      ---       ---     ---   #229
-      0011D0H     LINE      ---       ---     ---   #230
-      001202H     LINE      ---       ---     ---   #231
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 12
-
-
-      00120AH     LINE      ---       ---     ---   #232
-      001216H     LINE      ---       ---     ---   #234
-      001238H     LINE      ---       ---     ---   #235
-      00123CH     LINE      ---       ---     ---   #236
-      00123CH     LINE      ---       ---     ---   #238
+      001220H     LINE      ---       ---     ---   #226
+      001224H     LINE      ---       ---     ---   #228
+      00123AH     LINE      ---       ---     ---   #229
+      00123AH     LINE      ---       ---     ---   #230
+      00126CH     LINE      ---       ---     ---   #231
+      001274H     LINE      ---       ---     ---   #232
+      001280H     LINE      ---       ---     ---   #234
+      0012A2H     LINE      ---       ---     ---   #235
+      0012A6H     LINE      ---       ---     ---   #236
+      0012A6H     LINE      ---       ---     ---   #238
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      001240H     BLOCK     LVL=0     000CH   ---   ClrScr
-      001240H     LINE      ---       ---     ---   #240
-      001240H     LINE      ---       ---     ---   #242
-      001244H     LINE      ---       ---     ---   #243
-      00124AH     LINE      ---       ---     ---   #244
+      0012AAH     BLOCK     LVL=0     000CH   ---   ClrScr
+      0012AAH     LINE      ---       ---     ---   #240
+      0012AAH     LINE      ---       ---     ---   #242
+      0012AEH     LINE      ---       ---     ---   #243
+      0012B4H     LINE      ---       ---     ---   #244
       ---         BLOCKEND  LVL=0     ---     ---   
-      001454H     PUBLIC    LABEL     ---     ---   ADC_vInit
-      001464H     PUBLIC    LABEL     ---     ---   ADC_uwReadConv
+      000068H     PUBLIC    LABEL     ---     ---   ADC_vInit
+      000078H     PUBLIC    LABEL     ---     ---   ADC_uwReadConv
 
-      001454H     BLOCK     LVL=0     0010H   ---   ADC_vInit
-      001454H     LINE      ---       ---     ---   #62
-      001454H     LINE      ---       ---     ---   #73
-      00145AH     LINE      ---       ---     ---   #80
-      001462H     LINE      ---       ---     ---   #86
-      ---         BLOCKEND  LVL=0     ---     ---   
-
-      001464H     BLOCK     LVL=0     000CH   ---   ADC_uwReadConv
-      001464H     LINE      ---       ---     ---   #110
-      001464H     LINE      ---       ---     ---   #112
-      00146AH     LINE      ---       ---     ---   #113
-      00146EH     LINE      ---       ---     ---   #114
-      ---         BLOCKEND  LVL=0     ---     ---   
-      00035EH     PUBLIC    LABEL     ---     ---   ?C_FPADD
-      00039CH     PUBLIC    LABEL     ---     ---   ?C_FPXSUB
-      00035AH     PUBLIC    LABEL     ---     ---   ?C_FPSUB
-
-      00035AH     BLOCK     LVL=0     00E8H   ---   ?C_FPSUB
-      ---         BLOCKEND  LVL=0     ---     ---   
-      000442H     PUBLIC    LABEL     ---     ---   ?C_FPMUL
-
-      000442H     BLOCK     LVL=0     0094H   ---   ?C_FPMUL
-      ---         BLOCKEND  LVL=0     ---     ---   
-      0004D6H     PUBLIC    LABEL     ---     ---   ?C_FPDIV
-
-      0004D6H     BLOCK     LVL=0     00C8H   ---   ?C_FPDIV
-      ---         BLOCKEND  LVL=0     ---     ---   
-      00059EH     PUBLIC    LABEL     ---     ---   ?C_FCAST
-
-      00059EH     BLOCK     LVL=0     0046H   ---   ?C_FCAST
-      ---         BLOCKEND  LVL=0     ---     ---   
-      0005E4H     PUBLIC    LABEL     ---     ---   sprintf
-
-      0005E4H     BLOCK     LVL=0     0024H   ---   sprintf
+      000068H     BLOCK     LVL=0     0010H   ---   ADC_vInit
+      000068H     LINE      ---       ---     ---   #62
+      000068H     LINE      ---       ---     ---   #73
+      00006EH     LINE      ---       ---     ---   #80
+      000076H     LINE      ---       ---     ---   #86
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000608H     BLOCK     LVL=0     0008H   ---   SaveCh
+      000078H     BLOCK     LVL=0     000CH   ---   ADC_uwReadConv
+      000078H     LINE      ---       ---     ---   #110
+      000078H     LINE      ---       ---     ---   #112
+      00007EH     LINE      ---       ---     ---   #113
+      000082H     LINE      ---       ---     ---   #114
       ---         BLOCKEND  LVL=0     ---     ---   
-      000610H     PUBLIC    LABEL     ---     ---   ?C_FPGETOPN
-      000636H     PUBLIC    LABEL     ---     ---   ?C_FPNANRSL
-      00063EH     PUBLIC    LABEL     ---     ---   ?C_FPINFRSL
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 13
+      001382H     PUBLIC    LABEL     ---     ---   StartTemp
+      0012B6H     PUBLIC    LABEL     ---     ---   CC2_vInit
+      001394H     PUBLIC    LABEL     ---     ---   bTempDa
+      0013A8H     PUBLIC    LABEL     ---     ---   fGetTemp
+      0012F2H     PUBLIC    LABEL     ---     ---   CC2_viIsrCC19
+      08020CH     SYMBOL    VAR       ---     ---   index
+      080210H     SYMBOL    VAR       ---     ---   tps
+      080274H     SYMBOL    VAR       ---     ---   tds
+      00FD00H.4   SYMBOL    BIT       ---     ---   syncing
+
+      0012B6H     BLOCK     LVL=0     003CH   ---   CC2_vInit
+      0012B6H     LINE      ---       ---     ---   #70
+      0012B6H     LINE      ---       ---     ---   #82
+      0012BCH     LINE      ---       ---     ---   #83
+      0012C2H     LINE      ---       ---     ---   #84
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 13
 
 
-      000660H     PUBLIC    LABEL     ---     ---   ?C_FPNOERR
-      000656H     PUBLIC    LABEL     ---     ---   ?C_FPRSLNR
-      00064AH     PUBLIC    LABEL     ---     ---   ?C_FPOPRSL
-      00066EH     PUBLIC    LABEL     ---     ---   ?C_FPZERRSL
-      00066EH     PUBLIC    LABEL     ---     ---   ?C_FPUNFRS
-
-      000610H     BLOCK     LVL=0     0026H   ---   ?C_FPGETOPN
-      ---         BLOCKEND  LVL=0     ---     ---   
-
-      000636H     BLOCK     LVL=0     0008H   ---   ?C_FPNANRSL
-      ---         BLOCKEND  LVL=0     ---     ---   
-
-      00063EH     BLOCK     LVL=0     000CH   ---   ?C_FPINFRSL
-      ---         BLOCKEND  LVL=0     ---     ---   
-
-      00064AH     BLOCK     LVL=0     0022H   ---   ?C_FPOPRSL
-      ---         BLOCKEND  LVL=0     ---     ---   
-
-      00066CH     BLOCK     LVL=0     0002H   ---   EXIT
-      ---         BLOCKEND  LVL=0     ---     ---   
-
-      00066EH     BLOCK     LVL=0     0006H   ---   ?C_FPZERRSL
-      ---         BLOCKEND  LVL=0     ---     ---   
-      0006AEH     PUBLIC    LABEL     ---     ---   ?C?PRNFMT
-
-      000674H     BLOCK     LVL=0     045EH   ---   print_formatter
-      ---         BLOCKEND  LVL=0     ---     ---   
-      000AD2H     PUBLIC    LABEL     ---     ---   ?C_FPCONVERT
-      000BF2H     PUBLIC    LABEL     ---     ---   ?C_FPROUND
-
-      000AD2H     BLOCK     LVL=0     0120H   ---   ?C_FPCONVERT
+      0012C8H     LINE      ---       ---     ---   #85
+      0012CEH     LINE      ---       ---     ---   #86
+      0012D4H     LINE      ---       ---     ---   #105
+      0012DCH     LINE      ---       ---     ---   #106
+      0012E2H     LINE      ---       ---     ---   #107
+      0012E8H     LINE      ---       ---     ---   #112
+      0012F0H     LINE      ---       ---     ---   #131
       ---         BLOCKEND  LVL=0     ---     ---   
 
-      000BF2H     BLOCK     LVL=0     003CH   ---   ?C_FPROUND
+      0012F2H     BLOCK     LVL=0     0090H   ---   CC2_viIsrCC19
+      0012FEH     BLOCK     LVL=1     0078H   ---   
+      08020EH     SYMBOL    VAR       ---     ---   oldCC19
+      ---         BLOCKEND  LVL=1     ---     ---   
+      0012F2H     LINE      ---       ---     ---   #160
+      0012FEH     LINE      ---       ---     ---   #161
+      0012FEH     LINE      ---       ---     ---   #166
+      001306H     LINE      ---       ---     ---   #167
+      00130EH     LINE      ---       ---     ---   #169
+      00131AH     LINE      ---       ---     ---   #171
+      00133AH     LINE      ---       ---     ---   #172
+      00135AH     LINE      ---       ---     ---   #173
+      001366H     LINE      ---       ---     ---   #174
+      001368H     LINE      ---       ---     ---   #178
+      00136EH     LINE      ---       ---     ---   #180
+      001376H     LINE      ---       ---     ---   #183
       ---         BLOCKEND  LVL=0     ---     ---   
-      000C2EH     PUBLIC    LABEL     ---     ---   ?C_FTNPWR
 
-      000C2EH     BLOCK     LVL=0     0044H   ---   ?C_FTNPWR
+      001382H     BLOCK     LVL=0     0012H   ---   StartTemp
+      001382H     LINE      ---       ---     ---   #189
+      001382H     LINE      ---       ---     ---   #191
+      001388H     LINE      ---       ---     ---   #192
+      00138CH     LINE      ---       ---     ---   #194
+      001392H     LINE      ---       ---     ---   #195
       ---         BLOCKEND  LVL=0     ---     ---   
-      000C72H     PUBLIC    LABEL     ---     ---   ?C_PCASTS
 
-      000C72H     BLOCK     LVL=0     0024H   ---   ?C_PCASTS
+      001394H     BLOCK     LVL=0     0014H   ---   bTempDa
+      001394H     LINE      ---       ---     ---   #197
+      001394H     LINE      ---       ---     ---   #199
+      0013A6H     LINE      ---       ---     ---   #200
       ---         BLOCKEND  LVL=0     ---     ---   
-      0013F8H     PUBLIC    LABEL     ---     ---   memmove
-      000238H     PUBLIC    VAR       ---     ---   ?C_ENDINIT
+
+      0013A8H     BLOCK     LVL=0     00DAH   ---   fGetTemp
+      0013ACH     BLOCK     LVL=1     00D0H   ---   
+      000000H     SYMBOL    AUTO      ---     ---   td
+      000004H     SYMBOL    AUTO      ---     ---   tp
+      000008H     SYMBOL    AUTO      ---     ---   stds
+      00000AH     SYMBOL    AUTO      ---     ---   stps
+      00000CH     SYMBOL    AUTO      ---     ---   i
+      ---         BLOCKEND  LVL=1     ---     ---   
+      0013A8H     LINE      ---       ---     ---   #202
+      0013ACH     LINE      ---       ---     ---   #203
+      0013ACH     LINE      ---       ---     ---   #208
+      0013B2H     LINE      ---       ---     ---   #209
+      0013B8H     LINE      ---       ---     ---   #211
+      0013C0H     LINE      ---       ---     ---   #213
+      0013E0H     LINE      ---       ---     ---   #214
+      001400H     LINE      ---       ---     ---   #215
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 14
+
+
+      001418H     LINE      ---       ---     ---   #216
+      001434H     LINE      ---       ---     ---   #217
+      001452H     LINE      ---       ---     ---   #218
+      00147CH     LINE      ---       ---     ---   #219
+      ---         BLOCKEND  LVL=0     ---     ---   
+      0003BEH     PUBLIC    LABEL     ---     ---   ?C_FPADD
+      0003FCH     PUBLIC    LABEL     ---     ---   ?C_FPXSUB
+      0003BAH     PUBLIC    LABEL     ---     ---   ?C_FPSUB
+
+      0003BAH     BLOCK     LVL=0     00E8H   ---   ?C_FPSUB
+      ---         BLOCKEND  LVL=0     ---     ---   
+      0004A2H     PUBLIC    LABEL     ---     ---   ?C_FPMUL
+
+      0004A2H     BLOCK     LVL=0     0094H   ---   ?C_FPMUL
+      ---         BLOCKEND  LVL=0     ---     ---   
+      000536H     PUBLIC    LABEL     ---     ---   ?C_FPDIV
+
+      000536H     BLOCK     LVL=0     00C8H   ---   ?C_FPDIV
+      ---         BLOCKEND  LVL=0     ---     ---   
+      0005FEH     PUBLIC    LABEL     ---     ---   ?C_FCAST
+
+      0005FEH     BLOCK     LVL=0     0046H   ---   ?C_FCAST
+      ---         BLOCKEND  LVL=0     ---     ---   
+      000644H     PUBLIC    LABEL     ---     ---   sprintf
+
+      000644H     BLOCK     LVL=0     0024H   ---   sprintf
+      ---         BLOCKEND  LVL=0     ---     ---   
+
+      000668H     BLOCK     LVL=0     0008H   ---   SaveCh
+      ---         BLOCKEND  LVL=0     ---     ---   
+      000670H     PUBLIC    LABEL     ---     ---   ?C_FPGETOPN
+      000696H     PUBLIC    LABEL     ---     ---   ?C_FPNANRSL
+      00069EH     PUBLIC    LABEL     ---     ---   ?C_FPINFRSL
+      0006C0H     PUBLIC    LABEL     ---     ---   ?C_FPNOERR
+      0006B6H     PUBLIC    LABEL     ---     ---   ?C_FPRSLNR
+      0006AAH     PUBLIC    LABEL     ---     ---   ?C_FPOPRSL
+      0006CEH     PUBLIC    LABEL     ---     ---   ?C_FPZERRSL
+      0006CEH     PUBLIC    LABEL     ---     ---   ?C_FPUNFRS
+
+      000670H     BLOCK     LVL=0     0026H   ---   ?C_FPGETOPN
+      ---         BLOCKEND  LVL=0     ---     ---   
+
+      000696H     BLOCK     LVL=0     0008H   ---   ?C_FPNANRSL
+      ---         BLOCKEND  LVL=0     ---     ---   
+
+      00069EH     BLOCK     LVL=0     000CH   ---   ?C_FPINFRSL
+      ---         BLOCKEND  LVL=0     ---     ---   
+
+      0006AAH     BLOCK     LVL=0     0022H   ---   ?C_FPOPRSL
+      ---         BLOCKEND  LVL=0     ---     ---   
+
+      0006CCH     BLOCK     LVL=0     0002H   ---   EXIT
+      ---         BLOCKEND  LVL=0     ---     ---   
+
+      0006CEH     BLOCK     LVL=0     0006H   ---   ?C_FPZERRSL
+      ---         BLOCKEND  LVL=0     ---     ---   
+      00070EH     PUBLIC    LABEL     ---     ---   ?C?PRNFMT
+L166 LINKER/LOCATER V5.25                                                             05/20/2012  17:33:40  PAGE 15
+
+
+
+      0006D4H     BLOCK     LVL=0     045EH   ---   print_formatter
+      ---         BLOCKEND  LVL=0     ---     ---   
+      000B32H     PUBLIC    LABEL     ---     ---   ?C_FPCONVERT
+      000C52H     PUBLIC    LABEL     ---     ---   ?C_FPROUND
+
+      000B32H     BLOCK     LVL=0     0120H   ---   ?C_FPCONVERT
+      ---         BLOCKEND  LVL=0     ---     ---   
+
+      000C52H     BLOCK     LVL=0     003CH   ---   ?C_FPROUND
+      ---         BLOCKEND  LVL=0     ---     ---   
+      000C8EH     PUBLIC    LABEL     ---     ---   ?C_FTNPWR
+
+      000C8EH     BLOCK     LVL=0     0044H   ---   ?C_FTNPWR
+      ---         BLOCKEND  LVL=0     ---     ---   
+      000CD2H     PUBLIC    LABEL     ---     ---   ?C_PCASTS
+
+      000CD2H     BLOCK     LVL=0     0024H   ---   ?C_PCASTS
+      ---         BLOCKEND  LVL=0     ---     ---   
+      0015ECH     PUBLIC    LABEL     ---     ---   memmove
+      00023EH     PUBLIC    VAR       ---     ---   ?C_ENDINIT
 
 
 
@@ -778,11 +874,8 @@ FUNCTION . . . . . . REG MASK
 
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 1000H BYTE CODE SIZE LIMIT; USED: 0A10H BYTE (62%) *
-L166 LINKER/LOCATER V5.25                                                             05/07/2012  09:40:52  PAGE 14
-
-
+* RESTRICTED VERSION WITH 1000H BYTE CODE SIZE LIMIT; USED: 0BAAH BYTE (72%) *
 ******************************************************************************
 
-Program Size: data=753(near=753) const=506(near=194) code=4696
+Program Size: data=955(near=955) const=526(near=194) code=5100
 L166 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

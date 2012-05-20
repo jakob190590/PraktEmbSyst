@@ -142,7 +142,7 @@
             <CpuDllArguments></CpuDllArguments>
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
+            <InitializationFile>.\DBGSTART.INI</InitializationFile>
           </SimDlls>
           <TargetDlls>
             <CpuDll></CpuDll>
@@ -313,6 +313,11 @@
               <FileName>ADC.C</FileName>
               <FileType>1</FileType>
               <FilePath>.\ADC.C</FilePath>
+            </File>
+            <File>
+              <FileName>CC2.C</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\CC2.C</FilePath>
             </File>
           </Files>
         </Group>

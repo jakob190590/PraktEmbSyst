@@ -12,7 +12,7 @@
 // @Description   This file contains the Project initialization function.
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:08
+// @Date          20.05.2012 17:17:05
 //
 //****************************************************************************
 
@@ -62,7 +62,7 @@
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:08
+// @Date          20.05.2012 17:17:05
 //
 //****************************************************************************
 
@@ -110,6 +110,9 @@ void Project_Init(void)
   // initializes the Analog/Digital Converter (ADC)
   ADC_vInit();
 
+  // initializes the Capture/Compare Unit CAPCOM2
+  CC2_vInit();
+
   // initializes the General Purpose Timer Unit 1 (GPT1)
   GT1_vInit();
 
@@ -135,7 +138,7 @@ void Project_Init(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:08
+// @Date          20.05.2012 17:17:05
 //
 //****************************************************************************
 
@@ -172,7 +175,7 @@ void main(void)
 					sprintf(s, "Kanal %d: %5.2f", kanal, fGibADmittel(kanal));
 					DoPrintZ(1, s);
 		
-					if (++kanal >= ADNUM)
+					if (++kanal >= ADNUM) // kanal = ++kanal % ADNUM;
 						kanal = 0;
 
 					ledState ^= 0x80; 
