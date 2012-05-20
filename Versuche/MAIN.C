@@ -170,12 +170,9 @@ void main(void)
 				case '1': 
 		
 					sprintf(s, "Kanal %d: %5.2f", kanal, fGibADmittel(kanal));
-
 					DoPrintZ(1, s);
 		
-					if (kanal < (ADNUM - 1))
-						kanal++;
-					else
+					if (++kanal >= ADNUM)
 						kanal = 0;
 
 					ledState ^= 0x80; 
@@ -189,6 +186,8 @@ void main(void)
 					ledState ^= 0x40;
 					break;
 				case '3':
+
+					StartTemp();
 					
 					ledState ^= 0x20;
 					break;
@@ -196,7 +195,14 @@ void main(void)
 					ledState ^= 0x80;
 					break;
 			}
+
 			IO_vWritePort(P1L,ledState);
+
+			if (bTempDa())
+			{
+				sprintf(s, "Temperatur: %5.2f", fGetTemp());
+				DoPrintZ(3, s);
+			}
 
 		}
 	}
