@@ -13,7 +13,7 @@
 //                
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:09
+// @Date          20.05.2012 11:46:05
 //
 //****************************************************************************
 
@@ -35,10 +35,10 @@
 
 // USER CODE BEGIN (GT1_General,2)
 
-static int nTaste, aTaste = 0xFF; // neue und alte taste
+static int nTaste = 0xFF; // taste
 static bit tFlag = 0; // taster flag
 static bit iCnt = 0; // interrupt counter
-static bit consumed;
+static bit consumed; // key event consumed
 
 
 #define BUFLEN 20 // Size des Buffers zur Mittelung (adBuff)
@@ -66,7 +66,7 @@ static unsigned long sum[ADNUM] = { 0 };
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:09
+// @Date          20.05.2012 11:46:05
 //
 //****************************************************************************
 
@@ -134,7 +134,7 @@ void GT1_vInit(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:09
+// @Date          20.05.2012 11:46:05
 //
 //****************************************************************************
 
@@ -194,7 +194,7 @@ void GT1_viIsrTmr3(void) interrupt T3INT
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:09
+// @Date          20.05.2012 11:46:05
 //
 //****************************************************************************
 
@@ -203,25 +203,23 @@ void GT1_viIsrTmr2(void) interrupt T2INT
   // USER CODE BEGIN (GT1_IsrTmr2,1)
 	
 	nTaste = P1H | 0x0F;
-	if (nTaste != 0xFF && nTaste == aTaste)
+	if (nTaste != 0xFF) // Taste gedrueckt
 	{
 		if (iCnt == 0)
 		{
-			iCnt = 1;			
+			iCnt = 1;	
+			consumed = 0;	
 		}
-		else
-		{
-			iCnt = 0;
+		else // if (!consumed)
+		{ 			
 			tFlag = 1;
 		}
 	}
-	else
+	else // Keine Taste gedrueckt
 	{
 		iCnt = 0;
 		tFlag = 0;
 	}
-
-	aTaste = nTaste;
 
   // USER CODE END
 }
@@ -233,8 +231,13 @@ void GT1_viIsrTmr2(void) interrupt T2INT
 
 bit KeyDown(void)
 {  	
-	consumed = 1;
-	return (tFlag && !consumed);
+	if (tFlag && !consumed)
+	{
+		consumed = 1;
+		return 1;
+	}
+
+	return 0;
 }
 
 char GetKey(void)
