@@ -14,7 +14,7 @@
 //                
 //
 //----------------------------------------------------------------------------
-// @Date          20.05.2012 17:17:05
+// @Date          21.05.2012 09:36:30
 //
 //****************************************************************************
 
@@ -40,7 +40,7 @@
 
 static unsigned tds[TEMPSAMPLES]; // T_D s
 static unsigned tps[TEMPSAMPLES]; // T_P s
-static unsigned index;
+static unsigned index = 0;
 static bit syncing;
 
 // USER CODE END
@@ -63,7 +63,7 @@ static bit syncing;
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          20.05.2012 17:17:05
+// @Date          21.05.2012 09:36:30
 //
 //****************************************************************************
 
@@ -77,7 +77,6 @@ void CC2_vInit(void)
   /// ---- Timer 8 Configuration -------------
   ///  timer 8 works in timer mode
   ///  prescaler factor is 8
-  ///  timer 8 run bit is reset
 
   T78CON = 0x0000;
   T7     = 0x0000;    // load timer 7 register
@@ -124,7 +123,13 @@ void CC2_vInit(void)
   /// ---- Capture Compare Channel 27 -------------
   ///  disable capture compare channel 27
 
+  /// timer 8 is running
+  T78CON |= 0x4000;
+
+
   // USER CODE BEGIN (CC2_Init,1)
+
+	CC19IE = 0;
 
   // USER CODE END
 
@@ -153,7 +158,7 @@ void CC2_vInit(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          20.05.2012 17:17:05
+// @Date          21.05.2012 09:36:30
 //
 //****************************************************************************
 
@@ -174,8 +179,8 @@ void CC2_viIsrCC19(void) interrupt CC19INT
 	}
 
 	else
-		// timer deaktivieren? CC interrupt deaktivieren
-		CC2_vStopTmr(TIMER_8);
+		// CC interrupt deaktivieren
+		CC19IE = 0;
 
 	oldCC19 = CC19;
 
@@ -190,13 +195,19 @@ void StartTemp()
 {
 	syncing = 1;
 	index = 0;
-	// start timer?	CC interrupt aktivieren
-	CC2_vStartTmr(TIMER_8);
+	// CC interrupt aktivieren
+	CC19IR = 0;	//reset pending interrupt
+	CC19IE = 1;	// enable interrupt
 }
 
 bit bTempDa()
 {
-	return index == TEMPSAMPLES;
+	if (index == TEMPSAMPLES)
+	{
+		index = 0;
+		return 1;
+	}
+	return 0;
 }
 
 float fGetTemp()

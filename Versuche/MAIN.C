@@ -12,7 +12,7 @@
 // @Description   This file contains the Project initialization function.
 //
 //----------------------------------------------------------------------------
-// @Date          20.05.2012 17:17:05
+// @Date          21.05.2012 09:36:30
 //
 //****************************************************************************
 
@@ -62,7 +62,7 @@
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          20.05.2012 17:17:05
+// @Date          21.05.2012 09:36:30
 //
 //****************************************************************************
 
@@ -138,7 +138,7 @@ void Project_Init(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          20.05.2012 17:17:05
+// @Date          21.05.2012 09:36:30
 //
 //****************************************************************************
 
@@ -178,21 +178,21 @@ void main(void)
 					if (++kanal >= ADNUM) // kanal = ++kanal % ADNUM;
 						kanal = 0;
 
-					ledState ^= 0x80; 
+					ledState ^= 0x10; 
 					break;
 
 				case '2':	
 					
-					sprintf(s, "Mittel:  %5.2f", fGibGewicht());
+					sprintf(s, "Gewicht: %5.2f", fGibGewicht());
 					DoPrintZ(2, s);
 									
-					ledState ^= 0x40;
+					ledState ^= 0x20;
 					break;
 				case '3':
 
 					StartTemp();
 					
-					ledState ^= 0x20;
+					ledState ^= 0x40;
 					break;
 				case '4':
 					ledState ^= 0x80;
@@ -201,12 +201,12 @@ void main(void)
 
 			IO_vWritePort(P1L,ledState);
 
-			if (bTempDa())
-			{
-				sprintf(s, "Temperatur: %5.2f", fGetTemp());
-				DoPrintZ(3, s);
-			}
+		}
 
+		if (bTempDa())
+		{
+			sprintf(s, "Temperatur: %5.2f", fGetTemp());
+			DoPrintZ(3, s);
 		}
 	}
 

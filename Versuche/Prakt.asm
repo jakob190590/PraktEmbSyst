@@ -9,7 +9,7 @@
 ;                PLEASE DO NOT MODIFY THIS FILE !
 ;
 ;----------------------------------------------------------------------------
-; Date          20.05.2012 17:17:06
+; Date          21.05.2012 09:36:31
 ;
 ;****************************************************************************
 
@@ -1370,7 +1370,7 @@ T78CON_T7M	SET	0
 T78CON_T7R	SET	0
 T78CON_T8I	SET	0
 T78CON_T8M	SET	0
-T78CON_T8R	SET	0
+T78CON_T8R	SET	1
 
 ; CAPCOM 2 Timer 7 Interrupt Control Register
 T7IC_GLVL	SET	0
