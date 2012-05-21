@@ -199,56 +199,9 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGD167</Key>
-          <Name>(103=-1,-1,-1,-1,0)(3010=-1,-1,-1,-1,0)(108=-1,-1,-1,-1,0)(3004=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(3014=-1,-1,-1,-1,0)(82=874,256,1272,383,0)(83=711,438,1109,572,1)(85=-1,-1,-1,-1,0)(3008=-1,-1,-1,-1,0)(3015=-1,-1,-1,-1,0)(90=-1,-1,-1,-1,0)(93=-1,-1,-1,-1,0)(94=-1,-1,-1,-1,0)(95=-1,-1,-1,-1,0)(98=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(3016=-1,-1,-1,-1,0)(3019=-1,-1,-1,-1,0)(3018=-1,-1,-1,-1,0)(80=150,107,366,475,0)(3007=150,107,371,518,0)(3000=-1,-1,-1,-1,0)(3013=-1,-1,-1,-1,0)(3012=-1,-1,-1,-1,0)</Name>
+          <Name>(103=-1,-1,-1,-1,0)(3010=-1,-1,-1,-1,0)(108=-1,-1,-1,-1,0)(3004=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(3014=-1,-1,-1,-1,0)(82=874,256,1272,383,0)(83=841,513,1239,647,0)(85=-1,-1,-1,-1,0)(3008=-1,-1,-1,-1,0)(3015=-1,-1,-1,-1,0)(90=-1,-1,-1,-1,0)(93=-1,-1,-1,-1,0)(94=-1,-1,-1,-1,0)(95=-1,-1,-1,-1,0)(98=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(3016=-1,-1,-1,-1,0)(3019=-1,-1,-1,-1,0)(3018=-1,-1,-1,-1,0)(80=150,107,366,475,0)(3007=150,107,371,518,0)(3000=-1,-1,-1,-1,0)(3013=-1,-1,-1,-1,0)(3012=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint>
-        <Bp>
-          <Number>0</Number>
-          <Type>0</Type>
-          <LineNumber>208</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>5590</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>MAIN.C</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>193</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>5550</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>MAIN.C</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>206</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>5582</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>MAIN.C</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-      </Breakpoint>
       <ToolboxButtons>
         <Wi>
           <IntNumber>0</IntNumber>
@@ -357,7 +310,7 @@
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>198</TopLine>
-      <CurrentLine>206</CurrentLine>
+      <CurrentLine>208</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
@@ -368,10 +321,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>15</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>143</TopLine>
-      <CurrentLine>143</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\GT1.C</PathWithFileName>
       <FilenameWithoutPath>GT1.C</FilenameWithoutPath>
@@ -424,10 +377,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>10</ColumnNumber>
+      <ColumnNumber>29</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>195</TopLine>
-      <CurrentLine>210</CurrentLine>
+      <TopLine>173</TopLine>
+      <CurrentLine>173</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\CC2.C</PathWithFileName>
       <FilenameWithoutPath>CC2.C</FilenameWithoutPath>
@@ -444,7 +397,7 @@
   <AlienFiles>
     <PathWithFilename>E:\Daten\CP164PRJ\Versuche\TempSim.ini</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>5</CurrentLine>
+    <CurrentLine>10</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -470,7 +423,7 @@
   <AlienFiles>
     <PathWithFilename>E:\Daten\CP164PRJ\Versuche\DBGSTART.INI</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>6</CurrentLine>
+    <CurrentLine>8</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -498,37 +451,37 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>2</ActiveTab>
       <Documents>
         <Doc>
           <Name>E:\Daten\CP164PRJ\Versuche\DBGSTART.INI</Name>
-          <ColumnNumber>15</ColumnNumber>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>6</CurrentLine>
+          <CurrentLine>8</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\CC2.C</Name>
-          <ColumnNumber>10</ColumnNumber>
-          <TopLine>195</TopLine>
-          <CurrentLine>210</CurrentLine>
+          <ColumnNumber>29</ColumnNumber>
+          <TopLine>173</TopLine>
+          <CurrentLine>173</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\MAIN.C</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>198</TopLine>
-          <CurrentLine>206</CurrentLine>
+          <TopLine>158</TopLine>
+          <CurrentLine>168</CurrentLine>
         </Doc>
         <Doc>
           <Name>E:\Daten\CP164PRJ\Versuche\TempSim.ini</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <ColumnNumber>15</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>5</CurrentLine>
+          <CurrentLine>10</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\GT1.C</Name>
-          <ColumnNumber>15</ColumnNumber>
-          <TopLine>143</TopLine>
-          <CurrentLine>143</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

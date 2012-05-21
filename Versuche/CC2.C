@@ -14,7 +14,7 @@
 //                
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 09:36:30
+// @Date          21.05.2012 10:38:34
 //
 //****************************************************************************
 
@@ -63,7 +63,7 @@ static bit syncing;
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 09:36:30
+// @Date          21.05.2012 10:38:34
 //
 //****************************************************************************
 
@@ -106,9 +106,9 @@ void CC2_vInit(void)
   CC19  = 0x0000;  // load CC19 register
 
   ///  enable CC19 interrupt
-  ///  CC19 interrupt priority level(ILVL) = 5
+  ///  CC19 interrupt priority level(ILVL) = 7
   ///  CC19 interrupt group level (GLVL) = 1
-  CC19IC = 0x0055;
+  CC19IC = 0x005D;
 
 
   /// ---- Capture Compare Channel 24 -------------
@@ -158,7 +158,7 @@ void CC2_vInit(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 09:36:30
+// @Date          21.05.2012 10:38:34
 //
 //****************************************************************************
 
@@ -166,19 +166,21 @@ void CC2_viIsrCC19(void) interrupt CC19INT
 {
   // USER CODE BEGIN (CC2_IsrCC19,0)
 
-	static oldCC19 = 0;
+	static unsigned int oldCC19 = 0;
+	unsigned int CC19val = CC19;
+	unsigned int CC18val = CC18;
 
 	if (syncing)
 		syncing = 0;
 
 	else if (index < TEMPSAMPLES)
 	{
-		tds[index] = CC19 - CC18;
-		tps[index] = CC19 - oldCC19;		
+		tds[index] = CC19val - CC18val;
+		tps[index] = CC19val - oldCC19;		
 		index++;
 	}
 
-	else
+	if (index == TEMPSAMPLES)
 		// CC interrupt deaktivieren
 		CC19IE = 0;
 

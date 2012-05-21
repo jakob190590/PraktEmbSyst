@@ -9,7 +9,7 @@
 ;                PLEASE DO NOT MODIFY THIS FILE !
 ;
 ;----------------------------------------------------------------------------
-; Date          21.05.2012 09:36:31
+; Date          21.05.2012 10:38:35
 ;
 ;****************************************************************************
 
@@ -254,7 +254,7 @@ CC18_CC18	SET	0
 CC19IC_CC19IE	SET	1
 CC19IC_CC19IR	SET	0
 CC19IC_GLVL	SET	1
-CC19IC_ILVL	SET	5
+CC19IC_ILVL	SET	7
 
 ; CAPCOM 2 Register 19
 CC19_CC19	SET	0
