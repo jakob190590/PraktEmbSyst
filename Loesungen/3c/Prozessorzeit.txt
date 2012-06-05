@@ -1,0 +1,14 @@
+Wie viel Prozent der Prozessorzeit gehen für die Verarbeitung der CC19-Interrupt drauf?
+
+Haltepunkte setzen
+ - in main bei StartTemp() und bei der Ausgabe der Temperatur (wenn bTempDa() wahr ist)
+ - und am Anfang und Ende der ISR CC2_viIsrCC19.
+
+Im Debug-Modus anhand des Registers sec die Zeit zwischen den Haltepunkten messen:
+ (1) 50 * Dauer der ISR
+ (2) Zeit zwischen StartTemp und (bTempDa() == 1)
+
+(1) / (2) ist die gesuchte Zahl; Bei uns ca. 10 %
+(Dauer anderer ISRs sind aber nicht eingerechnet...)
+
+-> Besser: Benutzung des PEC, 3 d)

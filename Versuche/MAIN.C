@@ -12,7 +12,7 @@
 // @Description   This file contains the Project initialization function.
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:08
+// @Date          21.05.2012 21:30:10
 //
 //****************************************************************************
 
@@ -62,7 +62,7 @@
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:08
+// @Date          21.05.2012 21:30:10
 //
 //****************************************************************************
 
@@ -110,6 +110,9 @@ void Project_Init(void)
   // initializes the Analog/Digital Converter (ADC)
   ADC_vInit();
 
+  // initializes the Capture/Compare Unit CAPCOM2
+  CC2_vInit();
+
   // initializes the General Purpose Timer Unit 1 (GPT1)
   GT1_vInit();
 
@@ -135,7 +138,7 @@ void Project_Init(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          07.05.2012 09:23:08
+// @Date          21.05.2012 21:30:10
 //
 //****************************************************************************
 
@@ -145,8 +148,6 @@ void main(void)
 	
 	int ledState = 0;	// LED Status
 	
-	bit oldState = 0;
-
 	char s[21]; // 20 Zeichen fuers Display + '\0'
 
 	char kanal = 0;
@@ -163,9 +164,8 @@ void main(void)
 
 	while(1)
 	{ 	
-
-		bit state = KeyDown(); 				
-		if (state && !oldState)
+				
+		if (KeyDown())
 		{
 			switch(GetKey())
 			{
@@ -173,37 +173,41 @@ void main(void)
 				case '1': 
 		
 					sprintf(s, "Kanal %d: %5.2f", kanal, fGibADmittel(kanal));
-
 					DoPrintZ(1, s);
 		
-					if (kanal < (ADNUM - 1))
-						kanal++;
-					else
+					if (++kanal >= ADNUM) // kanal = ++kanal % ADNUM;
 						kanal = 0;
 
-					ledState ^= 0x80; 
+					ledState ^= 0x10; 
 					break;
 
 				case '2':	
 					
-					sprintf(s, "Mittel:  %5.2f", fGibGewicht());
+					sprintf(s, "Gewicht: %5.2f", fGibGewicht());
 					DoPrintZ(2, s);
 									
-					ledState ^= 0x40;
+					ledState ^= 0x20;
 					break;
 				case '3':
+
+					StartTemp();
 					
-					ledState ^= 0x20;
+					ledState ^= 0x40;
 					break;
 				case '4':
 					ledState ^= 0x80;
 					break;
 			}
+
 			IO_vWritePort(P1L,ledState);
 
 		}
-		
-		oldState = state;
+
+		if (bTempDa())
+		{
+			sprintf(s, "Temperatur: %5.2f", fGetTemp());
+			DoPrintZ(3, s);
+		}
 	}
 
   // USER CODE END

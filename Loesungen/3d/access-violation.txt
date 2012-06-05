@@ -1,0 +1,8 @@
+Access violation (siehe Screenshot) liegt dran,
+dass der Destination Pointer wohl nur 16 bit hat,
+die Adresse der Arrays aber normalerweise über
+0x00080000 liegt. Lösung: Arrays mit der Speicher-
+art sdata deklarieren
+static unsigned sdata arr[SIZE];
+Dann liegen sie in der System Page und haben eine
+Adresse kleiner 0xFFFF.
