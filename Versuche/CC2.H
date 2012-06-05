@@ -13,7 +13,7 @@
 //                the Capture Compare unit 2.
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:10
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -57,7 +57,7 @@ float fGetTemp();
 // @Parameters    Name of the CAPCOM timer to be used
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:10
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -83,12 +83,38 @@ float fGetTemp();
 // @Parameters    Name of the CAPCOM timer to be used
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:10
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
 #define CC2_vStopTmr(TimerNr)  CC2_vStop(TimerNr,R)
 #define CC2_vStop(TimerNr,R) TimerNr##R = 0                     
+
+
+//****************************************************************************
+// @Macro         CC2_vSetCCxReg(RegName,Value)
+//
+//----------------------------------------------------------------------------
+// @Description   This macro loads the selected capture/compare register
+//                with the parameter Value.
+//                
+//                The following definitions are available for RegName
+//                (only for enabled CAPCOM channels):
+//                0 - 0 (see @Defines in header file)
+//
+//----------------------------------------------------------------------------
+// @Returnvalue   none
+//
+//----------------------------------------------------------------------------
+// @Parameters    Name of the CAPCOM channel to be used
+// @Parameters    16-bit Value with which the CCx register is to be loaded
+//
+//----------------------------------------------------------------------------
+// @Date          05.06.2012 15:19:14
+//
+//****************************************************************************
+
+#define CC2_vSetCCxReg(RegName,Value) RegName = Value
 
 
 
@@ -106,11 +132,16 @@ float fGetTemp();
 
 // Defines for enabled CAPCOM2 channels:
 
+#define CC_16 CC16
+#define CC_17 CC17
 #define CC_18 CC18
 #define CC_19 CC19
 
 
 // USER CODE BEGIN (CC2Header,3)
+
+// Timer 7 Startwert, dass er 5000 * 0.4 us = 2 ms läuft!
+#define T7RELOAD 0xEC77
 
 // USER CODE END
 
@@ -119,6 +150,9 @@ float fGetTemp();
 // @Interrupt Vectors
 //****************************************************************************
 
+#define T7INT     0x3D
+#define CC16INT   0x30
+#define CC17INT   0x31
 #define CC18INT   0x32
 #define CC19INT   0x33
 

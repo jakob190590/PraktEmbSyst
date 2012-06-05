@@ -13,7 +13,7 @@
 //                Asynchronous / Synchronous Serial Interface.
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:11
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -76,7 +76,7 @@ static void SendChar();
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:11
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -93,9 +93,9 @@ void ASC_vInit(void)
   S0BG   = 0x0040;
 
   ///  enable transmit buffer interrupt
-  ///  transmit buffer interrupt priority level(ILVL) = 4
-  ///  transmit buffer interrupt group level (GLVL) = 1
-  S0TBIC = 0x0051;
+  ///  transmit buffer interrupt priority level(ILVL) = 3
+  ///  transmit buffer interrupt group level (GLVL) = 0
+  S0TBIC = 0x004C;
 
   P3    |= 0x0400;    //  set P3.10 output latch (TXD0)
   DP3   |= 0x0400;    /// set P3.10 direction control (TXD0 output)
@@ -128,7 +128,7 @@ void ASC_vInit(void)
 // @Parameters    data to be written into the S0TBUF register
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:11
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -157,7 +157,7 @@ void ASC_vSendData(uword Data)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:11
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 

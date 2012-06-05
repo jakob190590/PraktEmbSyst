@@ -1,6 +1,6 @@
 //****************************************************************************
-// @Module        General Purpose Timer Unit 1
-// @Filename      GT1.H
+// @Module        RTC
+// @Filename      RTC.H
 // @Project       Prakt.dav
 //----------------------------------------------------------------------------
 // @Controller    Infineon C164CI-8E
@@ -10,10 +10,10 @@
 // @Codegenerator DAvE 2-0-0
 //
 // @Description   This file contains all function prototypes and macros for
-//                the GPT1 unit.
+//                the Real Time Clock.
 //
 //----------------------------------------------------------------------------
-// @Date          05.06.2012 15:19:15
+// @Date          05.06.2012 15:19:16
 //
 //****************************************************************************
 
@@ -21,17 +21,12 @@
 // @Prototypes of global functions
 //****************************************************************************
 
-void GT1_vInit(void);
+void RTC_vInit(void);
 
 
 // USER CODE BEGIN (Header,1)
 
-bit KeyDown(void);
-char GetKey(void);
-
-
-float fGibADmittel(char);
-float fGibGewicht();
+void refreshDisplay(char refresh);
 
 // USER CODE END
 
@@ -46,13 +41,9 @@ float fGibGewicht();
 // USER CODE END
 
 
-//***************************************************************************
-// @Defines
-//***************************************************************************
-
-#define TIMER_2 T2
-#define TIMER_3 T3
-#define TIMER_4 T4
+/****************************************************************************
+* @Defines                                                                   
+****************************************************************************/
 
 
 // USER CODE BEGIN (Header,3)
@@ -60,12 +51,11 @@ float fGibGewicht();
 // USER CODE END
 
 
-//***************************************************************************
-// @Interrupt vectors
-//***************************************************************************
+/****************************************************************************
+* @Interrupt vectors                                                         
+****************************************************************************/
 
-#define T2INT   0x22
-#define T3INT   0x23
+#define XP3INT   0x43
 
 
 // USER CODE BEGIN (Header,4)

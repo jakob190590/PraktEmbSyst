@@ -12,7 +12,7 @@
 // @Description   This is the include header file for all other modules.
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:10
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -28,6 +28,15 @@
 #define BFLD   _bfld_
 
 // USER CODE BEGIN (MainHeader,0)
+
+// Refresh der Werte auf dem Display
+// (Kombination möglich)
+#define REFRESH_NONE 0
+#define REFRESH_ALL 0xF
+#define REFRESH_Z1 1
+#define REFRESH_Z2 2
+#define REFRESH_Z3 4
+#define REFRESH_Z4 8 
 
 // USER CODE END
 
@@ -491,6 +500,7 @@ sbit  XP3IE    = XP3IC^6;
 #include "CC2.H"
 #include "GT1.H"
 #include "INT.H"
+#include "RTC.H"
 
 // USER CODE BEGIN (MainHeader,1)
 

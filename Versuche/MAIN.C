@@ -12,7 +12,7 @@
 // @Description   This file contains the Project initialization function.
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:10
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -46,6 +46,16 @@
 
 // USER CODE BEGIN (Main,3)
 
+char kanal = 0;	// Analogkanal
+
+char stufe = 1; // Geschw.stufe fuer Motor
+
+unsigned drehzahl;
+
+bit refresh = 0; // refresh complete display
+
+unsigned compare16 = -500 * 1;
+
 // USER CODE END
 
 
@@ -62,7 +72,7 @@
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:10
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -116,7 +126,13 @@ void Project_Init(void)
   // initializes the General Purpose Timer Unit 1 (GPT1)
   GT1_vInit();
 
+  // initializes the Real Time Clock (RTC)
+  RTC_vInit();
+
   // USER CODE BEGIN (Project_Init,1)
+
+	// Compare-Wert neu setzen
+	CC2_vSetCCxReg(CC_16, compare16);
 
   // USER CODE END
 
@@ -138,7 +154,7 @@ void Project_Init(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:10
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -147,11 +163,7 @@ void main(void)
   // USER CODE BEGIN (Main,1)
 	
 	int ledState = 0;	// LED Status
-	
-	char s[21]; // 20 Zeichen fuers Display + '\0'
-
-	char kanal = 0;
-
+	char s[COLCOUNT + 1]; // 20 Zeichen fuers Display + '\0'
 
   // USER CODE END
 
@@ -172,37 +184,63 @@ void main(void)
 
 				case '1': 
 		
-					sprintf(s, "Kanal %d: %5.2f", kanal, fGibADmittel(kanal));
-					DoPrintZ(1, s);
-		
 					if (++kanal >= ADNUM) // kanal = ++kanal % ADNUM;
 						kanal = 0;
+
+					refreshDisplay(REFRESH_Z1);
 
 					ledState ^= 0x10; 
 					break;
 
 				case '2':	
 					
-					sprintf(s, "Gewicht: %5.2f", fGibGewicht());
-					DoPrintZ(2, s);
+					refreshDisplay(REFRESH_Z2);
 									
 					ledState ^= 0x20;
 					break;
+
 				case '3':
 
-					StartTemp();
+					// Geschw.stufe erhoehen
+					if (stufe < 10)
+					{
+						stufe++;
+						compare16 = -500 * stufe;
+
+						refreshDisplay(REFRESH_Z4);
+					}
 					
 					ledState ^= 0x40;
 					break;
+
 				case '4':
+
+					// Geschw.stufe erniedrigen
+					if (stufe > 1)
+					{
+						stufe--;
+						compare16 = -500 * stufe;
+
+						refreshDisplay(REFRESH_Z4);
+					}
+
 					ledState ^= 0x80;
 					break;
 			}
 
-			IO_vWritePort(P1L,ledState);
+			IO_vWritePort(P1L, ledState);
 
 		}
 
+		// refresh Flag wird von RTC gesetzt
+		if (refresh)
+		{
+			refreshDisplay(REFRESH_ALL);
+			refresh = 0;
+		}
+
+		// Messung wird durch StartTemp() angestoﬂen,
+		// und angezeigt, sobald's fertig ist.
 		if (bTempDa())
 		{
 			sprintf(s, "Temperatur: %5.2f", fGetTemp());

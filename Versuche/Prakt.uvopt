@@ -199,83 +199,9 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGD167</Key>
-          <Name>(103=-1,-1,-1,-1,0)(3010=-1,-1,-1,-1,0)(108=-1,-1,-1,-1,0)(3004=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(3014=-1,-1,-1,-1,0)(82=874,256,1272,383,0)(83=1327,725,1725,852,1)(85=-1,-1,-1,-1,0)(3008=-1,-1,-1,-1,0)(3015=-1,-1,-1,-1,0)(90=-1,-1,-1,-1,0)(93=-1,-1,-1,-1,0)(94=-1,-1,-1,-1,0)(95=-1,-1,-1,-1,0)(98=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(3016=-1,-1,-1,-1,0)(3019=-1,-1,-1,-1,0)(3018=-1,-1,-1,-1,0)(80=150,107,366,475,0)(3007=150,107,371,518,0)(3000=-1,-1,-1,-1,0)(3013=-1,-1,-1,-1,0)(3012=-1,-1,-1,-1,0)</Name>
+          <Name>(103=-1,-1,-1,-1,0)(3010=-1,-1,-1,-1,0)(108=-1,-1,-1,-1,0)(3004=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(3014=-1,-1,-1,-1,0)(82=874,256,1272,383,0)(83=882,895,1280,1029,1)(85=-1,-1,-1,-1,0)(3008=-1,-1,-1,-1,0)(3015=-1,-1,-1,-1,0)(90=-1,-1,-1,-1,0)(93=-1,-1,-1,-1,0)(94=-1,-1,-1,-1,0)(95=-1,-1,-1,-1,0)(98=10,191,214,418,0)(105=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(3016=-1,-1,-1,-1,0)(3019=-1,-1,-1,-1,0)(3018=-1,-1,-1,-1,0)(80=150,107,366,475,0)(3007=150,107,371,518,0)(3000=-1,-1,-1,-1,0)(3013=150,100,285,302,0)(3012=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint>
-        <Bp>
-          <Number>0</Number>
-          <Type>0</Type>
-          <LineNumber>300</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>5234</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>CC2.C</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>293</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>5050</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>CC2.C</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>208</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>5582</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>MAIN.C</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>261</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>4932</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>CC2.C</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-      </Breakpoint>
-      <WatchWindow1>
-        <Ww>
-          <count>0</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>t18s,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>1</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>t19s,0x0A</ItemText>
-        </Ww>
-      </WatchWindow1>
       <ToolboxButtons>
         <Wi>
           <IntNumber>0</IntNumber>
@@ -317,11 +243,21 @@
           <FirstString>60 °C</FirstString>
           <SecondString>tempsim(60)</SecondString>
         </Wi>
+        <Wi>
+          <IntNumber>8</IntNumber>
+          <FirstString>Kill Dreh Signal</FirstString>
+          <SecondString>SIGNAL KILL drehsim</SecondString>
+        </Wi>
+        <Wi>
+          <IntNumber>9</IntNumber>
+          <FirstString>Drehen</FirstString>
+          <SecondString>drehsim(40)</SecondString>
+        </Wi>
       </ToolboxButtons>
       <DebugFlag>
         <trace>0</trace>
         <periodic>0</periodic>
-        <aLwin>1</aLwin>
+        <aLwin>0</aLwin>
         <aCover>0</aCover>
         <aSer1>1</aSer1>
         <aSer2>0</aSer2>
@@ -338,7 +274,7 @@
         <aLa>0</aLa>
         <aPa1>0</aPa1>
         <AscS4>0</AscS4>
-        <aSer4>1</aSer4>
+        <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
         <newCpu>0</newCpu>
@@ -349,8 +285,8 @@
       <LogicAnalyzers>
         <Wi>
           <IntNumber>0</IntNumber>
-          <FirstString>(P8 &amp; 0x4) &gt;&gt; 0</FirstString>
-          <SecondString>FF00000000000000000000000000E0FFFFFFEF41010000000000000000000000000000005038000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000D8140000</SecondString>
+          <FirstString>(P8 &amp; 0x1) &gt;&gt; 0</FirstString>
+          <SecondString>FF0000000000000000000000000000000000F03F010000000000000000000000000000005038000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000D8140000</SecondString>
         </Wi>
       </LogicAnalyzers>
     </TargetOption>
@@ -369,8 +305,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1045</TopLine>
-      <CurrentLine>1050</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Start167.a66</PathWithFileName>
       <FilenameWithoutPath>Start167.a66</FilenameWithoutPath>
@@ -381,10 +317,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>59</ColumnNumber>
+      <ColumnNumber>34</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>142</TopLine>
-      <CurrentLine>142</CurrentLine>
+      <TopLine>112</TopLine>
+      <CurrentLine>135</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
@@ -397,8 +333,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>136</TopLine>
-      <CurrentLine>155</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\GT1.C</PathWithFileName>
       <FilenameWithoutPath>GT1.C</FilenameWithoutPath>
@@ -451,13 +387,27 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>34</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>270</TopLine>
-      <CurrentLine>285</CurrentLine>
+      <TopLine>252</TopLine>
+      <CurrentLine>273</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\CC2.C</PathWithFileName>
       <FilenameWithoutPath>CC2.C</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>8</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>90</TopLine>
+      <CurrentLine>131</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\RTC.C</PathWithFileName>
+      <FilenameWithoutPath>RTC.C</FilenameWithoutPath>
     </File>
   </Group>
 
@@ -469,9 +419,61 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>D:\Daten\Dropbox\6_SoSe12\Embedded Systems\Praktikum\CP164PRJ\Versuche\INT.H</PathWithFilename>
-    <TopLine>57</TopLine>
-    <CurrentLine>57</CurrentLine>
+    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\RTC.H</PathWithFilename>
+    <TopLine>9</TopLine>
+    <CurrentLine>29</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\MAIN.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>35</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\CC2.H</PathWithFilename>
+    <TopLine>92</TopLine>
+    <CurrentLine>117</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -499,31 +501,49 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\CC2.C</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>270</TopLine>
-          <CurrentLine>285</CurrentLine>
+          <ColumnNumber>34</ColumnNumber>
+          <TopLine>252</TopLine>
+          <CurrentLine>273</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\MAIN.C</Name>
-          <ColumnNumber>59</ColumnNumber>
-          <TopLine>142</TopLine>
-          <CurrentLine>142</CurrentLine>
+          <ColumnNumber>34</ColumnNumber>
+          <TopLine>112</TopLine>
+          <CurrentLine>135</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\RTC.C</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>90</TopLine>
+          <CurrentLine>131</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>CC2.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>92</TopLine>
+          <CurrentLine>117</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>MAIN.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>35</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>RTC.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>9</TopLine>
+          <CurrentLine>29</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\GT1.C</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>136</TopLine>
-          <CurrentLine>155</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>INT.H</Name>
-          <ColumnNumber>53</ColumnNumber>
-          <TopLine>57</TopLine>
-          <CurrentLine>57</CurrentLine>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

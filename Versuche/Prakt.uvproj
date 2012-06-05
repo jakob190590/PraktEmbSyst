@@ -319,6 +319,11 @@
               <FileType>1</FileType>
               <FilePath>.\CC2.C</FilePath>
             </File>
+            <File>
+              <FileName>RTC.C</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RTC.C</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -13,7 +13,7 @@
 //                
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:11
+// @Date          05.06.2012 15:19:15
 //
 //****************************************************************************
 
@@ -62,16 +62,16 @@
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          21.05.2012 21:30:11
+// @Date          05.06.2012 15:19:15
 //
 //****************************************************************************
 
 void IO_vInit(void)
 {
-  /// P8.0 .. P8.7  switch on standard TTL input levels
+  /// P8.0 .. P8.7  switch on special threshold input levels
   /// P3.8 .. P3.15 switch on standard TTL input levels
   /// P3.0 .. P3.7  switch on standard TTL input levels
-  PICON = 0x0000;
+  PICON = 0x0080;
 
   /// no pin of port 0 low is used as general IO
 
