@@ -1,0 +1,3 @@
+Wenn unsere Daten per Remote Frame angefordert werden, wird das entsprechende Transmitobject ja automatisch gesendet. Wir muessen unser Transmitobject also regelmaessig mit den aktuellen Daten füllen, dass es -- bei Anforderung -- einigermassen aktuell ist.
+
+Das kann man z.B. mit dem Realtime Clock (RTC) machen.

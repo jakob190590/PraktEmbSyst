@@ -180,6 +180,10 @@ void main(void)
 
 	while(1)
 	{ 	
+		
+		// main wurde so veraendert, dass es keine Displayausgaben
+		// macht ausser denen zum Testen des CAN-Moduls.
+		// Alles andere wurde auskommentiert.
 				
 		if (KeyDown())
 		{
