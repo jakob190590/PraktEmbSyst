@@ -317,10 +317,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>34</ColumnNumber>
+      <ColumnNumber>18</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>112</TopLine>
-      <CurrentLine>135</CurrentLine>
+      <TopLine>182</TopLine>
+      <CurrentLine>203</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\MAIN.C</PathWithFileName>
       <FilenameWithoutPath>MAIN.C</FilenameWithoutPath>
@@ -333,8 +333,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\GT1.C</PathWithFileName>
       <FilenameWithoutPath>GT1.C</FilenameWithoutPath>
@@ -387,10 +387,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>34</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>252</TopLine>
-      <CurrentLine>273</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\CC2.C</PathWithFileName>
       <FilenameWithoutPath>CC2.C</FilenameWithoutPath>
@@ -403,11 +403,25 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>90</TopLine>
-      <CurrentLine>131</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\RTC.C</PathWithFileName>
       <FilenameWithoutPath>RTC.C</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>25</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>488</TopLine>
+      <CurrentLine>509</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\CAN.C</PathWithFileName>
+      <FilenameWithoutPath>CAN.C</FilenameWithoutPath>
     </File>
   </Group>
 
@@ -419,61 +433,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\RTC.H</PathWithFilename>
-    <TopLine>9</TopLine>
-    <CurrentLine>29</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\MAIN.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>35</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\Daten\CP164PRJ\Versuche\CC2.H</PathWithFilename>
-    <TopLine>92</TopLine>
-    <CurrentLine>117</CurrentLine>
+    <PathWithFilename>C:\Dokumente und Einstellungen\c164-t2\Desktop\Versuche\CAN.H</PathWithFilename>
+    <TopLine>119</TopLine>
+    <CurrentLine>137</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -504,46 +466,22 @@
       <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
-          <Name>.\CC2.C</Name>
-          <ColumnNumber>34</ColumnNumber>
-          <TopLine>252</TopLine>
-          <CurrentLine>273</CurrentLine>
-        </Doc>
-        <Doc>
           <Name>.\MAIN.C</Name>
-          <ColumnNumber>34</ColumnNumber>
-          <TopLine>112</TopLine>
-          <CurrentLine>135</CurrentLine>
+          <ColumnNumber>18</ColumnNumber>
+          <TopLine>182</TopLine>
+          <CurrentLine>203</CurrentLine>
         </Doc>
         <Doc>
-          <Name>.\RTC.C</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>90</TopLine>
-          <CurrentLine>131</CurrentLine>
+          <Name>.\CAN.C</Name>
+          <ColumnNumber>25</ColumnNumber>
+          <TopLine>488</TopLine>
+          <CurrentLine>509</CurrentLine>
         </Doc>
         <Doc>
-          <Name>CC2.H</Name>
+          <Name>CAN.H</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>92</TopLine>
-          <CurrentLine>117</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>MAIN.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>35</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>RTC.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>9</TopLine>
-          <CurrentLine>29</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\GT1.C</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <TopLine>119</TopLine>
+          <CurrentLine>137</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
