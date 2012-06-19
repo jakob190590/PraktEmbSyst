@@ -12,7 +12,7 @@
 // @Description   This file contains the Project initialization function.
 //
 //----------------------------------------------------------------------------
-// @Date          12.06.2012 15:16:58
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -72,7 +72,7 @@ unsigned compare16 = -500 * 1;
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          12.06.2012 15:16:58
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -117,9 +117,6 @@ void Project_Init(void)
   // initializes the Asynchronous/Synchronous Serial Interface (ASC)
   ASC_vInit();
 
-  // initializes the On-Chip CAN Interface (CAN)
-  CAN_vInit();
-
   // initializes the Analog/Digital Converter (ADC)
   ADC_vInit();
 
@@ -157,7 +154,7 @@ void Project_Init(void)
 // @Parameters    none
 //
 //----------------------------------------------------------------------------
-// @Date          12.06.2012 15:16:58
+// @Date          05.06.2012 15:19:14
 //
 //****************************************************************************
 
@@ -167,7 +164,6 @@ void main(void)
 	
 	int ledState = 0;	// LED Status
 	char s[COLCOUNT + 1]; // 20 Zeichen fuers Display + '\0'
-	char canCnt = 0;
 
   // USER CODE END
 
@@ -180,10 +176,6 @@ void main(void)
 
 	while(1)
 	{ 	
-		
-		// main wurde so veraendert, dass es keine Displayausgaben
-		// macht ausser denen zum Testen des CAN-Moduls.
-		// Alles andere wurde auskommentiert.
 				
 		if (KeyDown())
 		{
@@ -192,20 +184,16 @@ void main(void)
 
 				case '1': 
 		
-					CAN_vTransmit(1);
-
 					if (++kanal >= ADNUM) // kanal = ++kanal % ADNUM;
 						kanal = 0;
 
-					//refreshDisplay(REFRESH_Z1);
+					refreshDisplay(REFRESH_Z1);
 
 					ledState ^= 0x10; 
 					break;
 
 				case '2':	
 					
-					vMakeCanValue(fGibGewicht());
-
 					refreshDisplay(REFRESH_Z2);
 									
 					ledState ^= 0x20;
@@ -219,7 +207,7 @@ void main(void)
 						stufe++;
 						compare16 = -500 * stufe;
 
-						//refreshDisplay(REFRESH_Z4);
+						refreshDisplay(REFRESH_Z4);
 					}
 					
 					ledState ^= 0x40;
@@ -233,7 +221,7 @@ void main(void)
 						stufe--;
 						compare16 = -500 * stufe;
 
-						//refreshDisplay(REFRESH_Z4);
+						refreshDisplay(REFRESH_Z4);
 					}
 
 					ledState ^= 0x80;
@@ -244,22 +232,13 @@ void main(void)
 
 		}
 
-		if (bCanRok())
-		{
-			canCnt++;
-			sprintf(s, "%2d: %2.4f", canCnt, fGiveCanValue());
-			DoPrintZ(1, s);
-		}
-
-		/*
 		// refresh Flag wird von RTC gesetzt
 		if (refresh)
 		{
 			refreshDisplay(REFRESH_ALL);
 			refresh = 0;
 		}
-		*/
-		/*
+
 		// Messung wird durch StartTemp() angestoﬂen,
 		// und angezeigt, sobald's fertig ist.
 		if (bTempDa())
@@ -267,7 +246,6 @@ void main(void)
 			sprintf(s, "Temperatur: %5.2f", fGetTemp());
 			DoPrintZ(3, s);
 		}
-		*/
 	}
 
   // USER CODE END

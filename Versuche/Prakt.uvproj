@@ -218,8 +218,8 @@
             </OnChipMemories>
           </Target166Misc>
           <C166>
-            <Optimize>6</Optimize>
-            <SpeedSize>0</SpeedSize>
+            <Optimize>0</Optimize>
+            <SpeedSize>1</SpeedSize>
             <RegisterColoring>0</RegisterColoring>
             <UseStaticMemory>0</UseStaticMemory>
             <WarningLevel>2</WarningLevel>
@@ -323,11 +323,6 @@
               <FileName>RTC.C</FileName>
               <FileType>1</FileType>
               <FilePath>.\RTC.C</FilePath>
-            </File>
-            <File>
-              <FileName>CAN.C</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\CAN.C</FilePath>
             </File>
           </Files>
         </Group>
